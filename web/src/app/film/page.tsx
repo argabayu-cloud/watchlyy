@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import NavbarFilm from "../components/NavbarFilm";
+import Footer from "../components/Footer";
 
 interface Movie {
   id: number;
@@ -16,39 +18,41 @@ export default function Film() {
   const [actionMovies, setActionMovies] = useState<Movie[]>([]);
 
   useEffect(() => {
+    const img = "/images/hero.png"; // Semua gambar memakai ini
+
     setNewMovies([
       {
         id: 1,
         title: "Train Dreams (2025)",
-        poster: "/posters/train.jpg",
+        poster: img,
         date: "06 Nov 2025",
         badge: "WEBDL",
       },
       {
         id: 2,
         title: "Anniversary (2025)",
-        poster: "/posters/anniversary.jpg",
+        poster: img,
         date: "29 Oct 2025",
         badge: "WEBDL",
       },
       {
         id: 3,
         title: "Legacy: Bomba (2025)",
-        poster: "/posters/legacy.jpg",
+        poster: img,
         date: "21 Aug 2025",
         badge: "WEBDL",
       },
       {
         id: 4,
         title: "The Family Plan 2 (2025)",
-        poster: "/posters/familyplan.jpg",
+        poster: img,
         date: "11 Nov 2025",
         badge: "WEBDL",
       },
-      {
+       {
         id: 4,
         title: "The Family Plan 2 (2025)",
-        poster: "/posters/familyplan.jpg",
+        poster: img,
         date: "11 Nov 2025",
         badge: "WEBDL",
       },
@@ -58,21 +62,35 @@ export default function Film() {
       {
         id: 5,
         title: "Brothers Grimm (2025)",
-        poster: "/posters/brothers.jpg",
+        poster: img,
         date: "18 Jun 2025",
         badge: "WEBDL",
       },
       {
         id: 6,
         title: "One Battle After Another",
-        poster: "/posters/onebattle.jpg",
+        poster: img,
         date: "10 Mar 2025",
         badge: "BLURAY",
       },
       {
         id: 7,
         title: "Shark Zone",
-        poster: "/posters/shark.jpg",
+        poster: img,
+        date: "02 May 2025",
+        badge: "WEBDL",
+      },
+      {
+        id: 6,
+        title: "One Battle After Another",
+        poster: img,
+        date: "10 Mar 2025",
+        badge: "BLURAY",
+      },
+      {
+        id: 7,
+        title: "Shark Zone",
+        poster: img,
         date: "02 May 2025",
         badge: "WEBDL",
       },
@@ -80,8 +98,10 @@ export default function Film() {
   }, []);
 
   return (
-    <div className="bg-[#0F0F0F] min-h-screen text-white px-6 md:px-12 py-10">
-      
+    <>
+      <div className="bg-[#0F0F0F] min-h-screen text-white px-6 md:px-12 py-10">
+        <NavbarFilm />
+
       {/* FILM TERBARU */}
       <section>
         <h2 className="text-lg font-semibold border-l-4 border-red-600 pl-3 mb-5">
@@ -144,5 +164,7 @@ export default function Film() {
         </div>
       </section>
     </div>
+      <Footer />
+    </>
   );
 }
