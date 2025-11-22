@@ -1,23 +1,10 @@
 "use client";
-
-import { useState } from "react";
 import Image from "next/image";
-import { Listbox } from "@headlessui/react";
 
-const genres = [
-  "Action", "Adventure", "Animation", "Comedy", "Crime",
-  "Drama", "Fantasy", "Horror", "Mystery", "Romance",
-  "Sci-Fi", "Thriller"
-];
 
-const ratings = ["1", "2", "3", "4", "5"];
-
-const years = Array.from({ length: 36 }, (_, i) => `${1990 + i}`);
 
 export default function Navbar() {
-  const [selectedGenre, setSelectedGenre] = useState(genres[0]);
-  const [selectedRating, setSelectedRating] = useState(ratings[0]);
-  const [selectedYear, setSelectedYear] = useState(years[0]);
+
 
   return (
     <nav className="w-full fixed top-0 z-50 bg-black/40 backdrop-blur-md border-b border-white/10">
