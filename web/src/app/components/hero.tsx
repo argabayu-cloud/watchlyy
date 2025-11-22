@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 export default function Hero() {
   return (
     <section
@@ -28,12 +28,12 @@ export default function Hero() {
 
         {/* Buttons */}
         <div className="flex items-start gap-4">
-          <a
-            href="#"
+          <Link
+            href="/film"
             className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg text-base font-medium"
           >
             Mulai Nonton
-          </a>
+          </Link>
 
           <a
             href="#"
