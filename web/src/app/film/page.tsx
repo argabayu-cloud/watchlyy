@@ -40,7 +40,7 @@ export default function Film() {
 
   return (
     <>
-      <div className="bg-[#0F0F0F] min-h-screen text-white px-6 md:px-12 py-10">
+      <div className="bg-[#0F0F0F] min-h-screen text-white px-6 md:px-12 py-20">
         <NavbarFilm />
 
         {/* FILM TERBARU */}
