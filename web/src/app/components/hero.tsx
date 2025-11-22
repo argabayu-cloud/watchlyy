@@ -1,33 +1,49 @@
 "use client";
+import { useState, useEffect } from "react";
 import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
+
+const images = ["/images/1.jpg", "/images/2.jpg", "/images/3.jpg"];
+
 export default function Hero() {
-  return (
-    <section
-      className="relative w-full h-screen flex items-center px-8 md:px-20 bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/hero.png')" }}
-    >
-      {/* Overlay hitam 70% */}
-      <div className="absolute inset-0 bg-black/70"></div>
+const [current, setCurrent] = useState(0);
 
-      <div className="relative z-10 max-w-xl text-white flex flex-col items-start text-left">
-        {/* Status */}
-        <span className="inline-block mb-4 text-sm bg-white/10 px-4 py-1 rounded-full">
-          • Available to Watch
-        </span>
+useEffect(() => {
+const interval = setInterval(() => {
+setCurrent((prev) => (prev + 1) % images.length);
+}, 5000);
+return () => clearInterval(interval);
+}, []);
 
-        {/* Title */}
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
-          Tonton Film Favoritmu
-          <br /> Dalam Satu Tempat
+const goToSlide = (index: number): void => {
+setCurrent(index);
+};
+
+return ( <section className="relative w-full h-screen overflow-hidden bg-black"> <AnimatePresence initial={false}>
+<motion.div
+key={current}
+className="absolute inset-0 bg-cover bg-center"
+style={{ backgroundImage: `url('${images[current]}')` }}
+initial={{ opacity: 0, x: 100 }}
+animate={{ opacity: 1, x: 0 }}
+exit={{ opacity: 0, x: -100 }}
+transition={{ duration: 0.8 }}
+></motion.div> </AnimatePresence>
+
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/60"></div>
+
+  {/* Content */}
+   <div className="relative z-10 max-w-xl h-full flex flex-col justify-center px-12 md:px-20 text-white">
+    <h1 className="text-4xl md:text-4.5xl font-bold leading-tight mb-3">
+          Tonton Film Favoritmu <br /> Dalam Satu Tempat
         </h1>
 
-        {/* Subtitle */}
         <p className="text-lg opacity-90 mb-6">
-          Temukan film terbaru, serial populer, dan rekomendasi pilihan yang cocok dengan seleramu. Semua ada di Watchly.
+          Temukan film terbaru, serial populer, dan rekomendasi terbaik untuk kamu.
         </p>
 
-        {/* Buttons */}
-        <div className="flex items-start gap-4">
+        <div className="flex gap-4">
           <Link
             href="/film"
             className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg text-base font-medium"
@@ -41,8 +57,22 @@ export default function Hero() {
           >
             Lihat Koleksi
           </a>
-        </div>
-      </div>
-    </section>
-  );
+    </div>
+  </div>
+
+  {/* Dots Navigation */}
+  <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+    {images.map((_, i) => (
+      <button
+        key={i}
+        onClick={() => goToSlide(i)}
+        className={`w-3 h-3 rounded-full transition-all ${
+          current === i ? "bg-white scale-125" : "bg-white/40 hover:bg-white/70"
+        }`}
+      ></button>
+    ))}
+  </div>
+</section>
+
+);
 }
