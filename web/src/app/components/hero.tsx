@@ -15,7 +15,7 @@ setCurrent((prev) => (prev + 1) % images.length);
 return () => clearInterval(interval);
 }, []);
 
-const goToSlide = (index) => {
+const goToSlide = (index: number): void => {
 setCurrent(index);
 };
 
