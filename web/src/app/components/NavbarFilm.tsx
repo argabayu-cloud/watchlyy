@@ -22,12 +22,12 @@ export default function Navbar() {
 
   return (
     <nav className="w-full fixed top-0 z-50 bg-black/40 backdrop-blur-md border-b border-white/10">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-0 py-4 flex items-center justify-between">
         
         {/* LEFT */}
-        <div className="flex items-center gap-6">
-          <Image
-            src="/logo.png"
+        <div className=" flex items-center gap-6 right-0">
+          <Image 
+            src="/images/Watchly.png"
             alt="Watchly Logo"
             width={120}
             height={40}

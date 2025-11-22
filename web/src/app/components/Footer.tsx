@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="w-full bg-black text-gray-300 py-10 px-6 md:px-20 border-t border-white/10">
@@ -7,7 +7,11 @@ export default function Footer() {
         
         {/* Brand */}
         <div>
-          <h2 className="text-white text-xl font-bold mb-3">Watchly</h2>
+          <img 
+            src="images/WatchLy.png" 
+            alt="Watchly Logo" 
+            className="w-50 mb-3"
+          />
           <p className="text-sm opacity-80">
             Platform streaming film dan series favoritmu. 
             Nikmati pengalaman menonton tanpa batas.
