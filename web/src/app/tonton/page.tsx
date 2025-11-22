@@ -42,14 +42,7 @@ export default function TontonPage() {
             </p>
 
             <button
-                className="
-                    mt-4 px-6 py-3 rounded-lg text-lg font-semibold
-                    bg-[#DC143C] text-white
-                    hover:bg-red-700
-                    active:bg-white active:text-black
-                    transition
-                "
-                >
+                className="mt-4 px-6 py-3 rounded-lg text-lg font-semibold bg-[#DC143C] text-white hover:bg-red-700 active:bg-white active:text-black transition">
                 Putar Sekarang
             </button>
 
