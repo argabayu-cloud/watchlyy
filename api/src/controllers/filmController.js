@@ -1,6 +1,8 @@
-const prisma = require("../prisma");
+import { PrismaClient } from "@prisma/client";
 
-exports.getAllFilms = async (req, res) => {
+const prisma = new PrismaClient();
+
+export const getAllFilms = async (req, res) => {
   try {
     const films = await prisma.film.findMany({
       include: {
@@ -22,7 +24,7 @@ exports.getAllFilms = async (req, res) => {
 };
 
 // GET /films/recommend - simple placeholder: return a small set of films
-exports.getRecommendedFilms = async (req, res) => {
+export const getRecommendedFilms = async (req, res) => {
   try {
     const films = await prisma.film.findMany({
       take: 5,
@@ -45,7 +47,7 @@ exports.getRecommendedFilms = async (req, res) => {
 };
 
 // GET /films/:id - return film by ID
-exports.getFilmById = async (req, res) => {
+export const getFilmById = async (req, res) => {
   try {
     const { id } = req.params;
     const film = await prisma.film.findUnique({

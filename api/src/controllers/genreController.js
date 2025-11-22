@@ -1,6 +1,8 @@
-const prisma = require("../prisma");
+import { PrismaClient } from "@prisma/client";
 
-exports.getAllGenres = async (req, res) => {
+const prisma = new PrismaClient();
+
+export const getAllGenres = async (req, res) => {
   try {
     const genres = await prisma.genre.findMany();
     res.status(200).json(genres);
@@ -10,7 +12,7 @@ exports.getAllGenres = async (req, res) => {
   }
 };
 
-exports.createGenre = async (req, res) => {
+export const createGenre = async (req, res) => {
   try {
     const { name } = req.body;
 

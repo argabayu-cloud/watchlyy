@@ -1,6 +1,8 @@
-const prisma = require("../prisma");
+import { PrismaClient } from "@prisma/client";
 
-exports.getAllUsers = async (req, res) => {
+const prisma = new PrismaClient();
+
+export const getAllUsers = async (req, res) => {
   try {
     const users = await prisma.user.findMany({
       include: {
@@ -20,7 +22,7 @@ exports.getAllUsers = async (req, res) => {
   }
 };
 
-exports.registerUser = async (req, res) => {
+export const registerUser = async (req, res) => {
   try {
     const { name, email, password } = req.body;
 
