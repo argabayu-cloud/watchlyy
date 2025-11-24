@@ -3,8 +3,13 @@
 import Image from "next/image";
 import NavbarFilm from "../components/NavbarFilm";
 import Footer from "../components/Footer";
+import { motion } from "framer-motion";
+import { FaBookmark } from "react-icons/fa";
+import { useState } from "react";
 
 export default function TontonPage() {
+  const [isSaved, setIsSaved] = useState(false);
+
   const movie = {
     title: "The Family Plan 2 (2025)",
     description:
@@ -41,10 +46,45 @@ export default function TontonPage() {
               {movie.description}
             </p>
 
-            <button
-                className="mt-4 px-6 py-3 rounded-lg text-lg font-semibold bg-[#DC143C] text-white hover:bg-red-700 active:bg-white active:text-black transition">
+            {/* BUTTON + ICON */}
+            <div className="flex items-center">
+              <button
+                className="px-6 py-3 rounded-lg text-lg font-semibold bg-[#DC143C] text-white hover:bg-red-700 active:bg-white active:text-black transition"
+              >
                 Putar Sekarang
-            </button>
+              </button>
+
+              {/* ICON SAVE */}
+              <motion.button
+                onClick={() => setIsSaved(!isSaved)}
+                whileTap={{ scale: 1.4 }}
+                animate={{ scale: isSaved ? 1.2 : 1 }}
+                transition={{ type: "spring", stiffness: 300, damping: 12 }}
+                className="
+                  p-4 rounded-lg transition 
+                  bg-transparent
+                "
+                title="Simpan ke Koleksi"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill={isSaved ? "white" : "transparent"}      // isi icon
+                  stroke="white"                                 // garis tepi
+                  strokeWidth={isSaved ? 0 : 2}                  // hilang saat full white
+                >
+                  <path d="M6 2h12a2 2 0 0 1 2 2v18l-8-4-8 4V4a2 2 0 0 1 2-2z"/>
+                </svg>
+              </motion.button>
+            </div>
+
+            {isSaved && (
+              <p className="text-green-400 text-sm mt-2">
+                Berhasil disimpan ke koleksi.
+              </p>
+            )}
           </div>
         </section>
       </div>
