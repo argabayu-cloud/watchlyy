@@ -1,10 +1,7 @@
 "use client";
 import Image from "next/image";
 
-
-
 export default function Navbar() {
-
 
   return (
     <nav className="w-full fixed top-0 z-50 bg-black/40 backdrop-blur-md border-b border-white/10">
@@ -19,7 +16,6 @@ export default function Navbar() {
             height={40}
             className="object-contain"
           />
-
           
         </div>
 
