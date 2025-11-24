@@ -52,7 +52,7 @@ transition={{ duration: 0.8 }}
           </Link>
 
           <a
-            href="#"
+            href="/koleksi"
             className="border border-white hover:bg-white/20 text-white px-6 py-3 rounded-lg text-base font-medium"
           >
             Lihat Koleksi
