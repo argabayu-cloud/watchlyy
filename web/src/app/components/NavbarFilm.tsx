@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -36,32 +37,31 @@ export default function Navbar() {
 
           {/* GENRE */}
           <Select onValueChange={setGenre}>
-  <SelectTrigger className="w-fit bg-transparent border-none p-0 text-white hover:text-red-400 cursor-pointer data-[placeholder]:text-gray-300">
-    <SelectValue placeholder="Genre" />
-  </SelectTrigger>
-  <SelectContent className="bg-black border-white/20 text-white">
-    {genres.map((g, i) => (
-      <SelectItem key={i} value={g}>
-        {g}
-      </SelectItem>
-    ))}
-  </SelectContent>
-</Select>
-
+            <SelectTrigger className="w-fit bg-transparent border-none p-0 text-white hover:text-red-400 cursor-pointer data-[placeholder]:text-gray-300">
+              <SelectValue placeholder="Genre" />
+            </SelectTrigger>
+            <SelectContent className="bg-black border-white/20 text-white">
+              {genres.map((g, i) => (
+                <SelectItem key={i} value={g}>
+                  {g}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
 
           {/* RATING */}
           <Select onValueChange={setRating}>
-  <SelectTrigger className="w-fit bg-transparent border-none p-0 text-white hover:text-red-400 cursor-pointer data-[placeholder]:text-gray-300">
-    <SelectValue placeholder="Rating" />
-  </SelectTrigger>
-  <SelectContent className="bg-black border-white/20 text-white">
-    {ratings.map((r) => (
-      <SelectItem key={r} value={String(r)}>
-        {r}
-      </SelectItem>
-    ))}
-  </SelectContent>
-</Select>
+            <SelectTrigger className="w-fit bg-transparent border-none p-0 text-white hover:text-red-400 cursor-pointer data-[placeholder]:text-gray-300">
+              <SelectValue placeholder="Rating" />
+            </SelectTrigger>
+            <SelectContent className="bg-black border-white/20 text-white">
+              {ratings.map((r) => (
+                <SelectItem key={r} value={String(r)}>
+                  {r}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
 
 
           {/* YEAR */}
@@ -76,7 +76,7 @@ export default function Navbar() {
                 </SelectItem>
                 ))}
             </SelectContent>
-            </Select>
+          </Select>
 
         </div>
 
@@ -87,9 +87,17 @@ export default function Navbar() {
             placeholder="Search..."
             className="px-4 py-2 bg-white/10 text-white rounded-lg placeholder-gray-300 outline-none focus:ring-2 focus:ring-red-500"
           />
-          <button className="px-5 py-2 rounded-lg bg-red-600 text-white hover:bg-red-700">
-            Login
-          </button>
+          <Link href="/profile">
+            <div className="w-10 h-10 rounded-full overflow-hidden border border-white/20 cursor-pointer hover:border-red-500 transition">
+              <Image
+                src="/images/profile.jpg"        // ganti sesuai foto profil kamu
+                alt="Profile"
+                width={40}
+                height={40}
+                className="object-cover w-full h-full"
+              />
+            </div>
+          </Link>
         </div>
 
       </div>
