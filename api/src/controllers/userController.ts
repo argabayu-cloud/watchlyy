@@ -1,56 +1,67 @@
-// userController.js atau userController.ts
-
-// Hapus: import pkg from "@prisma/client";
-// Hapus: const { PrismaClient } = pkg;
-
-// BARU: Menggunakan import * as untuk mendapatkan constructor yang benar (PrismaModule)
-import * as PrismaModule from "@prisma/client";
-
-// BARU: Akses constructor PrismaClient dari objek impor (PrismaModule)
-const PrismaClient = PrismaModule.PrismaClient;
+import { Request, Response } from "express";
+import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
-export const getAllUsers = async (req, res) => {
+// Ambil semua user
+export const getAllUsers = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
   try {
-    const users = await prisma.user.findMany({
-      include: {
-        ratings: true,
-      },
-    });
-
-    res.json({
+    const users = await prisma.user.findMany();
+    res.status(200).json({
       status: "success",
       data: users,
     });
-  } catch (err) {
+  } catch (error) {
+    console.error(error);
     res.status(500).json({
       status: "error",
-      message: err.message,
+      message: "Terjadi kesalahan saat mengambil data pengguna",
     });
   }
 };
 
-export const registerUser = async (req, res) => {
+// Registrasi user baru
+export const registerUser = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
   try {
-    const { name, email, password } = req.body;
+    const { name, email, password, phone } = req.body;
+
+    if (!name || !email || !password || !phone) {
+      res.status(400).json({
+        status: "error",
+        message: "Name, email, password, dan phone wajib diisi",
+      });
+      return;
+    }
+
+    const existingUser = await prisma.user.findUnique({ where: { email } });
+    if (existingUser) {
+      res.status(409).json({
+        status: "error",
+        message: "Email sudah terdaftar",
+      });
+      return;
+    }
 
     const newUser = await prisma.user.create({
-      data: {
-        name,
-        email,
-        password, // nanti kita ganti hash
-      },
+      data: { name, email, password, phone },
     });
 
-    res.json({
+    res.status(201).json({
       status: "success",
+      message: "User berhasil didaftarkan",
       data: newUser,
     });
-  } catch (err) {
+  } catch (error) {
+    console.error(error);
     res.status(500).json({
       status: "error",
-      message: err.message,
+      message: "Terjadi kesalahan saat mendaftarkan user",
     });
   }
 };

@@ -1,37 +1,31 @@
-import "dotenv/config"; // Revisi 1: Sintaks impor dotenv yang modern dan disarankan
-import express from "express"; // Revisi 2: Menggunakan import untuk express
-import cors from "cors"; // Revisi 3: Menggunakan import untuk cors
+  import express from "express";
+  import cors from "cors";
+  import { PrismaClient } from "@prisma/client";
 
-// Revisi 4, 5, 6: Menggunakan import untuk semua routes
-import filmRoutes from "./routes/filmRoute.js"; // <-- Tambahkan .js
-import genreRoutes from "./routes/genreRoute.js"; // <-- Tambahkan .js
-import userRoutes from "./routes/userRoute.js"; // <-- Tambahkan .js
+  // Routes
+  import genreRoutes from "./routes/genreRoute";
+  import authRoutes from "./routes/authRoutes";
+  import userRoutes from "./routes/userRoute";
+  import filmRoutes from "./routes/filmRoute";
 
-const app = express();
-const corsOptions = {
-  // ... Konfigurasi CORS Eksplisit
-  origin: "http://localhost:3000",
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  credentials: true,
-  optionsSuccessStatus: 204, // Untuk preflight request
-};
+  const app = express();
+  const prisma = new PrismaClient();
 
-// Middleware
-app.use(express.json()); // Penting untuk membaca body POST request
-app.use(cors(corsOptions)); // Menggunakan konfigurasi CORS yang spesifik
+  app.use(cors());
+  app.use(express.json());
 
-// Routes
-// Catatan: Deklarasi routes (filmRoutes, genreRoutes, userRoutes) sekarang ada di bagian import
+  // Default root (cek API)
+  app.get("/", (req, res) => {
+    res.json({ message: "API Running..." });
+  });
 
-// Definisi route: /genres, /films, /users
-app.use("/genres", genreRoutes);
-app.use("/films", filmRoutes);
-app.use("/users", userRoutes);
+  // Register all routes
+  app.use("/api/genres", genreRoutes);
+  app.use("/api/auth", authRoutes);
+  app.use("/api/users", userRoutes);
+  app.use("/api/films", filmRoutes);
 
-// Server listen
-const PORT = 3001;
-app.listen(PORT, () => {
-  console.log(`API running on http://localhost:${PORT}`);
-});
-
-export default app; // Revisi 7: Mengganti module.exports = app;
+  // Server
+  app.listen(3001, () => {
+    console.log("Server running at http://localhost:3001");
+  });
