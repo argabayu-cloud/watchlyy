@@ -4,7 +4,6 @@ import Image from "next/image";
 import NavbarFilm from "../components/NavbarFilm";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
-import { FaBookmark } from "react-icons/fa";
 import { useState } from "react";
 
 export default function TontonPage() {
