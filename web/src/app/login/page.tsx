@@ -19,7 +19,7 @@ const [password, setPassword] = useState("");
 const handleLogin = (e: React.FormEvent) => {
 e.preventDefault();
 
-```
+
 // contoh validasi sederhana
 if (!email || !password) {
   alert("Email dan password tidak boleh kosong.");
@@ -29,7 +29,7 @@ if (!email || !password) {
 // ganti ini nanti pakai API login kamu
 console.log("Login:", { email, password });
 alert("Login berhasil (contoh)");
-```
+
 
 };
 
@@ -77,7 +77,7 @@ Masukkan email dan password kamu </CardDescription> </CardHeader>
     </CardFooter>
   </Card>
 </div>
-```
+
 
 );
 }
