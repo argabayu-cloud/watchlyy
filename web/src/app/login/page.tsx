@@ -36,7 +36,6 @@ alert("Login berhasil (contoh)");
 return ( <div className="min-h-screen bg-[#0F0F0F] flex items-center justify-center p-6"> <Card className="w-full max-w-sm bg-black text-white border border-gray-700"> <CardHeader> <CardTitle className="text-2xl">Login</CardTitle> <CardDescription className="text-gray-400">
 Masukkan email dan password kamu </CardDescription> </CardHeader>
 
-```
     <CardContent>
       <form onSubmit={handleLogin} className="space-y-4">
         <div>
