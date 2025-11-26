@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
 
@@ -27,9 +28,12 @@ export default function Navbar() {
             className="px-4 py-2 bg-white/10 text-white rounded-lg placeholder-gray-300 outline-none focus:ring-2 focus:ring-red-500"
           />
 
-          <button className="px-5 py-2 rounded-lg bg-red-600 text-white font-medium hover:bg-red-700 transition">
-            Login
-          </button>
+          {/* Ubah button menjadi Link */}
+          <Link href="/login">
+            <button className="px-5 py-2 rounded-lg bg-red-600 text-white font-medium hover:bg-red-700 transition">
+              Login
+            </button>
+          </Link>
         </div>
 
       </div>
