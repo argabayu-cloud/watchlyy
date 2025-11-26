@@ -8,31 +8,31 @@ export default function Rekomendasi() {
       id: 1,
       title: "Rekomendasi Film 1",
       year: 2025,
-      image: "/images/hero.png",
+      image: "/images/1.jpg",
     },
     {
       id: 2,
       title: "Rekomendasi Film 2",
       year: 2025,
-      image: "/images/hero.png",
+      image: "/images/2.jpg",
     },
     {
       id: 3,
       title: "Rekomendasi Film 3",
       year: 2025,
-      image: "/images/hero.png",
+      image: "/images/3.jpg",
     },
     {
       id: 4,
       title: "Rekomendasi Film 4",
       year: 2025,
-      image: "/images/hero.png",
+      image: "/images/4.jpg",
     },
     {
       id: 5,
       title: "Rekomendasi Film 5",
       year: 2025,
-      image: "/images/hero.png",
+      image: "/images/5.jpg",
     },
   ];
 
