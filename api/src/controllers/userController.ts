@@ -1,56 +1,55 @@
-// userController.js atau userController.ts
-
-// Hapus: import pkg from "@prisma/client";
-// Hapus: const { PrismaClient } = pkg;
-
-// BARU: Menggunakan import * as untuk mendapatkan constructor yang benar (PrismaModule)
-import * as PrismaModule from "@prisma/client";
-
-// BARU: Akses constructor PrismaClient dari objek impor (PrismaModule)
-const PrismaClient = PrismaModule.PrismaClient;
+import { Request, Response } from "express";
+import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
-export const getAllUsers = async (req, res) => {
+export const loginUser = async (req: Request, res: Response): Promise<void> => {
   try {
-    const users = await prisma.user.findMany({
-      include: {
-        ratings: true,
-      },
+    const { email, password } = req.body;
+
+    // Validasi input
+    if (!email || !password) {
+      res.status(400).json({
+        status: "error",
+        message: "Email dan password wajib diisi",
+      });
+      return;
+    }
+
+    // Cek apakah email ada
+    const user = await prisma.user.findUnique({
+      where: { email },
     });
 
-    res.json({
+    if (!user) {
+      res.status(404).json({
+        status: "error",
+        message: "Email tidak ditemukan",
+      });
+      return;
+    }
+
+    // Cek password
+    if (user.password !== password) {
+      res.status(401).json({
+        status: "error",
+        message: "Password salah",
+      });
+      return;
+    }
+
+    // Login berhasil
+    res.status(200).json({
       status: "success",
-      data: users,
+      message: "Login berhasil",
+      data: user,
     });
-  } catch (err) {
+  } catch (error) {
+    console.error(error);
+
     res.status(500).json({
       status: "error",
-      message: err.message,
-    });
-  }
-};
-
-export const registerUser = async (req, res) => {
-  try {
-    const { name, email, password } = req.body;
-
-    const newUser = await prisma.user.create({
-      data: {
-        name,
-        email,
-        password, // nanti kita ganti hash
-      },
-    });
-
-    res.json({
-      status: "success",
-      data: newUser,
-    });
-  } catch (err) {
-    res.status(500).json({
-      status: "error",
-      message: err.message,
+      message: "Terjadi kesalahan saat login",
     });
   }
 };
