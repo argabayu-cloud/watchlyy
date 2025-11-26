@@ -1,12 +1,12 @@
-import express from "express"; // Mengganti require("express")
-import { getAllUsers, registerUser } from "../controllers/userController.js"; // Mengganti require("../controllers...")
+import { Router } from "express";
+import { getAllUsers, registerUser } from "../controllers/userController.js";
 
-const router = express.Router();
+const userRouter = Router();
 
-// GET /users
-router.get("/", getAllUsers);
+// ROUTE GET: Ambil semua user
+userRouter.get("/", getAllUsers);
 
-// POST /users/register
-router.post("/register", registerUser);
+// ROUTE POST: Registrasi user baru
+userRouter.post("/register", registerUser);
 
-export default router; // Mengganti module.exports = router;
+export default userRouter;

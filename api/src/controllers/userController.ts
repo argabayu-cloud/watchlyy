@@ -3,53 +3,65 @@ import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
-export const loginUser = async (req: Request, res: Response): Promise<void> => {
+// Ambil semua user
+export const getAllUsers = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
   try {
-    const { email, password } = req.body;
-
-    // Validasi input
-    if (!email || !password) {
-      res.status(400).json({
-        status: "error",
-        message: "Email dan password wajib diisi",
-      });
-      return;
-    }
-
-    // Cek apakah email ada
-    const user = await prisma.user.findUnique({
-      where: { email },
-    });
-
-    if (!user) {
-      res.status(404).json({
-        status: "error",
-        message: "Email tidak ditemukan",
-      });
-      return;
-    }
-
-    // Cek password
-    if (user.password !== password) {
-      res.status(401).json({
-        status: "error",
-        message: "Password salah",
-      });
-      return;
-    }
-
-    // Login berhasil
+    const users = await prisma.user.findMany();
     res.status(200).json({
       status: "success",
-      message: "Login berhasil",
-      data: user,
+      data: users,
     });
   } catch (error) {
     console.error(error);
-
     res.status(500).json({
       status: "error",
-      message: "Terjadi kesalahan saat login",
+      message: "Terjadi kesalahan saat mengambil data pengguna",
+    });
+  }
+};
+
+// Registrasi user baru
+export const registerUser = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+  try {
+    const { name, email, password, phone } = req.body;
+
+    if (!name || !email || !password || !phone) {
+      res.status(400).json({
+        status: "error",
+        message: "Name, email, password, dan phone wajib diisi",
+      });
+      return;
+    }
+
+    const existingUser = await prisma.user.findUnique({ where: { email } });
+    if (existingUser) {
+      res.status(409).json({
+        status: "error",
+        message: "Email sudah terdaftar",
+      });
+      return;
+    }
+
+    const newUser = await prisma.user.create({
+      data: { name, email, password, phone },
+    });
+
+    res.status(201).json({
+      status: "success",
+      message: "User berhasil didaftarkan",
+      data: newUser,
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({
+      status: "error",
+      message: "Terjadi kesalahan saat mendaftarkan user",
     });
   }
 };
