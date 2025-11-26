@@ -1,4 +1,13 @@
-import { PrismaClient } from "@prisma/client";
+// genreController.js atau genreController.ts
+
+// Hapus: import pkg from "@prisma/client";
+// Hapus: const { PrismaClient } = pkg;
+
+// BARU: Menggunakan import * as untuk mendapatkan constructor yang benar (PrismaModule)
+import * as PrismaModule from "@prisma/client";
+
+// BARU: Akses constructor PrismaClient dari objek impor (PrismaModule)
+const PrismaClient = PrismaModule.PrismaClient;
 
 const prisma = new PrismaClient();
 

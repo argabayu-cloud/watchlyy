@@ -3,7 +3,7 @@ import {
     getAllFilms,
     getRecommendedFilms,
     getFilmById 
-} from "../controllers/filmController"; // Impor dipindahkan ke atas
+} from "../controllers/filmController.js"; // Impor dipindahkan ke atas
 
 const router = express.Router();
 

@@ -1,5 +1,5 @@
 import express from "express"; // Mengganti require("express")
-import { getAllUsers, registerUser } from "../controllers/userController"; // Mengganti require("../controllers...")
+import { getAllUsers, registerUser } from "../controllers/userController.js"; // Mengganti require("../controllers...")
 
 const router = express.Router();
 

@@ -3,9 +3,9 @@ import express from "express"; // Revisi 2: Menggunakan import untuk express
 import cors from "cors"; // Revisi 3: Menggunakan import untuk cors
 
 // Revisi 4, 5, 6: Menggunakan import untuk semua routes
-import filmRoutes from "./routes/filmRoutes";
-import genreRoutes from "./routes/genreRoutes";
-import userRoutes from "./routes/userRoutes";
+import filmRoutes from "./routes/filmRoute.js"; // <-- Tambahkan .js
+import genreRoutes from "./routes/genreRoute.js"; // <-- Tambahkan .js
+import userRoutes from "./routes/userRoute.js"; // <-- Tambahkan .js
 
 const app = express();
 const corsOptions = {

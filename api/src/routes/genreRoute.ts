@@ -2,7 +2,7 @@ import express from "express"; // Mengganti require("express")
 import {
     getAllGenres,
     createGenre
-} from "../controllers/genreController"; // Mengganti require("../controllers...")
+} from "../controllers/genreController.js"; // Mengganti require("../controllers...")
 
 const router = express.Router();
 
