@@ -1,37 +1,17 @@
-import "dotenv/config"; // Revisi 1: Sintaks impor dotenv yang modern dan disarankan
-import express from "express"; // Revisi 2: Menggunakan import untuk express
-import cors from "cors"; // Revisi 3: Menggunakan import untuk cors
+import express from "express";
+import authRoutes from "./routes/authRoutes";
+import dotenv from "dotenv";
 
-// Revisi 4, 5, 6: Menggunakan import untuk semua routes
-import filmRoutes from "./routes/filmRoute.js"; // <-- Tambahkan .js
-import genreRoutes from "./routes/genreRoute.js"; // <-- Tambahkan .js
-import userRoutes from "./routes/userRoute.js"; // <-- Tambahkan .js
+dotenv.config();
 
 const app = express();
-const corsOptions = {
-  // ... Konfigurasi CORS Eksplisit
-  origin: "http://localhost:3000",
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  credentials: true,
-  optionsSuccessStatus: 204, // Untuk preflight request
-};
 
-// Middleware
-app.use(express.json()); // Penting untuk membaca body POST request
-app.use(cors(corsOptions)); // Menggunakan konfigurasi CORS yang spesifik
+app.use(express.json());
 
-// Routes
-// Catatan: Deklarasi routes (filmRoutes, genreRoutes, userRoutes) sekarang ada di bagian import
+app.use("/api/auth", authRoutes);
 
-// Definisi route: /genres, /films, /users
-app.use("/genres", genreRoutes);
-app.use("/films", filmRoutes);
-app.use("/users", userRoutes);
+const PORT = process.env.PORT || 5000;
 
-// Server listen
-const PORT = 3001;
 app.listen(PORT, () => {
-  console.log(`API running on http://localhost:${PORT}`);
+  console.log(`Server running on http://localhost:${PORT}`);
 });
-
-export default app; // Revisi 7: Mengganti module.exports = app;
