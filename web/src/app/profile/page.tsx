@@ -16,7 +16,6 @@ export default function ProfilePage() {
   const [tempImage, setTempImage] = useState<File | null>(null);
   const [hasNewImage, setHasNewImage] = useState(false);
 
-  // Upload foto
   const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -24,7 +23,6 @@ export default function ProfilePage() {
     setTempImage(file);
     setHasNewImage(true);
 
-    // Preview
     const previewURL = URL.createObjectURL(file);
     setImageUrl(previewURL);
   };
@@ -33,7 +31,6 @@ export default function ProfilePage() {
     if (!tempImage) return;
 
     console.log("Foto siap disubmit ke server:", tempImage);
-
     alert("Foto berhasil disimpan (contoh)");
     setHasNewImage(false);
   };
@@ -59,48 +56,46 @@ export default function ProfilePage() {
         </CardHeader>
 
         <CardContent className="space-y-6">
-        {/* FOTO PROFIL */}
-        <div className="flex flex-col items-center gap-3">
-        <div className="w-24 h-24 rounded-full overflow-hidden border border-gray-600">
-            <Image
-            src={imageUrl}
-            alt="Profile"
-            width={100}
-            height={100}
-            className="object-cover w-full h-full"
-            />
-        </div>
+          {/* FOTO PROFIL */}
+          <div className="flex flex-col items-center gap-6">
+            <div className="w-24 h-24 rounded-full overflow-hidden border border-gray-600">
+              <Image
+                src={imageUrl}
+                alt="Profile"
+                width={100}
+                height={100}
+                className="object-cover w-full h-full"
+              />
+            </div>
 
-        {/* BUTTON UPLOAD ICON */}
-        <Button
-            variant="outline"
-            size="icon"
-            aria-label="upload photo"
-            className="border-gray-600 text-white hover:bg-white/10"
-            onClick={() => document.getElementById("uploadFoto")?.click()}
-        >
-            <ArrowUpIcon className="h-4 w-4" />
-        </Button>
-
-        {/* Hidden input */}
-        <input
-            id="uploadFoto"
-            type="file"
-            accept="image/*"
-            className="hidden"
-            onChange={handleImageUpload}
-        />
-
-        {/* TOMBOL SIMPAN FOTO */}
-        {hasNewImage && (
+            {/* CLEAN BUTTON UPLOAD */}
             <Button
-            className="bg-green-600 hover:bg-green-700 w-full max-w-[150px]"
-            onClick={handleSavePhoto}
+              className="bg-green-600 hover:bg-green-700 text-white flex items-center gap-2"
+              onClick={() => document.getElementById("uploadFoto")?.click()}
             >
-            Simpan Foto
+              Upload
+              <ArrowUpIcon className="h-4 w-4" />
             </Button>
-        )}
-        </div>
+
+            {/* Input Hidden */}
+            <input
+              id="uploadFoto"
+              type="file"
+              accept="image/*"
+              className="hidden"
+              onChange={handleImageUpload}
+            />
+
+            {/* TOMBOL SIMPAN FOTO */}
+            {hasNewImage && (
+              <Button
+                className="bg-green-600 hover:bg-green-700 w-full max-w-[150px]"
+                onClick={handleSavePhoto}
+              >
+                Simpan Foto
+              </Button>
+            )}
+          </div>
 
           {/* NAMA */}
           <div>
