@@ -1,16 +1,14 @@
 import express from "express";
 import authRoutes from "./routes/authRoutes";
-import dotenv from "dotenv";
-
-dotenv.config();
 
 const app = express();
 
 app.use(express.json());
 
+// Auth routes
 app.use("/api/auth", authRoutes);
 
-const PORT = process.env.PORT || 5000;
+const PORT = 3001; // UBAH KE PORT YANG KAMU MAU
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
