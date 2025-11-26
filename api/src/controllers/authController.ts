@@ -1,19 +1,18 @@
-import { PrismaClient } from "@prisma/client";
 import { Request, Response } from "express";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
-const JWT_SECRET = "your_secret_key"; // gunakan ENV di production
+const JWT_SECRET = "your_secret_key";
 
 // =============================
-// REGISTER USER
+// REGISTER
 // =============================
 export const register = async (req: Request, res: Response): Promise<void> => {
   try {
     const { name, email, phone, password } = req.body;
 
-    // Validasi input wajib
     if (!name || !email || !phone || !password) {
       res.status(400).json({
         status: "error",
@@ -22,8 +21,12 @@ export const register = async (req: Request, res: Response): Promise<void> => {
       return;
     }
 
-    // Cek email sudah dipakai
-    const existingUser = await prisma.user.findUnique({ where: { email } });
+    const normalizedEmail = (email as string).toLowerCase();
+
+    const existingUser = await prisma.user.findUnique({
+      where: { email: normalizedEmail },
+    });
+
     if (existingUser) {
       res.status(400).json({
         status: "error",
@@ -32,47 +35,41 @@ export const register = async (req: Request, res: Response): Promise<void> => {
       return;
     }
 
-    // Hash password
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    // Simpan user baru
     const user = await prisma.user.create({
       data: {
-        name,
-        email,
-        phone,
+        name: name as string,
+        email: normalizedEmail,
+        phone: phone as string,
         password: hashedPassword,
       },
     });
 
+    const { password: _, ...userData } = user;
+
     res.status(201).json({
       status: "success",
-      message: "Registrasi berhasil",
-      data: {
-        id: user.id,
-        name: user.name,
-        email: user.email,
-        phone: user.phone,
-      },
+      message: "User berhasil didaftarkan",
+      data: userData,
     });
-  } catch (error: unknown) {
-    const err = error as Error;
+  } catch (error) {
+    const message =
+      error instanceof Error
+        ? error.message
+        : "Terjadi kesalahan saat registrasi";
 
-    res.status(500).json({
-      status: "error",
-      message: err.message || "Terjadi kesalahan saat registrasi",
-    });
+    res.status(500).json({ status: "error", message });
   }
 };
 
 // =============================
-// LOGIN USER
+// LOGIN
 // =============================
 export const login = async (req: Request, res: Response): Promise<void> => {
   try {
     const { email, password } = req.body;
 
-    // Validasi input
     if (!email || !password) {
       res.status(400).json({
         status: "error",
@@ -81,8 +78,11 @@ export const login = async (req: Request, res: Response): Promise<void> => {
       return;
     }
 
-    // Cek user
-    const user = await prisma.user.findUnique({ where: { email } });
+    const normalizedEmail = (email as string).toLowerCase();
+
+    const user = await prisma.user.findUnique({
+      where: { email: normalizedEmail },
+    });
 
     if (!user) {
       res.status(400).json({
@@ -92,8 +92,8 @@ export const login = async (req: Request, res: Response): Promise<void> => {
       return;
     }
 
-    // Cek password
-    const match = await bcrypt.compare(password, user.password);
+    const match = await bcrypt.compare(password as string, user.password);
+
     if (!match) {
       res.status(400).json({
         status: "error",
@@ -102,30 +102,24 @@ export const login = async (req: Request, res: Response): Promise<void> => {
       return;
     }
 
-    // Buat token JWT
     const token = jwt.sign({ id: user.id, email: user.email }, JWT_SECRET, {
       expiresIn: "1d",
     });
+
+    const { password: _, ...userData } = user;
 
     res.status(200).json({
       status: "success",
       message: "Login berhasil",
       data: {
         token,
-        user: {
-          id: user.id,
-          name: user.name,
-          email: user.email,
-          phone: user.phone,
-        },
+        user: userData,
       },
     });
-  } catch (error: unknown) {
-    const err = error as Error;
+  } catch (error) {
+    const message =
+      error instanceof Error ? error.message : "Terjadi kesalahan saat login";
 
-    res.status(500).json({
-      status: "error",
-      message: err.message || "Terjadi kesalahan saat login",
-    });
+    res.status(500).json({ status: "error", message });
   }
 };

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "^6.19.0",
     "bcrypt": "^6.0.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
@@ -16,8 +17,7 @@
     "jsonwebtoken": "^9.0.2",
     "next": "16.0.3",
     "react": "19.2.0",
-    "react-dom": "19.2.0",
-    "@prisma/client": "^6.19.0"
+    "react-dom": "19.2.0"
   },
   "devDependencies": {
     "@types/bcrypt": "^6.0.0",
