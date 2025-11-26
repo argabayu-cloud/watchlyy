@@ -1,24 +1,19 @@
-import express from "express";
-import { 
-    getAllFilms,
-    getRecommendedFilms,
-    getFilmById 
-} from "../controllers/filmController.js"; // Impor dipindahkan ke atas
+import { Router } from "express";
+import {
+  getAllFilms,
+  getRecommendedFilms,
+  getFilmById,
+} from "../controllers/filmController.js";
 
-const router = express.Router();
+const filmRouter = Router();
 
-// Catatan: Urutan pendaftaran route SANGAT PENTING
+// ROUTE FILM SPESIFIK: Rekomendasi Film
+filmRouter.get("/recommend", getRecommendedFilms);
 
-// 1. GET /films/recommend (Route Spesifik)
-// Ini harus diletakkan sebelum route dinamis (/films/:id) agar tidak dianggap sebagai ID.
-router.get("/recommend", getRecommendedFilms);
+// ROUTE FILM DINAMIS: Berdasarkan ID
+filmRouter.get("/:id", getFilmById);
 
-// 2. GET /films/:id (Route Dinamis - Disiapkan untuk film berdasarkan ID)
-router.get("/:id", getFilmById); 
-// Catatan: Saya mengaktifkan route ini karena Anda mengimpor getFilmById.
+// ROUTE FILM UTAMA: Semua Film
+filmRouter.get("/", getAllFilms);
 
-// 3. GET /films (Route List Utama)
-router.get("/", getAllFilms);
-
-// Mengganti module.exports = router; dengan ES Module export default
-export default router;
+export default filmRouter;
