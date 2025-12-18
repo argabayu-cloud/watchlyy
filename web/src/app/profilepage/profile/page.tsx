@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -11,6 +12,7 @@ export default function ProfilePage() {
   const [profilePhoto, setProfilePhoto] = useState<string | null>(null);
   const [editing, setEditing] = useState(false);
   const [newUsername, setNewUsername] = useState(username);
+  const router = useRouter();
 
   const handlePhotoChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -23,11 +25,12 @@ export default function ProfilePage() {
     setUsername(newUsername);
     setEditing(false);
     // TODO: Save to server
+    router.push('/film');
   };
 
   return (
-    <div className="p-6">
-      <Card>
+    <div className="min-h-screen bg-[#0F0F0F] flex items-center justify-center p-6">
+      <Card className="w-full max-w-md bg-black text-white border border-gray-700">
         <CardHeader>
           <CardTitle>Profil</CardTitle>
         </CardHeader>
@@ -36,7 +39,7 @@ export default function ProfilePage() {
             <label className="block text-sm font-medium mb-2">Foto Profil</label>
             <div className="flex items-center space-x-4">
               <Image
-                src={profilePhoto || "/images/default-avatar.png"}
+                src={profilePhoto || "/images/WatchLy.png"}
                 alt="Profile"
                 width={80}
                 height={80}
@@ -60,7 +63,7 @@ export default function ProfilePage() {
                 placeholder="Masukkan username baru"
               />
             ) : (
-              <p className="text-gray-700">{username}</p>
+              <p className="text-gray-400">{username}</p>
             )}
           </div>
           <div className="flex space-x-2">
