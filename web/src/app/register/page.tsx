@@ -18,6 +18,7 @@ export default function RegisterPage() {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [loading, setLoading] = useState(false);
@@ -25,7 +26,7 @@ export default function RegisterPage() {
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!name || !email || !password || !confirmPassword) {
+    if (!name || !email || !phone || !password || !confirmPassword) {
       alert("Semua field wajib diisi.");
       return;
     }
@@ -53,20 +54,20 @@ export default function RegisterPage() {
           body: JSON.stringify({
             name,
             email,
+            phone,
             password,
           }),
         }
       );
 
-      const data = await response.json();
+      const result = await response.json();
 
       if (!response.ok) {
-        alert(data.message || "Registrasi gagal");
-        setLoading(false);
+        alert(result.message || "Registrasi gagal");
         return;
       }
 
-      alert("Registrasi berhasil. Silakan login.");
+      alert(result.message || "Registrasi berhasil");
       router.push("/login");
     } catch (error) {
       console.error("Register error:", error);
@@ -107,6 +108,17 @@ export default function RegisterPage() {
                 className="mt-1 bg-gray-900 border-gray-700 text-white"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+
+            <div>
+              <label className="text-sm">Nomor HP</label>
+              <Input
+                type="tel"
+                placeholder="08xxxxxxxxxx"
+                className="mt-1 bg-gray-900 border-gray-700 text-white"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
               />
             </div>
 
