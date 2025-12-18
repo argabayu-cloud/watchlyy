@@ -24,58 +24,54 @@ export default function RegisterPage() {
   const [loading, setLoading] = useState(false);
 
   const handleRegister = async (e: React.FormEvent) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    if (!name || !email || !phone || !password || !confirmPassword) {
-      alert("Semua field wajib diisi.");
-      return;
-    }
+  if (!name || !email || !phone || !password || !confirmPassword) {
+    alert("Semua field wajib diisi");
+    return;
+  }
 
-    if (password !== confirmPassword) {
-      alert("Password dan konfirmasi password tidak sama.");
-      return;
-    }
+  if (password !== confirmPassword) {
+    alert("Password tidak sama");
+    return;
+  }
 
-    if (password.length < 6) {
-      alert("Password minimal 6 karakter.");
-      return;
-    }
+  setLoading(true);
 
-    setLoading(true);
-
-    try {
-      const response = await fetch(
-        "http://localhost:5000/api/auth/register",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            name,
-            email,
-            phone,
-            password,
-          }),
-        }
-      );
-
-      const result = await response.json();
-
-      if (!response.ok) {
-        alert(result.message || "Registrasi gagal");
-        return;
+  try {
+    const response = await fetch(
+      "http://localhost:3001/api/auth/register",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          phone,
+          password,
+        }),
       }
+    );
 
-      alert(result.message || "Registrasi berhasil");
-      router.push("/login");
-    } catch (error) {
-      console.error("Register error:", error);
-      alert("Terjadi kesalahan saat registrasi");
-    } finally {
-      setLoading(false);
+    const result = await response.json();
+
+    if (!response.ok) {
+      alert(result.message);
+      return;
     }
-  };
+
+    alert(result.message);
+    router.push("/login");
+  } catch (error) {
+    console.error(error);
+    alert("Tidak bisa terhubung ke server");
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   return (
     <div className="min-h-screen bg-[#0F0F0F] flex items-center justify-center p-6">
