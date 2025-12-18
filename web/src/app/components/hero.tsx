@@ -45,14 +45,14 @@ transition={{ duration: 0.8 }}
 
         <div className="flex gap-4">
           <Link
-            href="/film"
+            href="/login"
             className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg text-base font-medium"
           >
             Mulai Nonton
           </Link>
 
           <a
-            href="/koleksi"
+            href="/login"
             className="border border-white hover:bg-white/20 text-white px-6 py-3 rounded-lg text-base font-medium"
           >
             Lihat Koleksi
