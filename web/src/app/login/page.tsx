@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import {
 Card,
 CardHeader,
@@ -11,10 +12,12 @@ CardFooter,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import Link  from "next/link";
 
 export default function LoginPage() {
 const [email, setEmail] = useState("");
 const [password, setPassword] = useState("");
+const router = useRouter();
 
 const handleLogin = (e: React.FormEvent) => {
 e.preventDefault();
@@ -28,7 +31,7 @@ if (!email || !password) {
 
 // ganti ini nanti pakai API login kamu
 console.log("Login:", { email, password });
-alert("Login berhasil (contoh)");
+router.push('/film');
 
 
 };
@@ -71,7 +74,7 @@ Masukkan email dan password kamu </CardDescription> </CardHeader>
 
     <CardFooter>
       <p className="text-sm text-gray-400">
-        Belum punya akun? <span className="text-red-500">Daftar</span>
+        Belum punya akun? <Link href="/register"><span className="text-red-500">Daftar</span></Link>
       </p>
     </CardFooter>
   </Card>
