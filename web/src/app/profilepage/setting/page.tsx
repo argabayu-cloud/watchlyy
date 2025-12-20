@@ -37,10 +37,36 @@ export default function SettingPage() {
         <h2 className="text-lg font-semibold">Bahasa</h2>
 
         <select className="w-full rounded-lg border border-gray-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3 py-2 text-sm">
+          {/* Asia */}
           <option>Bahasa Indonesia</option>
           <option>English</option>
-          <option>日本語</option>
-          <option>한국어</option>
+          <option>日本語 (Japanese)</option>
+          <option>한국어 (Korean)</option>
+          <option>中文（简体）- Chinese (Simplified)</option>
+          <option>中文（繁體）- Chinese (Traditional)</option>
+          <option>ไทย (Thai)</option>
+          <option>Tiếng Việt (Vietnamese)</option>
+          <option>हिन्दी (Hindi)</option>
+
+          {/* Eropa */}
+          <option>Español (Spanish)</option>
+          <option>Français (French)</option>
+          <option>Deutsch (German)</option>
+          <option>Italiano (Italian)</option>
+          <option>Português (Portuguese)</option>
+          <option>Nederlands (Dutch)</option>
+          <option>Svenska (Swedish)</option>
+          <option>Русский (Russian)</option>
+          <option>Polski (Polish)</option>
+
+          {/* Timur Tengah */}
+          <option>العربية (Arabic)</option>
+          <option>Türkçe (Turkish)</option>
+          <option>עברית (Hebrew)</option>
+
+          {/* Lainnya */}
+          <option>Bahasa Melayu (Malay)</option>
+          <option>Українська (Ukrainian)</option>
         </select>
       </div>
 
@@ -71,7 +97,12 @@ export default function SettingPage() {
         <select className="w-full rounded-lg border border-gray-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3 py-2 text-sm">
           <option>Bahasa Indonesia</option>
           <option>English</option>
-          <option>Spanish</option>
+          <option>Español</option>
+          <option>Français</option>
+          <option>Deutsch</option>
+          <option>العربية</option>
+          <option>日本語</option>
+          <option>한국어</option>
         </select>
       </div>
 
@@ -95,7 +126,6 @@ export default function SettingPage() {
         <div className="flex items-center justify-between">
           <p className="font-medium">Mode Gelap</p>
 
-          {/* Toggle */}
           <button
             onClick={toggleDarkMode}
             className={`w-12 h-6 rounded-full transition ${
