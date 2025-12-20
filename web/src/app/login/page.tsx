@@ -64,9 +64,9 @@ Masukkan email dan password kamu </CardDescription> </CardHeader>
         <Button
           type="submit"
           className="w-full bg-red-600 hover:bg-red-700"
-        ><link href="/film">
+        ><Link href="/film">
           Login
-          </link>
+          </Link>
         </Button>
       </form>
     </CardContent>
