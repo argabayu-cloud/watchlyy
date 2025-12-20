@@ -44,11 +44,12 @@ export default function AkunPage() {
           </Link>
 
           {/* Item */}
-          <button
-            className="w-full rounded-lg bg-zinc-800 px-4 py-3 text-left hover:bg-zinc-700 transition"
+          <Link
+            href="/profilepage/akun/lupa_password"
+            className="block w-full rounded-lg bg-zinc-800 px-4 py-3 hover:bg-zinc-700 transition"
           >
             ❓ Lupa Password
-          </button>
+          </Link>
         </div>
       </div>
     </div>
