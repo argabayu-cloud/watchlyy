@@ -123,3 +123,26 @@ export const login = async (req: Request, res: Response): Promise<void> => {
     res.status(500).json({ status: "error", message });
   }
 };
+
+// =============================
+// LOGOUT
+// =============================
+export const logout = async (req: Request, res: Response): Promise<void> => {
+  try {
+    /**
+     * Pada JWT stateless:
+     * - Backend hanya memberi respons sukses
+     * - Token dihapus di sisi client
+     */
+
+    res.status(200).json({
+      status: "success",
+      message: "Logout berhasil",
+    });
+  } catch (error) {
+    res.status(500).json({
+      status: "error",
+      message: "Terjadi kesalahan saat logout",
+    });
+  }
+};
