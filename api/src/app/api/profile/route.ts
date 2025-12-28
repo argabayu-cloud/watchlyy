@@ -17,8 +17,5 @@ export async function PUT(req: Request) {
     ...body,
   };
 
-  return NextResponse.json({
-    success: true,
-    profile,
-  });
+  return NextResponse.json({ success: true, profile });
 }
