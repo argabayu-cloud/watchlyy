@@ -1,10 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-
-import Sidebar from "@/app/profilepage/sidebar/page"; // pastikan ini benar
+import { useProfile } from "@/context/ProfileContext";
+import Sidebar from "@/app/profilepage/sidebar/page";
 
 import {
   Select,
@@ -16,6 +15,8 @@ import {
 
 export default function Navbar() {
   const [openSidebar, setOpenSidebar] = useState(false);
+
+  const { profile } = useProfile();
 
   const genres = ["Action", "Adventure", "Romance", "Horror", "Drama", "Comedy"];
   const ratings = [1, 2, 3, 4, 5];
@@ -29,11 +30,11 @@ export default function Navbar() {
     <>
       {/* NAVBAR */}
       <nav className="w-full fixed top-0 z-50 bg-black/40 backdrop-blur-md border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-0 py-4 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           
           {/* LEFT */}
           <div className="flex items-center gap-6">
-            <Image 
+            <Image
               src="/images/Watchly.png"
               alt="Watchly Logo"
               width={120}
@@ -43,12 +44,12 @@ export default function Navbar() {
 
             {/* GENRE */}
             <Select onValueChange={setGenre}>
-              <SelectTrigger className="w-fit bg-transparent border-none p-0 text-white hover:text-red-400 cursor-pointer data-[placeholder]:text-gray-300">
+              <SelectTrigger className="w-fit bg-transparent border-none p-0 text-white hover:text-red-400">
                 <SelectValue placeholder="Genre" />
               </SelectTrigger>
               <SelectContent className="bg-black border-white/20 text-white">
-                {genres.map((g, i) => (
-                  <SelectItem key={i} value={g}>
+                {genres.map((g) => (
+                  <SelectItem key={g} value={g}>
                     {g}
                   </SelectItem>
                 ))}
@@ -57,7 +58,7 @@ export default function Navbar() {
 
             {/* RATING */}
             <Select onValueChange={setRating}>
-              <SelectTrigger className="w-fit bg-transparent border-none p-0 text-white hover:text-red-400 cursor-pointer data-[placeholder]:text-gray-300">
+              <SelectTrigger className="w-fit bg-transparent border-none p-0 text-white hover:text-red-400">
                 <SelectValue placeholder="Rating" />
               </SelectTrigger>
               <SelectContent className="bg-black border-white/20 text-white">
@@ -71,7 +72,7 @@ export default function Navbar() {
 
             {/* YEAR */}
             <Select onValueChange={setYear}>
-              <SelectTrigger className="w-fit bg-transparent border-none p-0 text-white hover:text-red-400 cursor-pointer data-[placeholder]:text-gray-300">
+              <SelectTrigger className="w-fit bg-transparent border-none p-0 text-white hover:text-red-400">
                 <SelectValue placeholder="Tahun" />
               </SelectTrigger>
               <SelectContent className="bg-black border-white/20 text-white max-h-52 overflow-y-auto">
@@ -92,18 +93,24 @@ export default function Navbar() {
               className="px-4 py-2 bg-white/10 text-white rounded-lg placeholder-gray-300 outline-none focus:ring-2 focus:ring-red-500"
             />
 
-            {/* FOTO PROFIL → OPEN SIDEBAR */}
+            {/* FOTO PROFIL */}
             <div
               onClick={() => setOpenSidebar(true)}
-              className="w-10 h-10 rounded-full overflow-hidden border border-white/20 cursor-pointer hover:border-red-500 transition"
+              className="flex items-center gap-2 cursor-pointer"
             >
-              <Image
-                src="/images/profile.jpg"
-                alt="Profile"
-                width={40}
-                height={40}
-                className="object-cover w-full h-full"
-              />
+              <span className="text-white text-sm">
+                {profile?.username || ""}
+              </span>
+
+              <div className="w-10 h-10 rounded-full overflow-hidden border border-white/20 hover:border-red-500 transition">
+                <Image
+                  src={profile?.photo || "/images/WatchLy.png"}
+                  alt="Profile"
+                  width={40}
+                  height={40}
+                  className="object-cover w-full h-full"
+                />
+              </div>
             </div>
           </div>
         </div>
