@@ -3,23 +3,19 @@
 import { useEffect, useState } from "react";
 
 export default function SettingPage() {
-  const [darkMode, setDarkMode] = useState(true);
-
-  // Set dark mode sebagai default
-  useEffect(() => {
+  const [darkMode, setDarkMode] = useState<boolean>(() => {
+    if (typeof window === "undefined") return true;
     const savedTheme = localStorage.getItem("theme");
-    const isDark = savedTheme ? savedTheme === "dark" : true;
+    return savedTheme ? savedTheme === "dark" : true;
+  });
 
-    setDarkMode(isDark);
-    document.documentElement.classList.toggle("dark", isDark);
-  }, []);
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", darkMode);
+    localStorage.setItem("theme", darkMode ? "dark" : "light");
+  }, [darkMode]);
 
   const toggleDarkMode = () => {
-    const newValue = !darkMode;
-    setDarkMode(newValue);
-
-    document.documentElement.classList.toggle("dark", newValue);
-    localStorage.setItem("theme", newValue ? "dark" : "light");
+    setDarkMode((prev) => !prev);
   };
 
   return (
@@ -37,36 +33,13 @@ export default function SettingPage() {
         <h2 className="text-lg font-semibold">Bahasa</h2>
 
         <select className="w-full rounded-lg border border-gray-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3 py-2 text-sm">
-          {/* Asia */}
           <option>Bahasa Indonesia</option>
           <option>English</option>
-          <option>日本語 (Japanese)</option>
-          <option>한국어 (Korean)</option>
-          <option>中文（简体）- Chinese (Simplified)</option>
-          <option>中文（繁體）- Chinese (Traditional)</option>
-          <option>ไทย (Thai)</option>
-          <option>Tiếng Việt (Vietnamese)</option>
-          <option>हिन्दी (Hindi)</option>
-
-          {/* Eropa */}
-          <option>Español (Spanish)</option>
-          <option>Français (French)</option>
-          <option>Deutsch (German)</option>
-          <option>Italiano (Italian)</option>
-          <option>Português (Portuguese)</option>
-          <option>Nederlands (Dutch)</option>
-          <option>Svenska (Swedish)</option>
-          <option>Русский (Russian)</option>
-          <option>Polski (Polish)</option>
-
-          {/* Timur Tengah */}
-          <option>العربية (Arabic)</option>
-          <option>Türkçe (Turkish)</option>
-          <option>עברית (Hebrew)</option>
-
-          {/* Lainnya */}
-          <option>Bahasa Melayu (Malay)</option>
-          <option>Українська (Ukrainian)</option>
+          <option>日本語</option>
+          <option>한국어</option>
+          <option>中文（简体）</option>
+          <option>中文（繁體）</option>
+          <option>العربية</option>
         </select>
       </div>
 
@@ -76,12 +49,12 @@ export default function SettingPage() {
 
         <div className="flex items-center justify-between">
           <p className="font-medium">Notifikasi Email</p>
-          <input type="checkbox" className="h-4 w-4" defaultChecked />
+          <input type="checkbox" defaultChecked />
         </div>
 
         <div className="flex items-center justify-between">
           <p className="font-medium">Notifikasi Aplikasi</p>
-          <input type="checkbox" className="h-4 w-4" />
+          <input type="checkbox" />
         </div>
       </div>
 
@@ -91,7 +64,7 @@ export default function SettingPage() {
 
         <div className="flex items-center justify-between">
           <p className="font-medium">Aktifkan Subtitle</p>
-          <input type="checkbox" className="h-4 w-4" defaultChecked />
+          <input type="checkbox" defaultChecked />
         </div>
 
         <select className="w-full rounded-lg border border-gray-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3 py-2 text-sm">
@@ -99,10 +72,6 @@ export default function SettingPage() {
           <option>English</option>
           <option>Español</option>
           <option>Français</option>
-          <option>Deutsch</option>
-          <option>العربية</option>
-          <option>日本語</option>
-          <option>한국어</option>
         </select>
       </div>
 

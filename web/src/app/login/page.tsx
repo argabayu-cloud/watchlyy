@@ -32,7 +32,7 @@ if (!email || !password) {
 
 try {
   setLoading(true);
-  const response = await fetch("http://localhost:3001/app/controllers/authController.ts", {
+  const response = await fetch("http://localhost:3001/api/auth/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -54,7 +54,7 @@ try {
   localStorage.setItem("user", JSON.stringify(result.data.user));
 
   alert("Login berhasil!");
-  router.push("/film/page.tsx");
+  router.push("/film");
 } catch (error) {
   alert("Terjadi kesalahan saat login.");
   console.error("Login error:", error);
