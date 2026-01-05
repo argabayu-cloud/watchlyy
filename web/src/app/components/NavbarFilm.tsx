@@ -98,20 +98,13 @@ export default function Navbar() {
               onClick={() => setOpenSidebar(true)}
               className="flex items-center gap-2 cursor-pointer"
             >
-              <Image
-                src="/images/btth1.jpg"
-                alt="Profile"
-                width={40}
-                height={40}
-                className="object-cover w-full h-full"
-              />
               <span className="text-white text-sm">
                 {profile?.username || ""}
               </span>
 
               <div className="w-10 h-10 rounded-full overflow-hidden border border-white/20 hover:border-red-500 transition">
                 <Image
-                  src={profile?.photo || "/images/WatchLy.png"}
+                  src={profile?.photo || "/images/btth1.jpg"}
                   alt="Profile"
                   width={40}
                   height={40}
