@@ -188,7 +188,7 @@ export default function Film() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
             {newMovies.map((movie) => (
-              <Link key={movie.id} href="/tonton">
+              <Link href={`/tonton?movie=${movie.id}`}>
                 <div className="group cursor-pointer">
                   <div className="relative rounded-lg overflow-hidden shadow-md">
                     <Image
@@ -221,7 +221,7 @@ export default function Film() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
             {horrorMovies.map((movie) => (
-              <Link key={movie.id} href="/tonton">
+              <Link href={`/tonton?movie=${movie.id}`}>
                 <div className="group cursor-pointer">
                   <div className="relative rounded-lg overflow-hidden shadow-md">
                     <Image
@@ -254,7 +254,7 @@ export default function Film() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
             {adventureMovies.map((movie) => (
-              <Link key={movie.id} href="/tonton">
+              <Link key={movie.id} href={`/tonton?movie=${movie.id}`}>
                 <div className="group cursor-pointer">
                   <div className="relative rounded-lg overflow-hidden shadow-md">
                     <Image
@@ -287,7 +287,7 @@ export default function Film() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
             {actionMovies.map((movie) => (
-              <Link key={movie.id} href="/tonton">
+              <Link key={movie.id} href={`/tonton?movie=${movie.id}`}>
                 <div className="group cursor-pointer">
                   <div className="relative rounded-lg overflow-hidden shadow-md">
                     <Image

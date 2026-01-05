@@ -1,20 +1,38 @@
 "use client";
 
+import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import NavbarFilm from "../components/NavbarFilm";
 import Footer from "../components/Footer";
-import { motion } from "framer-motion";
 import { useState } from "react";
+import { motion as Option } from "framer-motion";
+
+const movies = [
+  {
+    id: 1,
+    title: "Agak Laen",
+    description: "Seorang mantan agen rahasia...",
+    poster: "/images/3.jpg",
+  },
+  {
+    id: 2,
+    title: "Mortal Kombat: Anniversary",
+    description: "Pertarungan besar antar dimensi...",
+    poster: "/images/2.jpg",
+  },
+  
+];
 
 export default function TontonPage() {
+  const searchParams = useSearchParams();
+  const movieId = Number(searchParams.get("movie"));
   const [isSaved, setIsSaved] = useState(false);
 
-  const movie = {
-    title: "The Family Plan 2 (2025)",
-    description:
-      "Seorang mantan agen rahasia harus kembali ke dunia gelap untuk melindungi keluarganya setelah sebuah peristiwa misterius mengungkap identitas lamanya.",
-    poster: "/images/hero.png",
-  };
+  const movie = movies.find((m) => m.id === movieId);
+
+  if (!movie) {
+    return <div className="text-white text-center mt-20">Film tidak ditemukan</div>;
+  }
 
   return (
     <>
@@ -54,7 +72,7 @@ export default function TontonPage() {
               </button>
 
               {/* ICON SAVE */}
-              <motion.button
+              <Option.button
                 onClick={() => setIsSaved(!isSaved)}
                 whileTap={{ scale: 1.4 }}
                 animate={{ scale: isSaved ? 1.2 : 1 }}
@@ -76,7 +94,7 @@ export default function TontonPage() {
                 >
                   <path d="M6 2h12a2 2 0 0 1 2 2v18l-8-4-8 4V4a2 2 0 0 1 2-2z"/>
                 </svg>
-              </motion.button>
+              </Option.button>
             </div>
 
             {isSaved && (
