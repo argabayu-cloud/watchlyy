@@ -3,11 +3,11 @@ import cors from "cors";
 import { PrismaClient } from "@prisma/client";
 
 // Routes
-import genreRoutes from "./routes/genreRoute.js";
-import authRoutes from "./routes/authRoutes.js";
-import userRoutes from "./routes/userRoute.js";
-import filmRoutes from "./routes/filmRoute.js";
-import profilRoute from "./routes/profilRoute.js";
+import genreRoutes from "./routes/genreRoute.ts";
+import authRoutes from "./routes/authRoutes.ts";
+import userRoutes from "./routes/userRoute.ts";
+import filmRoutes from "./routes/filmRoute.ts";
+import profilRoute from "./routes/profilRoute.ts";
 
 const app = express();
 const prisma = new PrismaClient();
