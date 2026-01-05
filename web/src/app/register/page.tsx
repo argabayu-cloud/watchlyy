@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import Link from "next/link";
+import Link from "next/link"; 
 
 export default function RegisterPage() {
   const router = useRouter();

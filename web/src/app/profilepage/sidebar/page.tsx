@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { X, LogOut } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 interface Props {
   open: boolean;
@@ -12,9 +12,18 @@ interface Props {
 }
 
 export default function Sidebar({ open, onClose }: Props) {
+  const [Mounted, setMounted] = useState(false);
+  const [showLogoutConfirm, setShowLogoutConfirm] = useState(false);
+
   const pathname = usePathname();
   const router = useRouter();
-  const [showLogoutConfirm, setShowLogoutConfirm] = useState(false);
+
+  useEffect(() => {
+    const id = setTimeout(() => setMounted(true), 0);
+    return () => clearTimeout(id);
+  }, []);
+
+  if (!Mounted) return null;
 
   const isActive = (path: string) => pathname === path;
   const linkBase = "px-3 py-2 rounded-lg transition";

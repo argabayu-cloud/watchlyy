@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import {
 Card,
 CardHeader,
@@ -14,12 +15,14 @@ import { Input } from "@/components/ui/input";
 import  Link  from "next/link";
 
 export default function LoginPage() {
-const [email, setEmail] = useState("");
-const [password, setPassword] = useState("");
+  const router = useRouter();
+  
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
 
-const handleLogin = (e: React.FormEvent) => {
+const handleLogin = async (e: React.FormEvent) => {
 e.preventDefault();
-
 
 // contoh validasi sederhana
 if (!email || !password) {
@@ -27,15 +30,48 @@ if (!email || !password) {
   return;
 }
 
-// ganti ini nanti pakai API login kamu
-console.log("Login:", { email, password });
-alert("Login berhasil (contoh)");
+try {
+  setLoading(true);
+  const response = await fetch("http://localhost:3001/api/auth/login", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ 
+      email, 
+      password 
+    }),
+  });
 
+  const result = await response.json();
+  if (!response.ok) {
+    alert(result.message || "Login gagal.");
+    return;
+  }
 
+  // Simpan token atau data user
+  localStorage.setItem("token", result.data.token);
+  localStorage.setItem("user", JSON.stringify(result.data.user));
+
+  alert("Login berhasil!");
+  router.push("/film");
+} catch (error) {
+  alert("Terjadi kesalahan saat login.");
+  console.error("Login error:", error);
+} finally {
+  setLoading(false);
+}
 };
 
-return ( <div className="min-h-screen bg-[#0F0F0F] flex items-center justify-center p-6"> <Card className="w-full max-w-sm bg-black text-white border border-gray-700"> <CardHeader> <CardTitle className="text-2xl">Login</CardTitle> <CardDescription className="text-gray-400">
-Masukkan email dan password kamu </CardDescription> </CardHeader>
+return ( 
+<div className="min-h-screen bg-[#0F0F0F] flex items-center justify-center p-6"> 
+  <Card className="w-full max-w-sm bg-black text-white border border-gray-700"> 
+    <CardHeader> 
+      <CardTitle className="text-2xl">Login</CardTitle> 
+      <CardDescription className="text-gray-400">
+        Masukkan email dan password kamu 
+      </CardDescription> 
+    </CardHeader>  
 
     <CardContent>
       <form onSubmit={handleLogin} className="space-y-4">
@@ -63,22 +99,25 @@ Masukkan email dan password kamu </CardDescription> </CardHeader>
 
         <Button
           type="submit"
+          disabled={loading}
           className="w-full bg-red-600 hover:bg-red-700"
-        ><Link href="/film">
-          Login
-          </Link>
+        >
+          {loading ? "Memproses..." : "Login"}
         </Button>
       </form>
     </CardContent>
 
     <CardFooter>
       <p className="text-sm text-gray-400">
-        Belum punya akun? <Link href="/register"><span className="text-red-500">Daftar</span></Link>
+        Belum punya akun? 
+        <Link href="/register">
+          <span className="text-red-500">
+            Daftar
+          </span> 
+        </Link>
       </p>
     </CardFooter>
   </Card>
 </div>
-
-
 );
 }

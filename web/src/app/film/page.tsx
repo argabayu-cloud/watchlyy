@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import NavbarFilm from "../components/NavbarFilm";
 import Footer from "../components/Footer";
 
@@ -13,6 +12,8 @@ interface Movie {
   date: string;
   badge?: string;
 }
+
+const img = "/images/hero.png";
 
 export default function Film() {
   const [newMovies, setNewMovies] = useState<Movie[]>([]);
@@ -172,6 +173,21 @@ export default function Film() {
   ]);
 }, []);
 
+  const newMovies: Movie[] = [
+    { id: 1, title: "Train Dreams (2025)", poster: img, date: "06 Nov 2025", badge: "WEBDL" },
+    { id: 2, title: "Anniversary (2025)", poster: img, date: "29 Oct 2025", badge: "WEBDL" },
+    { id: 3, title: "Legacy: Bomba (2025)", poster: img, date: "21 Aug 2025", badge: "WEBDL" },
+    { id: 4, title: "The Family Plan 2 (2025)", poster: img, date: "11 Nov 2025", badge: "WEBDL" },
+    { id: 5, title: "The Family Plan 2 (2025)", poster: img, date: "11 Nov 2025", badge: "WEBDL" },
+  ];
+
+  const actionMovies: Movie[] = [
+    { id: 6, title: "Brothers Grimm (2025)", poster: img, date: "18 Jun 2025", badge: "WEBDL" },
+    { id: 7, title: "One Battle After Another", poster: img, date: "10 Mar 2025", badge: "BLURAY" },
+    { id: 8, title: "Shark Zone", poster: img, date: "02 May 2025", badge: "WEBDL" },
+    { id: 9, title: "One Battle After Another", poster: img, date: "10 Mar 2025", badge: "BLURAY" },
+    { id: 10, title: "Shark Zone", poster: img, date: "02 May 2025", badge: "WEBDL" },
+  ];
 
   return (
     <>
@@ -194,7 +210,7 @@ export default function Film() {
                       alt={movie.title}
                       width={300}
                       height={400}
-                      className="object-cover w-full h-60 group-hover:opacity-90 duration-150"
+                      className="object-cover w-full h-60"
                     />
                     {movie.badge && (
                       <span className="absolute top-2 left-2 bg-red-600 text-xs px-2 py-1 rounded">
