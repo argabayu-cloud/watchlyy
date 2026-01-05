@@ -20,7 +20,55 @@ const movies = [
     description: "Pertarungan besar antar dimensi...",
     poster: "/images/2.jpg",
   },
-  
+  {
+    id: 3,
+    title: "Spiderman: Legacy of Bomba (2025)",
+    description: "Pertarungan besar antar dimensi...",
+    poster: "/images/4.jpg",
+  },
+  {
+    id: 4,
+    title: "The Family Plan 2",
+    description: "Pertarungan besar antar dimensi...",
+    poster: "/images/5.jpg",
+  },
+  {
+    id: 5,
+    title: "Komangsi & Joddy (2025)",
+    description: "Pertarungan besar antar dimensi...",
+    poster: "/images/1.jpg",
+  },
+  {
+    id: 6,
+    title: "Malam Pencabut Nyawa",
+    description: "Pertarungan besar antar dimensi...",
+    poster: "/images/malam pencabut nyawa.jpg",
+  },
+  {
+    id: 7,
+    title: "Pamali Tumbal",
+    description: "Pertarungan besar antar dimensi...",
+    poster: "/images/7.jpg",
+  },
+  {
+    id: 8,
+    title: "KKN",
+    description: "Pertarungan besar antar dimensi...",
+    poster: "/images/8.jpg",
+  },
+  {
+    id: 9,
+    title: "Siksa Neraka",
+    description: "Pertarungan besar antar dimensi...",
+    poster: "/images/9.jpg",
+  },
+  {
+    id: 10,
+    title: "Danur",
+    description: "Pertarungan besar antar dimensi...",
+    poster: "/images/10.jpg",
+  },
+
 ];
 
 export default function TontonPage() {
