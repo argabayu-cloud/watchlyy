@@ -45,7 +45,7 @@ transition={{ duration: 0.8 }}
 
         <div className="flex gap-4">
           <Link
-            href="/login"
+            href="/film"
             className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg text-base font-medium"
           >
             Mulai Nonton

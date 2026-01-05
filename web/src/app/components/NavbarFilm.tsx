@@ -98,7 +98,7 @@ export default function Navbar() {
               className="w-10 h-10 rounded-full overflow-hidden border border-white/20 cursor-pointer hover:border-red-500 transition"
             >
               <Image
-                src="/images/profile.jpg"
+                src="/images/btth1.jpg"
                 alt="Profile"
                 width={40}
                 height={40}
