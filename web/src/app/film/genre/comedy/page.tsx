@@ -84,6 +84,13 @@ const comedyMovies: Movie[] = [
     date: "02 Apr 2025",
     badge: "BLURAY",
   },
+  {
+    id: 61,
+    title: "CENTRAL INTELLIGENCE",
+    poster: "/images/movie/comedy/11.jpg",
+    date: "16 Apr 2025",
+    badge: "WEBDL",
+  },
 ];
 
 export default function ComedyPage() {
