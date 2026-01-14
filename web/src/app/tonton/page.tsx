@@ -346,6 +346,41 @@ export const romanceMovies: Movie[] = [
     poster: "/images/movie/romance/before sunrise.jpeg",
     genre: "romance",
   },
+  {
+    id: 46,
+    title: "BERTAUT RINDU",
+    description: "Dalam perjalanan singkat di Eropa, Jesse dan Céline bertemu secara kebetulan dan memutuskan menghabiskan satu malam bersama di Wina. Melalui percakapan mendalam tentang hidup, cinta, dan mimpi, hubungan mereka berkembang secara alami dan tulus. Tanpa janji besar, hanya waktu yang terbatas, Before Sunrise menghadirkan kisah cinta sederhana namun sangat intim tentang koneksi manusia yang tak terlupakan.",
+    poster: "/images/movie/romance/bertaut rindu.webp",
+    genre: "romance",
+  },
+  {
+    id: 47,
+    title: "DILAN 1990",
+    description: "Berlatar di Bandung tahun 1990, film ini mengisahkan kisah cinta remaja antara Milea, siswi pindahan yang cerdas dan sopan, dengan Dilan, pemuda unik yang penuh percaya diri dan cara pendekatan tak biasa. Dengan gaya bicara nyeleneh namun tulus, Dilan perlahan mengisi hari-hari Milea dengan perhatian sederhana yang berkesan. Di balik romansa manis itu, terselip konflik remaja, geng motor, dan pilihan hidup yang membentuk kedewasaan mereka. Dilan 1990 adalah kisah cinta pertama yang hangat, polos, dan penuh kenangan tak terlupakan.",
+    poster: "/images/movie/romance/dilan.png",
+    genre: "romance",
+  },
+  {
+    id: 48,
+    title: "ANCIKA",
+    description: "",
+    poster: "/images/movie/romance/ancika.webp",
+    genre: "romance",
+  },
+  {
+    id: 49,
+    title: "172 DAYS",
+    description: "",
+    poster: "/images/movie/romance/172 days.jpg",
+    genre: "romance",
+  },
+  {
+    id: 50,
+    title: "BILA ESOK IBU TIADA",
+    description: "",
+    poster: "/images/movie/romance/ibu tiada.webp",
+    genre: "romance",
+  },
 ];
 
 export const dramaMovies: Movie[] = [
