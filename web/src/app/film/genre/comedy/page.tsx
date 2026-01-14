@@ -91,6 +91,13 @@ const comedyMovies: Movie[] = [
     date: "16 Apr 2025",
     badge: "WEBDL",
   },
+  {
+    id: 62,
+    title: "FREE GUY",
+    poster: "/images/movie/comedy/12.jpg",
+    date: "05 May 2025",
+    badge: "BLURAY",
+  },
 ];
 
 export default function ComedyPage() {
