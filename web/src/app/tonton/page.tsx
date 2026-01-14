@@ -212,7 +212,7 @@ export const dramaMovies: Movie[] = [
     id: 31,
     title: "FORREST GUMP",
     description: "Forrest Gump adalah seorang pria dengan kecerdasan di bawah rata-rata, namun memiliki hati yang luar biasa tulus dan penuh kasih. Tanpa pernah merencanakan hidupnya, Forrest justru terlibat dalam berbagai peristiwa besar yang membentuk sejarah Amerika, mulai dari dunia olahraga, dunia militer, hingga budaya populer. Di tengah segala pencapaiannya, satu hal yang selalu ia kejar adalah cinta sejatinya kepada Jenny. Kisah ini mengajarkan bahwa kesederhanaan, kejujuran, dan ketulusan hati mampu membawa seseorang menjalani hidup yang penuh makna.",
-    poster: "/images/movie/romance/1.jpg",
+    poster: "/images/movie/drama/forrest gump.jpg",
     genre: "drama",
   },
   {
