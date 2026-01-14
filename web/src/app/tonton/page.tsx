@@ -272,7 +272,7 @@ export const romanceMovies: Movie[] = [
   {
     id: 45,
     title: "BEFORE SUNRISE",
-    description: "",
+    description: "Dalam perjalanan singkat di Eropa, Jesse dan Céline bertemu secara kebetulan dan memutuskan menghabiskan satu malam bersama di Wina. Melalui percakapan mendalam tentang hidup, cinta, dan mimpi, hubungan mereka berkembang secara alami dan tulus. Tanpa janji besar, hanya waktu yang terbatas, Before Sunrise menghadirkan kisah cinta sederhana namun sangat intim tentang koneksi manusia yang tak terlupakan.",
     poster: "/images/movie/romance/before sunrise.jpeg",
     genre: "romance",
   },
