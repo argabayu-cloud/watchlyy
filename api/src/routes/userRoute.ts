@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getAllUsers, registerUser } from "../controllers/userController";
+import { getAllUsers, registerUser } from "../controllers/userController.ts";
 
 const userRouter = Router();
 
@@ -8,7 +8,5 @@ userRouter.get("/", getAllUsers);
 
 // ROUTE POST: Registrasi user baru
 userRouter.post("/register", registerUser);
-
-
 
 export default userRouter;

@@ -3,7 +3,7 @@ import {
   getAllFilms,
   getRecommendedFilms,
   getFilmById,
-} from "../controllers/filmController";
+} from "../controllers/filmController.js";
 
 const filmRouter = Router();
 
