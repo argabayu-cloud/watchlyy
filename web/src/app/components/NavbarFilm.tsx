@@ -121,7 +121,7 @@ export default function NavbarFilm() {
 
               <div className="w-10 h-10 rounded-full overflow-hidden border border-white/20 hover:border-red-500 transition">
                 <Image
-                  src={profile?.photo || "/images/btth1.jpg"}
+                  src={profile?.photo || "/images/pp.jpeg"}
                   alt="Profile"
                   width={40}
                   height={40}
