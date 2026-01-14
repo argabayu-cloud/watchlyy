@@ -169,46 +169,8 @@ export const actionMovies: Movie[] = [
     genre: "action",
   },
 ];
-export const romanceMovies: Movie[] = [
-  {
-    id: 41,
-    title: "THE NOTEBOOK",
-    description: "Kisah cinta abadi antara Noah dan Allie yang diuji oleh perbedaan status sosial, waktu, dan penyakit. Sebuah perjalanan emosional tentang kenangan, pengorbanan, dan cinta sejati yang tak pernah pudar.",
-    poster: "/images/movie/romance/1.jpg",
-    genre: "romance",
-  },
-  {
-    id: 42,
-    title: "ME BEFORE YOU",
-    description: "Seorang wanita ceria membangun hubungan tak terduga dengan pria yang kehilangan semangat hidupnya akibat kecelakaan. Hubungan mereka mengubah cara pandang tentang cinta, kebebasan, dan arti melepaskan.",
-    poster: "/images/movie/romance/2.jpg",
-    genre: "romance",
-  },
-  {
-    id: 43,
-    title: "LA LA LAND",
-    description: "Dua insan dengan mimpi besar bertemu di Los Angeles dan jatuh cinta. Di antara ambisi, musik, dan realita hidup, mereka harus memilih antara cinta dan impian.",
-    poster: "/images/movie/romance/3.jpeg",
-    genre: "romance",
-  },
-  {
-    id: 44,
-    title: "500 DAYS OF SUMMER",
-    description: "Sebuah kisah cinta yang diceritakan secara tidak biasa, tentang harapan, kenyataan, dan pelajaran pahit dalam hubungan modern.",
-    poster: "/images/movie/romance/4.jpg",
-    genre: "romance",
-  },
-  {
-    id: 45,
-    title: "BEFORE SUNRISE",
-    description: "Dua orang asing bertemu di kereta dan menghabiskan satu malam penuh percakapan mendalam di Wina. Sebuah kisah sederhana namun intim tentang koneksi dan waktu.",
-    poster: "/images/movie/romance/5.jpg",
-    genre: "romance",
-  },
-];
-
 /* 🔑 GABUNG SEMUA FILM */
-const movies: Movie[] = [...newMovies, ...horrorMovies , ...adventureMovies, ...actionMovies, ...romanceMovies];
+const movies: Movie[] = [...newMovies, ...horrorMovies , ...adventureMovies, ...actionMovies];
 
 /* ================== PAGE ================== */
 export default function TontonPage() {
