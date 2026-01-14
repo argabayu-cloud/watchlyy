@@ -377,7 +377,7 @@ export const romanceMovies: Movie[] = [
   {
     id: 50,
     title: "BILA ESOK IBU TIADA",
-    description: "",
+    description: "Film ini menyentuh sisi terdalam cinta keluarga, khususnya hubungan antara ibu dan anak. Mengisahkan seorang ibu yang diam-diam berjuang melawan penyakit sambil memastikan keluarganya tetap utuh dan bahagia. Di tengah kesibukan dan jarak emosional, anak-anaknya perlahan menyadari betapa besar pengorbanan sang ibu. Bila Esok Ibu Tiada adalah kisah cinta yang sunyi namun kuat, tentang kehilangan, penyesalan, dan kasih sayang yang abadi meski raga tak lagi ada.",
     poster: "/images/movie/romance/ibu tiada.webp",
     genre: "romance",
   },
