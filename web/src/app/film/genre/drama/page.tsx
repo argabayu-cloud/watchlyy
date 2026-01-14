@@ -77,6 +77,13 @@ const dramaMovies: Movie[] = [
     date: "05 Jul 2025",
     badge: "BLURAY",
   },
+  {
+    id: 40,
+    title: "THE NOTEBOOK",
+    poster: "/images/movie/drama/40.jpg",
+    date: "18 Jul 2025",
+    badge: "WEBDL",
+  },
 ];
 
 export default function DramaPage() {
