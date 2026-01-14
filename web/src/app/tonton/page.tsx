@@ -187,7 +187,7 @@ export const actionMovies: Movie[] = [
     id: 23,
     title: "FAST X",
     description: "Keluarga Dom Toretto kembali menghadapi ancaman terbesar mereka ketika masa lalu yang kelam kembali menghantui. Musuh baru yang cerdas dan penuh dendam merancang rencana balas dendam yang mengancam seluruh keluarga. Aksi balapan brutal, ledakan spektakuler, dan kejar-kejaran lintas negara menjadi sajian utama film ini. Di balik kecepatan dan adrenalin tinggi, Fast X menegaskan kembali nilai loyalitas, pengorbanan, dan arti keluarga yang menjadi jiwa dari franchise ini.",
-    poster: "/images/movie/si aktor.webp",
+    poster: "/images/movie/action/23.webp",
     genre: "action",
   },
   {
