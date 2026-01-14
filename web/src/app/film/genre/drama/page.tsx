@@ -91,6 +91,13 @@ const dramaMovies: Movie[] = [
     date: "01 Aug 2025",
     badge: "BLURAY",
   },
+  {
+    id: 42,
+    title: "SLUMDOG MILLIONAIRE",
+    poster: "/images/movie/drama/42.jpg",
+    date: "15 Aug 2025",
+    badge: "WEBDL",
+  },
 ];
 
 export default function DramaPage() {
