@@ -405,8 +405,8 @@ export const romanceMovies: Movie[] = [
   {
     id: 54,
     title: "PERAYAAN MATI RASA",
-    description: "",
-    poster: "/images/movie/romance/172 days.jpg",
+    description: "Film ini menggambarkan cinta dari sudut pandang yang berbeda—ketika perasaan perlahan menghilang tanpa disadari. Dua insan yang pernah saling mencintai terjebak dalam rutinitas, luka batin, dan kesepian emosional. Di balik senyum dan tawa, tersimpan kehampaan yang diperingati sebagai “perayaan mati rasa”. Sebuah drama romantis yang realistis dan dewasa, menggugah penonton untuk merenungkan arti komunikasi, kejujuran, dan keberanian menghadapi kenyataan dalam hubungan.",
+    poster: "/images/movie/romance/perayaan mati rasa.jpg",
     genre: "romance",
   },
   {
