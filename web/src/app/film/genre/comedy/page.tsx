@@ -56,6 +56,13 @@ const comedyMovies: Movie[] = [
     date: "05 Feb 2025",
     badge: "BLURAY",
   },
+  {
+    id: 57,
+    title: "DUMB AND DUMBER",
+    poster: "/images/movie/comedy/7.jpg",
+    date: "18 Feb 2025",
+    badge: "WEBDL",
+  },
 ];
 
 export default function ComedyPage() {
