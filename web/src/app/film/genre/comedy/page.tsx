@@ -63,7 +63,13 @@ const comedyMovies: Movie[] = [
     date: "18 Feb 2025",
     badge: "WEBDL",
   },
-  
+  {
+    id: 58,
+    title: "YES DAY",
+    poster: "/images/movie/comedy/8.jpg",
+    date: "03 Mar 2025",
+    badge: "WEBDL",
+  },
 ];
 
 export default function ComedyPage() {
