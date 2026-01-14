@@ -194,7 +194,7 @@ export const actionMovies: Movie[] = [
     id: 24,
     title: "THE EXPENDABLES 4",
     description: "Tim tentara bayaran legendaris kembali berkumpul untuk menghadapi misi berisiko tinggi yang melibatkan senjata mematikan dan konflik global. Dengan kekuatan senjata berat, strategi brutal, dan kerja tim yang solid, mereka menghadapi musuh yang tak segan menghancurkan segalanya. Film ini menyajikan aksi klasik penuh ledakan, pertarungan jarak dekat, dan humor khas para veteran perang. Setiap misi menjadi pertaruhan hidup dan mati tanpa kompromi.",
-    poster: "/images/movie/john wick.jpg",
+    poster: "/images/movie/action/24.jpg",
     genre: "action",
   },
   {
