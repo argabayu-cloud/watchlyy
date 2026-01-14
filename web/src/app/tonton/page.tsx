@@ -221,7 +221,7 @@ export const actionMovies: Movie[] = [
   {
     id: 28,
     title: "THE BATMAN RETURNS",
-    description: "",
+    description: "Batman menghadapi ancaman baru yang mengguncang Gotham City, di mana kejahatan semakin terorganisir dan berbahaya. Saat musuh misterius muncul dari bayang-bayang, sang Ksatria Kegelapan dipaksa menghadapi trauma masa lalu dan batas moralnya sendiri. Film ini menyuguhkan nuansa gelap, investigasi kriminal yang intens, serta aksi brutal yang realistis. The Batman Returns menampilkan sisi manusiawi seorang pahlawan yang terus berjuang melawan kegelapan.",
     poster: "/images/movie/the shadow.jpg",
     genre: "action",
   },
