@@ -391,8 +391,8 @@ export const romanceMovies: Movie[] = [
   {
     id: 52,
     title: "CINTA DALAM IKHLAS",
-    description: "",
-    poster: "/images/movie/romance/172 days.jpg",
+    description: "Kisah ini berfokus pada dua insan yang saling mencintai, namun harus menerima kenyataan bahwa tidak semua cinta bisa bersatu. Dihadapkan pada ujian hidup, perbedaan prinsip, dan kehendak Tuhan, mereka belajar tentang makna ikhlas dalam mencintai. Film ini menggambarkan perjuangan menahan ego, merelakan yang dicinta, dan mempercayai rencana Tuhan yang lebih indah. Cinta Dalam Ikhlas adalah kisah cinta sunyi yang mengajarkan ketenangan, kesabaran, dan ketulusan hati.",
+    poster: "/images/movie/romance/cinta dalam ikhlas.jpeg",
     genre: "romance",
   },
   {
