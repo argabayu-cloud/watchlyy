@@ -528,6 +528,86 @@ export const comedyMovies: Movie[] = [
     poster: "/images/movie/comedy/home alone.jpg",
     genre: "comedy",
   },
+  {
+    id: 56,
+    title: "THE MASK",
+    description:
+      "Seorang pria biasa menemukan topeng misterius yang memberinya kekuatan super absurd. Setiap kali topeng itu dipakai, kepribadiannya berubah menjadi sosok kocak dengan aksi tak masuk akal. Film ini penuh humor slapstick dan adegan komedi ikonik.",
+    poster: "/images/movie/comedy/6.jpg",
+    genre: "comedy",
+  },
+  {
+    id: 57,
+    title: "DUMB AND DUMBER",
+    description:
+      "Dua sahabat dengan kecerdasan di bawah rata-rata terlibat dalam perjalanan lintas kota yang penuh kesalahpahaman dan kekonyolan. Setiap keputusan yang mereka ambil justru membawa masalah baru yang semakin lucu.",
+    poster: "/images/movie/comedy/7.jpg",
+    genre: "comedy",
+  },
+  {
+    id: 58,
+    title: "YES DAY",
+    description:
+      "Sepasang orang tua memutuskan untuk mengatakan ‘ya’ pada semua permintaan anak-anak mereka selama satu hari penuh. Keputusan ini membawa petualangan kocak yang menguji kesabaran dan kebersamaan keluarga.",
+    poster: "/images/movie/comedy/8.jpg",
+    genre: "comedy",
+  },
+  {
+    id: 59,
+    title: "JUMANJI",
+    description:
+      "Sekelompok orang terjebak di dalam permainan dengan dunia penuh bahaya dan aturan aneh. Untuk bisa keluar, mereka harus bekerja sama sambil menghadapi situasi kocak yang tak terduga.",
+    poster: "/images/movie/comedy/9.jpg",
+    genre: "comedy",
+  },
+  {
+    id: 60,
+    title: "MR BEAN HOLIDAY",
+    description:
+      "Mr. Bean memenangkan liburan ke Prancis, namun perjalanannya berubah menjadi rangkaian kekacauan lucu. Tingkah polos dan cerobohnya selalu berujung pada situasi yang mengundang tawa.",
+    poster: "/images/movie/comedy/10.jpg",
+    genre: "comedy",
+  },
+  {
+    id: 61,
+    title: "CENTRAL INTELLIGENCE",
+    description:
+      "Seorang mantan korban perundungan sekolah yang kini menjadi agen rahasia CIA melibatkan teman lamanya dalam misi berbahaya. Aksi dan komedi berpadu dalam petualangan penuh kejutan.",
+    poster: "/images/movie/comedy/11.jpg",
+    genre: "comedy",
+  },
+  {
+    id: 62,
+    title: "FREE GUY",
+    description:
+      "Seorang NPC dalam game open-world menyadari bahwa dirinya hanyalah karakter latar. Dengan kepribadian ceria, ia memutuskan untuk menjadi pahlawan dalam dunianya sendiri.",
+    poster: "/images/movie/comedy/12.jpg",
+    genre: "comedy",
+  },
+  {
+    id: 63,
+    title: "RUSH HOUR",
+    description:
+      "Seorang polisi Hong Kong yang serius dipasangkan dengan detektif Amerika yang cerewet. Perbedaan budaya dan kepribadian mereka menciptakan aksi komedi yang seru dan menghibur.",
+    poster: "/images/movie/comedy/13.jpg",
+    genre: "comedy",
+  },
+  {
+    id: 64,
+    title: "THE DICTATOR",
+    description:
+      "Seorang diktator eksentrik melakukan perjalanan ke Amerika dan terlibat dalam berbagai situasi konyol. Film ini penuh satire politik dengan humor dewasa yang berani.",
+    poster: "/images/movie/comedy/14.jpg",
+    genre: "comedy",
+  },
+  {
+    id: 65,
+    title: "BAD BOYS",
+    description:
+      "Dua detektif dengan gaya hidup dan kepribadian yang bertolak belakang harus bekerja sama membongkar kasus kriminal besar. Aksi cepat dipadukan dengan humor khas persahabatan.",
+    poster: "/images/movie/comedy/15.jpg",
+    genre: "comedy",
+  },
 ];
 
 
