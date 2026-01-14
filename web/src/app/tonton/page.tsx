@@ -249,7 +249,7 @@ export const comedyMovies: Movie[] = [
   {
     id: 51,
     title: "AGAK LAEN",
-    description: "Forrest Gump adalah seorang pria dengan kecerdasan di bawah rata-rata, namun memiliki hati yang luar biasa tulus dan penuh kasih. Tanpa pernah merencanakan hidupnya, Forrest justru terlibat dalam berbagai peristiwa besar yang membentuk sejarah Amerika, mulai dari dunia olahraga, dunia militer, hingga budaya populer. Di tengah segala pencapaiannya, satu hal yang selalu ia kejar adalah cinta sejatinya kepada Jenny. Kisah ini mengajarkan bahwa kesederhanaan, kejujuran, dan ketulusan hati mampu membawa seseorang menjalani hidup yang penuh makna.",
+    description: "Seorang mantan agen rahasia yang hidupnya kini jauh dari sorotan tiba-tiba terjebak dalam serangkaian kejadian aneh dan kocak di sebuah tempat wisata lokal. Bersama sekelompok orang dengan kepribadian “agak laen”, ia harus mengungkap misteri tak masuk akal yang justru semakin rumit setiap kali mencoba diselesaikan. Penuh humor segar, kejutan absurd, dan sindiran kehidupan sehari-hari, film ini menyajikan petualangan yang tidak biasa namun sangat menghibur.",
     poster: "/images/movie/drama/forrest gump.jpg",
     genre: "comedy",
   },
