@@ -63,6 +63,7 @@ const comedyMovies: Movie[] = [
     date: "18 Feb 2025",
     badge: "WEBDL",
   },
+  
 ];
 
 export default function ComedyPage() {
