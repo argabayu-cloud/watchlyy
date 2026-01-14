@@ -293,7 +293,7 @@ export const romanceMovies: Movie[] = [
   {
     id: 48,
     title: "ANCIKA",
-    description: "",
+    description: "Ancika menghadirkan kelanjutan semesta cinta Dilan dari sudut pandang yang lebih dewasa. Berlatar tahun 1995, film ini menampilkan Dilan sebagai mahasiswa yang bertemu Ancika, perempuan mandiri dengan pemikiran kritis dan sikap tegas. Hubungan mereka berkembang melalui diskusi, perbedaan pandangan, dan dinamika kehidupan kampus. Tanpa rayuan berlebihan, cinta tumbuh dari kejujuran dan saling menghargai. Ancika menggambarkan bahwa cinta tidak selalu tentang kata-kata manis, tetapi tentang memahami dan tumbuh bersama.",
     poster: "/images/movie/romance/ancika.webp",
     genre: "romance",
   },
