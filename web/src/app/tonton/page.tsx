@@ -384,8 +384,8 @@ export const romanceMovies: Movie[] = [
   {
     id: 51,
     title: "ASSALAMU'ALAIKUM BAITULLAH",
-    description: "",
-    poster: "/images/movie/romance/172 days.jpg",
+    description: "Film ini mengisahkan perjalanan batin seorang perempuan yang terluka oleh masa lalu dan kehilangan arah hidup. Dalam keputusasaan, ia memutuskan melakukan perjalanan spiritual ke Tanah Suci. Di hadapan Ka’bah, ia menemukan kembali makna cinta, keikhlasan, dan hubungan manusia dengan Tuhan. Di sana pula ia bertemu seseorang yang membantunya memahami bahwa cinta sejati bukan hanya tentang memiliki, tetapi tentang saling menguatkan dalam iman. Sebuah kisah romantis religius yang menyentuh hati dan penuh refleksi kehidupan.",
+    poster: "/images/movie/romance/baitullah.webp",
     genre: "romance",
   },
   {
