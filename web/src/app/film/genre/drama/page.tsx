@@ -17,14 +17,14 @@ const dramaMovies: Movie[] = [
   {
     id: 31,
     title: "FORREST GUMP",
-    poster: "/images/movie/drama/31.webp",
+    poster: "/images/movie/drama/forrest gump.jpg",
     date: "15 Jan 2025",
     badge: "BLURAY",
   },
   {
     id: 32,
     title: "THE PURSUIT OF HAPPYNESS",
-    poster: "/images/movie/drama/32.png",
+    poster: "/images/movie/drama/the pursuit.jpg",
     date: "20 Feb 2025",
     badge: "WEBDL",
   },
@@ -47,6 +47,13 @@ const dramaMovies: Movie[] = [
     title: "THE GREEN MILE",
     poster: "/images/movie/drama/35.jpg",
     date: "12 May 2025",
+    badge: "BLURAY",
+  },
+  {
+    id: 36,
+    title: "SHAWSHANK REDEMPTION",
+    poster: "/images/movie/drama/36.jpg",
+    date: "25 May 2025",
     badge: "BLURAY",
   },
 ];
