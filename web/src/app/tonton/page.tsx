@@ -178,7 +178,7 @@ export const actionMovies: Movie[] = [
   {
     id: 22,
     title: "MISSION: IMPOSSIBLE – DEAD RECKONING",
-    description: "",
+    description: "Ethan Hunt kembali dalam misi paling berbahaya sepanjang kariernya ketika sebuah teknologi rahasia yang mampu mengendalikan dunia jatuh ke tangan yang salah. Diburu oleh musuh lama dan sekutu yang berubah menjadi ancaman, ia harus berpacu dengan waktu di berbagai belahan dunia. Aksi mata-mata penuh intrik, kejar-kejaran ekstrem, dan keputusan berisiko tinggi membuat film ini menyajikan ketegangan konstan. Setiap pilihan yang diambil membawa konsekuensi besar, menguji kesetiaan dan pengorbanan tim IMF.",
     poster: "/images/movie/13 bom.jpg",
     genre: "action",
   },
