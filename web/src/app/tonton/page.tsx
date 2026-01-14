@@ -240,7 +240,7 @@ export const dramaMovies: Movie[] = [
     id: 35,
     title: "THE GREEN MILE",
     description: "Di balik tembok penjara dan lorong panjang yang dikenal sebagai Green Mile, seorang sipir bertemu dengan narapidana yang memiliki kemampuan luar biasa. Kehadiran sosok tersebut mengubah cara pandang para penjaga terhadap keadilan, dosa, dan kemanusiaan. Seiring berjalannya waktu, batas antara benar dan salah menjadi kabur, meninggalkan dilema moral yang mendalam. Film ini adalah kisah emosional tentang belas kasih, keajaiban, dan penderitaan manusia yang tak terlupakan.",
-    poster: "/images/movie/romance/5.jpg",
+    poster: "/images/movie/drama/the green mile.jpg",
     genre: "drama",
   },
 ];
