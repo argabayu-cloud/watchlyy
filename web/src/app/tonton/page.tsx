@@ -127,7 +127,7 @@ export const adventureMovies: Movie[] = [
     id: 15,
     title: "KINGDOM PLANET OF THE APES",
     description: "Di dunia yang telah dikuasai oleh bangsa kera, manusia berjuang bertahan di tengah peradaban baru. Konflik kekuasaan dan perjuangan untuk kebebasan membawa para karakter ke dalam petualangan penuh strategi dan pengorbanan. Sebuah kisah epik tentang evolusi dan kepemimpinan.",
-    poster: "/images/movie/kingdom.jpg",
+    poster: "/images/movie/of the planet.jpg",
     genre: "adventure",
   },
 ];
