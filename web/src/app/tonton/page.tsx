@@ -452,6 +452,46 @@ export const romanceMovies: Movie[] = [
     poster: "/images/movie/romance/ibu tiada.webp",
     genre: "romance",
   },
+  {
+    id: 41,
+    title: "BERTAUT RINDU",
+    description:
+      "Kisah cinta remaja yang tumbuh dari persahabatan sederhana menjadi perasaan yang lebih dalam. Film ini menggambarkan rindu, harapan, dan dilema antara cinta serta masa depan dengan nuansa emosional yang kuat.",
+    poster: "/images/movie/romance/bertaut rindu.webp",
+    genre: "romance",
+  },
+  {
+    id: 42,
+    title: "ME BEFORE YOU",
+    description:
+      "Seorang wanita ceria bertemu pria kaya yang kehilangan semangat hidup akibat kecelakaan. Hubungan mereka perlahan berkembang menjadi kisah cinta yang menghangatkan sekaligus menguras emosi.",
+    poster: "/images/movie/romance/2.jpg",
+    genre: "romance",
+  },
+  {
+    id: 43,
+    title: "LA LA LAND",
+    description:
+      "Dua insan dengan mimpi besar bertemu di Los Angeles dan jatuh cinta. Film ini menyajikan romansa yang manis, musik yang kuat, dan pilihan hidup yang tidak selalu berjalan seiring cinta.",
+    poster: "/images/movie/romance/3.jpeg",
+    genre: "romance",
+  },
+  {
+    id: 44,
+    title: "500 DAYS OF SUMMER",
+    description:
+      "Perjalanan cinta seorang pria yang percaya pada takdir dengan seorang wanita yang tidak mempercayai cinta sejati. Cerita disampaikan secara non-linear dengan sudut pandang realistis tentang hubungan.",
+    poster: "/images/movie/romance/4.jpg",
+    genre: "romance",
+  },
+  {
+    id: 45,
+    title: "BEFORE SUNRISE",
+    description:
+      "Dua orang asing bertemu di kereta dan menghabiskan satu malam berkeliling kota sambil berbincang tentang hidup dan cinta. Romansa sederhana namun intim yang terasa sangat manusiawi.",
+    poster: "/images/movie/romance/5.jpg",
+    genre: "romance",
+  },
 ];
 
 export const dramaMovies: Movie[] = [
