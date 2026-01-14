@@ -22,9 +22,9 @@ export default function Navbar() {
   const ratings = [1, 2, 3, 4, 5];
   const years = Array.from({ length: 26 }, (_, i) => 2000 + i);
 
-  const [genre, setGenre] = useState("");
-  const [rating, setRating] = useState("");
-  const [year, setYear] = useState("");
+  const [genre, setGenre] = useState("/genre");
+  const [rating, setRating] = useState("/rating");
+  const [year, setYear] = useState("/year");
 
   return (
     <>
