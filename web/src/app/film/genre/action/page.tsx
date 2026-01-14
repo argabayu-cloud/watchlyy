@@ -100,7 +100,7 @@ const actionMovies: Movie[] = [
 {
   id: 28,
   title: "THE BATMAN RETURNS",
-  poster: "/images/movie/action/28.jpeg",
+  poster: "/images/movie/action/the batman.webp",
   date: "14 Dec 2025",
   badge: "BLURAY",
 },
