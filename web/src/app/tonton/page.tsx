@@ -398,8 +398,8 @@ export const romanceMovies: Movie[] = [
   {
     id: 53,
     title: "NAGIH JANJI CINTA",
-    description: "",
-    poster: "/images/movie/romance/172 days.jpg",
+    description: "Sebuah kisah tentang janji masa lalu yang belum ditepati dan luka yang belum sembuh. Seorang perempuan mencoba melanjutkan hidupnya, namun bayang-bayang cinta lama terus menghantui. Ketika takdir mempertemukan mereka kembali, pertanyaan lama pun muncul: apakah cinta lama layak diperjuangkan kembali, atau hanya kenangan yang harus dilepaskan? Film ini menyuguhkan konflik emosional, harapan, dan keberanian untuk menuntut kejujuran dalam cinta.",
+    poster: "/images/movie/romance/nagih janji cinta.jpg",
     genre: "romance",
   },
   {
