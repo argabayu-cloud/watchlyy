@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { useProfile } from "@/context/ProfileContext";
 import Sidebar from "@/app/profilepage/sidebar/page";
+import { useRouter } from "next/navigation";
 
 import {
   Select,
@@ -18,11 +19,12 @@ export default function Navbar() {
 
   const { profile } = useProfile();
 
+  const router = useRouter();
+
   const genres = ["Action", "Adventure", "Romance", "Horror", "Drama", "Comedy"];
   const ratings = [1, 2, 3, 4, 5];
   const years = Array.from({ length: 26 }, (_, i) => 2000 + i);
 
-  const [genre, setGenre] = useState("/genre");
   const [rating, setRating] = useState("/rating");
   const [year, setYear] = useState("/year");
 
@@ -43,10 +45,15 @@ export default function Navbar() {
             />
 
             {/* GENRE */}
-            <Select onValueChange={setGenre}>
+            <Select
+              onValueChange={(value) => {
+                router.push(`/film/genre/${value.toLowerCase()}`);
+              }}
+            >
               <SelectTrigger className="w-fit bg-transparent border-none p-0 text-white hover:text-red-400">
                 <SelectValue placeholder="Genre" />
               </SelectTrigger>
+
               <SelectContent className="bg-black border-white/20 text-white">
                 {genres.map((g) => (
                   <SelectItem key={g} value={g}>
