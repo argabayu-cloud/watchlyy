@@ -44,7 +44,7 @@ const adventureMovies: Movie[] = [
   {
     id: 15,
     title: "KINGDOM PLANET OF THE APES",
-    poster: "/images/movie/kingdom.jpg",
+    poster: "/images/movie/of the planet.jpg",
     date: "02 May 2025",
     badge: "WEBDL",
   },
