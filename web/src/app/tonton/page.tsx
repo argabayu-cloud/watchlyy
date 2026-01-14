@@ -251,7 +251,7 @@ export const romanceMovies: Movie[] = [
   {
     id: 42,
     title: "ME BEFORE YOU",
-    description: "",
+    description: "Louisa Clark, seorang wanita ceria dengan hidup sederhana, bertemu Will Traynor, pria sukses yang kehilangan semangat hidup akibat kecelakaan tragis. Hubungan mereka yang awalnya canggung perlahan berkembang menjadi ikatan emosional yang mendalam. Di tengah tawa, kesedihan, dan pilihan hidup yang sulit, Louisa belajar tentang arti mencintai tanpa harus memiliki. Film ini menghadirkan kisah cinta yang manis sekaligus memilukan, mengajarkan tentang keberanian untuk merelakan dan menerima kenyataan.",
     poster: "/images/movie/romance/me before you.jpg",
     genre: "romance",
   },
