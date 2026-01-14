@@ -56,6 +56,13 @@ const dramaMovies: Movie[] = [
     date: "25 May 2025",
     badge: "BLURAY",
   },
+  {
+    id: 37,
+    title: "THE GODFATHER",
+    poster: "/images/movie/drama/37.jpg",
+    date: "10 Jun 2025",
+    badge: "BLURAY",
+  },
 ];
 
 export default function DramaPage() {
