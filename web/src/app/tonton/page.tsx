@@ -172,7 +172,7 @@ export const actionMovies: Movie[] = [
     id: 21,
     title: "TRAIN TO BUSAN",
     description: "Saat wabah misterius menyebar dengan cepat di Korea Selatan, sebuah perjalanan kereta dari Seoul menuju Busan berubah menjadi mimpi buruk yang penuh teror. Para penumpang harus berjuang bertahan hidup dari serangan makhluk ganas yang terinfeksi virus mematikan. Di tengah kekacauan, seorang ayah berusaha melindungi putrinya sambil menghadapi pilihan-pilihan moral yang sulit. Film ini memadukan aksi intens, ketegangan tanpa henti, serta drama emosional yang kuat, menjadikannya lebih dari sekadar film zombie biasa.",
-    poster: "/images/movie/ph.webp",
+    poster: "/images/movie/action/21.jpg",
     genre: "action",
   },
   {
