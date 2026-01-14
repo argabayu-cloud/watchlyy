@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { useProfile } from "@/context/ProfileContext";
 import Sidebar from "@/app/profilepage/sidebar/page";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 import {
   Select,
@@ -14,26 +14,31 @@ import {
   SelectItem,
 } from "@/components/ui/select";
 
-export default function Navbar() {
+export default function NavbarFilm() {
   const [openSidebar, setOpenSidebar] = useState(false);
 
   const { profile } = useProfile();
-
   const router = useRouter();
+  const pathname = usePathname();
 
-  const genres = ["Action", "Adventure", "Romance", "Horror", "Drama", "Comedy"];
+  const genres = [
+    { label: "Action", path: "/film/genre/action" },
+    { label: "Adventure", path: "/film/genre/adventure" },
+    { label: "Horror", path: "/film/genre/horror" },
+    { label: "Romance", path: "/film/genre/romance" },
+    { label: "Drama", path: "/film/genre/drama" },
+    { label: "Comedy", path: "/film/genre/comedy" },
+  ];
+
   const ratings = [1, 2, 3, 4, 5];
   const years = Array.from({ length: 26 }, (_, i) => 2000 + i);
-
-  const [rating, setRating] = useState("/rating");
-  const [year, setYear] = useState("/year");
 
   return (
     <>
       {/* NAVBAR */}
       <nav className="w-full fixed top-0 z-50 bg-black/40 backdrop-blur-md border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          
+
           {/* LEFT */}
           <div className="flex items-center gap-6">
             <Image
@@ -41,30 +46,35 @@ export default function Navbar() {
               alt="Watchly Logo"
               width={120}
               height={40}
-              className="object-contain"
+              className="object-contain cursor-pointer"
+              onClick={() => router.push("/film")}
             />
 
             {/* GENRE */}
-            <Select
-              onValueChange={(value) => {
-                router.push(`/film/genre/${value.toLowerCase()}`);
-              }}
-            >
+            <Select onValueChange={(value) => router.push(value)}>
               <SelectTrigger className="w-fit bg-transparent border-none p-0 text-white hover:text-red-400">
                 <SelectValue placeholder="Genre" />
               </SelectTrigger>
 
               <SelectContent className="bg-black border-white/20 text-white">
-                {genres.map((g) => (
-                  <SelectItem key={g} value={g}>
-                    {g}
-                  </SelectItem>
-                ))}
+                {genres.map((g) => {
+                  const isActive = pathname === g.path;
+
+                  return (
+                    <SelectItem
+                      key={g.path}
+                      value={g.path}
+                      className={isActive ? "text-red-500 font-semibold" : ""}
+                    >
+                      {g.label}
+                    </SelectItem>
+                  );
+                })}
               </SelectContent>
             </Select>
 
             {/* RATING */}
-            <Select onValueChange={setRating}>
+            <Select>
               <SelectTrigger className="w-fit bg-transparent border-none p-0 text-white hover:text-red-400">
                 <SelectValue placeholder="Rating" />
               </SelectTrigger>
@@ -78,7 +88,7 @@ export default function Navbar() {
             </Select>
 
             {/* YEAR */}
-            <Select onValueChange={setYear}>
+            <Select>
               <SelectTrigger className="w-fit bg-transparent border-none p-0 text-white hover:text-red-400">
                 <SelectValue placeholder="Tahun" />
               </SelectTrigger>
