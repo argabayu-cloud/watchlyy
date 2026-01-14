@@ -77,6 +77,13 @@ const comedyMovies: Movie[] = [
     date: "20 Mar 2025",
     badge: "BLURAY",
   },
+  {
+    id: 60,
+    title: "MR BEAN HOLIDAY",
+    poster: "/images/movie/comedy/10.jpg",
+    date: "02 Apr 2025",
+    badge: "BLURAY",
+  },
 ];
 
 export default function ComedyPage() {
