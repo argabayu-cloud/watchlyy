@@ -265,7 +265,7 @@ export const romanceMovies: Movie[] = [
   {
     id: 44,
     title: "500 DAYS OF SUMMER",
-    description: "",
+    description: "Film ini mengisahkan perjalanan cinta Tom, seorang pria romantis, dan Summer, wanita bebas yang tidak percaya pada cinta sejati. Diceritakan secara non-linear, kisah ini memperlihatkan naik turunnya hubungan mereka, dari kebahagiaan hingga patah hati. 500 Days of Summer menyajikan sudut pandang realistis tentang cinta modern, ekspektasi, dan pelajaran berharga dari hubungan yang tidak berjalan sesuai harapan.",
     poster: "/images/movie/romance/500 days.webp",
     genre: "romance",
   },
