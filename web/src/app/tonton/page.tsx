@@ -169,8 +169,86 @@ export const actionMovies: Movie[] = [
     genre: "action",
   },
 ];
+export const romanceMovies: Movie[] = [
+  {
+    id: 41,
+    title: "THE NOTEBOOK",
+    description: "Kisah cinta abadi antara Noah dan Allie yang diuji oleh perbedaan status sosial, waktu, dan penyakit. Sebuah perjalanan emosional tentang kenangan, pengorbanan, dan cinta sejati yang tak pernah pudar.",
+    poster: "/images/movie/romance/1.jpg",
+    genre: "romance",
+  },
+  {
+    id: 42,
+    title: "ME BEFORE YOU",
+    description: "Seorang wanita ceria membangun hubungan tak terduga dengan pria yang kehilangan semangat hidupnya akibat kecelakaan. Hubungan mereka mengubah cara pandang tentang cinta, kebebasan, dan arti melepaskan.",
+    poster: "/images/movie/romance/2.jpg",
+    genre: "romance",
+  },
+  {
+    id: 43,
+    title: "LA LA LAND",
+    description: "Dua insan dengan mimpi besar bertemu di Los Angeles dan jatuh cinta. Di antara ambisi, musik, dan realita hidup, mereka harus memilih antara cinta dan impian.",
+    poster: "/images/movie/romance/3.jpeg",
+    genre: "romance",
+  },
+  {
+    id: 44,
+    title: "500 DAYS OF SUMMER",
+    description: "Sebuah kisah cinta yang diceritakan secara tidak biasa, tentang harapan, kenyataan, dan pelajaran pahit dalam hubungan modern.",
+    poster: "/images/movie/romance/4.jpg",
+    genre: "romance",
+  },
+  {
+    id: 45,
+    title: "BEFORE SUNRISE",
+    description: "Dua orang asing bertemu di kereta dan menghabiskan satu malam penuh percakapan mendalam di Wina. Sebuah kisah sederhana namun intim tentang koneksi dan waktu.",
+    poster: "/images/movie/romance/5.jpg",
+    genre: "romance",
+  },
+];
+
+export const dramaMovies: Movie[] = [
+  {
+    id: 31,
+    title: "FORREST GUMP",
+    description: "Forrest Gump adalah seorang pria dengan kecerdasan di bawah rata-rata, namun memiliki hati yang luar biasa tulus dan penuh kasih. Tanpa pernah merencanakan hidupnya, Forrest justru terlibat dalam berbagai peristiwa besar yang membentuk sejarah Amerika, mulai dari dunia olahraga, dunia militer, hingga budaya populer. Di tengah segala pencapaiannya, satu hal yang selalu ia kejar adalah cinta sejatinya kepada Jenny. Kisah ini mengajarkan bahwa kesederhanaan, kejujuran, dan ketulusan hati mampu membawa seseorang menjalani hidup yang penuh makna.",
+    poster: "/images/movie/drama/forrest gump.jpg",
+    genre: "drama",
+  },
+  {
+    id: 32,
+    title: "THE PURSUIT OF HAPPYNESS",
+    description: "Film ini mengikuti perjalanan hidup seorang ayah tunggal yang harus bertahan di tengah keterbatasan ekonomi dan tekanan hidup yang berat. Demi masa depan anaknya, ia rela menghadapi penolakan, kegagalan, dan rasa putus asa yang terus menguji mentalnya. Dengan tekad yang kuat dan keyakinan bahwa kerja keras tidak akan mengkhianati hasil, ia terus melangkah meski dunia terasa tidak adil. Sebuah kisah nyata yang menyentuh tentang pengorbanan, harapan, dan arti sejati dari kebahagiaan.",
+    poster: "/images/movie/romance/2.jpg",
+    genre: "drama",
+  },
+  {
+    id: 33,
+    title: "TITANIC",
+    description: "",
+    poster: "/images/movie/romance/3.jpeg",
+    genre: "drama",
+  },
+  {
+    id: 34,
+    title: "A BEAUTIFUL MIND",
+    description: "",
+    poster: "/images/movie/romance/4.jpg",
+    genre: "drama",
+  },
+  {
+    id: 35,
+    title: "THE GREEN MILE",
+    description: "",
+    poster: "/images/movie/romance/5.jpg",
+    genre: "drama",
+  },
+];
+
+
+
 /* 🔑 GABUNG SEMUA FILM */
-const movies: Movie[] = [...newMovies, ...horrorMovies , ...adventureMovies, ...actionMovies];
+const movies: Movie[] = [...newMovies, ...horrorMovies , ...adventureMovies, ...actionMovies, ...romanceMovies, ...dramaMovies ];
 
 /* ================== PAGE ================== */
 export default function TontonPage() {
