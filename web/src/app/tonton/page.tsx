@@ -278,7 +278,7 @@ export const comedyMovies: Movie[] = [
     id: 55,
     title: "HOME ALONE",
     description: "Seorang anak kecil secara tak sengaja tertinggal sendirian di rumah besar saat keluarganya pergi berlibur. Awalnya, kesendirian ini terasa menyenangkan karena ia bebas melakukan apa saja. Namun keadaan berubah ketika dua pencuri ceroboh berusaha membobol rumah tersebut. Dengan kecerdasan, kreativitas, dan keberanian yang luar biasa, sang anak menciptakan berbagai jebakan unik dan lucu untuk menghalau para pencuri. Film ini memadukan komedi slapstick, petualangan ringan, serta kehangatan keluarga yang membuatnya menjadi tontonan klasik lintas generasi.",
-    poster: "/images/movie/drama/the green mile.jpg",
+    poster: "/images/movie/comedy/home alone.jpg",
     genre: "comedy",
   },
 ];
