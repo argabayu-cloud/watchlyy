@@ -219,36 +219,74 @@ export const dramaMovies: Movie[] = [
     id: 32,
     title: "THE PURSUIT OF HAPPYNESS",
     description: "Film ini mengikuti perjalanan hidup seorang ayah tunggal yang harus bertahan di tengah keterbatasan ekonomi dan tekanan hidup yang berat. Demi masa depan anaknya, ia rela menghadapi penolakan, kegagalan, dan rasa putus asa yang terus menguji mentalnya. Dengan tekad yang kuat dan keyakinan bahwa kerja keras tidak akan mengkhianati hasil, ia terus melangkah meski dunia terasa tidak adil. Sebuah kisah nyata yang menyentuh tentang pengorbanan, harapan, dan arti sejati dari kebahagiaan.",
-    poster: "/images/movie/romance/2.jpg",
+    poster: "/images/movie/drama/the pursuit.jpg",
     genre: "drama",
   },
   {
     id: 33,
     title: "TITANIC",
-    description: "",
-    poster: "/images/movie/romance/3.jpeg",
+    description: "Berlatar di atas kapal paling megah pada masanya, Titanic mengisahkan pertemuan dua insan dari kelas sosial yang berbeda. Hubungan mereka tumbuh di tengah kemewahan, impian, dan kebebasan yang singkat. Ketika tragedi besar tak terelakkan terjadi, cinta mereka diuji oleh keadaan ekstrem dan pilihan-pilihan yang menyayat hati. Film ini bukan hanya kisah cinta, tetapi juga potret kemanusiaan, keberanian, dan kehilangan yang abadi dalam sejarah.",
+    poster: "/images/movie/drama/titanic.webp",
     genre: "drama",
   },
   {
     id: 34,
     title: "A BEAUTIFUL MIND",
-    description: "",
-    poster: "/images/movie/romance/4.jpg",
+    description: "Seorang matematikawan jenius berjuang mengejar karier akademik yang gemilang, namun harus menghadapi kenyataan pahit ketika pikirannya mulai dikuasai oleh penyakit mental. Dunia yang ia yakini perlahan runtuh, memaksanya mempertanyakan apa yang nyata dan apa yang tidak. Dengan dukungan orang-orang terdekat dan keteguhan cinta sejati, ia belajar menerima dirinya apa adanya. Film ini menggambarkan perjuangan batin, kecerdasan, dan kekuatan cinta dalam menghadapi penyakit yang tak terlihat.",
+    poster: "/images/movie/drama/a beautiful mind.jpeg",
     genre: "drama",
   },
   {
     id: 35,
     title: "THE GREEN MILE",
-    description: "",
-    poster: "/images/movie/romance/5.jpg",
+    description: "Di balik tembok penjara dan lorong panjang yang dikenal sebagai Green Mile, seorang sipir bertemu dengan narapidana yang memiliki kemampuan luar biasa. Kehadiran sosok tersebut mengubah cara pandang para penjaga terhadap keadilan, dosa, dan kemanusiaan. Seiring berjalannya waktu, batas antara benar dan salah menjadi kabur, meninggalkan dilema moral yang mendalam. Film ini adalah kisah emosional tentang belas kasih, keajaiban, dan penderitaan manusia yang tak terlupakan.",
+    poster: "/images/movie/drama/the green mile.jpg",
     genre: "drama",
+  },
+];
+
+export const comedyMovies: Movie[] = [
+  {
+    id: 51,
+    title: "AGAK LAEN",
+    description: "Seorang mantan agen rahasia yang hidupnya kini jauh dari sorotan tiba-tiba terjebak dalam serangkaian kejadian aneh dan kocak di sebuah tempat wisata lokal. Bersama sekelompok orang dengan kepribadian “agak laen”, ia harus mengungkap misteri tak masuk akal yang justru semakin rumit setiap kali mencoba diselesaikan. Penuh humor segar, kejutan absurd, dan sindiran kehidupan sehari-hari, film ini menyajikan petualangan yang tidak biasa namun sangat menghibur.",
+    poster: "/images/3.jpg",
+    genre: "comedy",
+  },
+  {
+    id: 52,
+    title: "MY STUPID BOSS",
+    description: "Film ini mengisahkan perjuangan seorang karyawan yang harus bekerja di bawah pimpinan bos dengan karakter super egois, kekanak-kanakan, dan sering bertindak tanpa logika. Setiap keputusan sang bos justru menimbulkan masalah baru, membuat suasana kantor penuh kekacauan dan konflik konyol. Mulai dari aturan kerja yang berubah-ubah, tuntutan tidak masuk akal, hingga sikap arogan yang menyebalkan, semua menjadi sumber humor yang terus mengalir. Di balik komedinya, film ini juga menyindir keras budaya kerja toksik, ketimpangan jabatan, dan realitas pahit dunia perkantoran yang dibalut dengan tawa segar.",
+    poster: "/images/movie/comedy/2.jpg",
+    genre: "comedy",
+  },
+  {
+    id: 53,
+    title: "THE HANGOVER",
+    description: "Sebuah pesta lajang di Las Vegas yang awalnya direncanakan sebagai malam penuh kesenangan berubah menjadi kekacauan total keesokan harinya. Sekelompok sahabat terbangun tanpa ingatan sedikit pun tentang apa yang mereka lakukan semalam, namun menemukan petunjuk-petunjuk aneh seperti bayi di lemari, harimau di kamar mandi, dan seorang teman yang menghilang. Dengan waktu yang semakin menipis, mereka harus menyusuri kembali jejak kegilaan malam sebelumnya. Film ini dipenuhi humor dewasa, situasi ekstrem, dan kejadian tak terduga yang membuat penonton tertawa sekaligus terkejut sepanjang cerita.",
+    poster: "/images/movie/comedy/3.jpg",
+    genre: "comedy",
+  },
+  {
+    id: 54,
+    title: "WARKOP DKI REBORN",
+    description: "Dono, Kasino, dan Indro kembali hadir dengan gaya humor khas Warkop yang penuh kelucuan, kecerdikan, dan sindiran sosial. Tiga sahabat ini selalu terjebak dalam berbagai situasi konyol akibat ide-ide nyeleneh dan pola pikir yang jauh dari kata normal. Mulai dari masalah pekerjaan, percintaan, hingga persoalan masyarakat sehari-hari, semuanya disajikan dalam bentuk komedi slapstick dan dialog yang menggelitik. Film ini bukan hanya menghibur, tetapi juga menghadirkan nostalgia kuat bagi penonton lama sekaligus hiburan segar bagi generasi baru.",
+    poster: "/images/movie/comedy/4.jpg",
+    genre: "comedy",
+  },
+  {
+    id: 55,
+    title: "HOME ALONE",
+    description: "Seorang anak kecil secara tak sengaja tertinggal sendirian di rumah besar saat keluarganya pergi berlibur. Awalnya, kesendirian ini terasa menyenangkan karena ia bebas melakukan apa saja. Namun keadaan berubah ketika dua pencuri ceroboh berusaha membobol rumah tersebut. Dengan kecerdasan, kreativitas, dan keberanian yang luar biasa, sang anak menciptakan berbagai jebakan unik dan lucu untuk menghalau para pencuri. Film ini memadukan komedi slapstick, petualangan ringan, serta kehangatan keluarga yang membuatnya menjadi tontonan klasik lintas generasi.",
+    poster: "/images/movie/comedy/home alone.jpg",
+    genre: "comedy",
   },
 ];
 
 
 
 /* 🔑 GABUNG SEMUA FILM */
-const movies: Movie[] = [...newMovies, ...horrorMovies , ...adventureMovies, ...actionMovies, ...romanceMovies, ...dramaMovies ];
+const movies: Movie[] = [...newMovies, ...horrorMovies , ...adventureMovies, ...actionMovies, ...romanceMovies, ...dramaMovies, ...comedyMovies];
 
 /* ================== PAGE ================== */
 export default function TontonPage() {
