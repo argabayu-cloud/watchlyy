@@ -104,7 +104,20 @@ const actionMovies: Movie[] = [
   date: "14 Dec 2025",
   badge: "BLURAY",
 },
-
+{
+  id: 29,
+  title: "PENGEPUNGAN DI BUKIT DURI",
+  poster: "/images/movie/action/29.jpg",
+  date: "17 April 2025",
+  badge: "WEBDL",
+},
+{
+  id: 30,
+  title: "VENOM",
+  poster: "/images/movie/action/30.png",
+  date: "4 Oktober 2025",
+  badge: "BLURAY",
+},
 ];
 
 export default function ActionPage() {
