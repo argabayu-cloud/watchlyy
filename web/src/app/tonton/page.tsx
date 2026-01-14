@@ -207,8 +207,48 @@ export const romanceMovies: Movie[] = [
   },
 ];
 
+export const dramaMovies: Movie[] = [
+  {
+    id: 31,
+    title: "FORREST GUMP",
+    description: "",
+    poster: "/images/movie/romance/1.jpg",
+    genre: "drama",
+  },
+  {
+    id: 32,
+    title: "THE PURSUIT OF HAPPYNESS",
+    description: "",
+    poster: "/images/movie/romance/2.jpg",
+    genre: "drama",
+  },
+  {
+    id: 33,
+    title: "TITANIC",
+    description: "",
+    poster: "/images/movie/romance/3.jpeg",
+    genre: "drama",
+  },
+  {
+    id: 34,
+    title: "A BEAUTIFUL MIND",
+    description: "",
+    poster: "/images/movie/romance/4.jpg",
+    genre: "drama",
+  },
+  {
+    id: 35,
+    title: "THE GREEN MILE",
+    description: "",
+    poster: "/images/movie/romance/5.jpg",
+    genre: "drama",
+  },
+];
+
+
+
 /* 🔑 GABUNG SEMUA FILM */
-const movies: Movie[] = [...newMovies, ...horrorMovies , ...adventureMovies, ...actionMovies, ...romanceMovies];
+const movies: Movie[] = [...newMovies, ...horrorMovies , ...adventureMovies, ...actionMovies, ...romanceMovies, ...dramaMovies ];
 
 /* ================== PAGE ================== */
 export default function TontonPage() {
