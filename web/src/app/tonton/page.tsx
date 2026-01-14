@@ -370,7 +370,7 @@ export const romanceMovies: Movie[] = [
   {
     id: 49,
     title: "172 DAYS",
-    description: "",
+    description: "Terinspirasi dari kisah nyata, 172 Days mengisahkan perjalanan cinta singkat namun bermakna antara dua insan yang dipersatukan oleh takdir dan iman. Dalam waktu yang terbatas, mereka berbagi kebahagiaan, harapan, dan doa, sambil menghadapi kenyataan pahit tentang kehilangan. Film ini menyoroti makna cinta yang tulus, ikhlas, dan berserah, bahwa cinta sejati tidak diukur dari lamanya waktu bersama, melainkan dari kedalaman perasaan yang ditinggalkan di hati.",
     poster: "/images/movie/romance/172 days.jpg",
     genre: "romance",
   },
