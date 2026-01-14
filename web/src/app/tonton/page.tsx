@@ -13,11 +13,7 @@ interface Movie {
   title: string;
   description: string;
   poster: string;
-<<<<<<< HEAD
-  genre: "new" | "horror" | "adventure" | "action" | "romance";
-=======
   genre: "new" | "horror" | "adventure" | "action" | "romance" | "drama" | "comedy";
->>>>>>> b48f88ce77be9dbbcedf9011dd914622a719f326
 }
 
 /* ================== DATA ================== */
@@ -173,8 +169,6 @@ export const actionMovies: Movie[] = [
     genre: "action",
   },
 ];
-<<<<<<< HEAD
-
 export const romanceMovies: Movie[] = [
   {
     id: 41,
@@ -213,8 +207,6 @@ export const romanceMovies: Movie[] = [
   },
 ];
 
-=======
->>>>>>> b48f88ce77be9dbbcedf9011dd914622a719f326
 /* 🔑 GABUNG SEMUA FILM */
 const movies: Movie[] = [...newMovies, ...horrorMovies , ...adventureMovies, ...actionMovies, ...romanceMovies];
 
