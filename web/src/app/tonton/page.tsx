@@ -145,6 +145,7 @@ export const actionMovies: Movie[] = [
     poster: "/images/movie/17.jpg",
     genre: "action",
   },
+  
   {
     id: 18,
     title: "SI PALING AKTOR",
