@@ -70,6 +70,13 @@ const dramaMovies: Movie[] = [
     date: "22 Jun 2025",
     badge: "WEBDL",
   },
+  {
+    id: 39,
+    title: "LIFE OF PI",
+    poster: "/images/movie/drama/39.jpg",
+    date: "05 Jul 2025",
+    badge: "BLURAY",
+  },
 ];
 
 export default function DramaPage() {
