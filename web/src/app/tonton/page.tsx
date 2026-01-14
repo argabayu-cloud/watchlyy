@@ -270,7 +270,7 @@ export const comedyMovies: Movie[] = [
   {
     id: 54,
     title: "WARKOP DKI REBORN",
-    description: "",
+    description: "Dono, Kasino, dan Indro kembali hadir dengan gaya humor khas Warkop yang penuh kelucuan, kecerdikan, dan sindiran sosial. Tiga sahabat ini selalu terjebak dalam berbagai situasi konyol akibat ide-ide nyeleneh dan pola pikir yang jauh dari kata normal. Mulai dari masalah pekerjaan, percintaan, hingga persoalan masyarakat sehari-hari, semuanya disajikan dalam bentuk komedi slapstick dan dialog yang menggelitik. Film ini bukan hanya menghibur, tetapi juga menghadirkan nostalgia kuat bagi penonton lama sekaligus hiburan segar bagi generasi baru.",
     poster: "/images/movie/drama/a beautiful mind.jpeg",
     genre: "comedy",
   },
