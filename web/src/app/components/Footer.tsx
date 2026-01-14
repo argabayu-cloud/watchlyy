@@ -26,7 +26,7 @@ export default function Footer() {
         <div>
           <h3 className="text-white text-lg font-semibold mb-3">Menu</h3>
           <ul className="space-y-2 text-sm">
-            <li><Link href="/" className="hover:text-white">Home</Link></li>
+            <li><Link href="/film" className="hover:text-white">Home</Link></li>
             <li><Link href="/film" className="hover:text-white">Genre</Link></li>
             <li><Link href="#" className="hover:text-white">Tahun</Link></li>
             <li><Link href="#" className="hover:text-white">Rating</Link></li>

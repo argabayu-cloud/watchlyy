@@ -48,6 +48,63 @@ const actionMovies: Movie[] = [
     date: "02 May 2025",
     badge: "WEBDL",
   },
+  {
+    id: 21,
+    title: "THE WITCH",
+    poster: "/images/movie/21.jpg",
+    date: "10 Mar 2025",
+    badge: "BLURAY",
+  },
+  {
+  id: 22,
+  title: "MISSION: IMPOSSIBLE – DEAD RECKONING",
+  poster: "/images/movie/22.jpg",
+  date: "28 Jul 2025",
+  badge: "BLURAY",
+},
+{
+  id: 23,
+  title: "FAST X",
+  poster: "/images/movie/23.jpg",
+  date: "19 May 2025",
+  badge: "WEBDL",
+},
+{
+  id: 24,
+  title: "THE EXPENDABLES 4",
+  poster: "/images/movie/24.jpg",
+  date: "15 Aug 2025",
+  badge: "BLURAY",
+},
+{
+  id: 25,
+  title: "THE CREATOR",
+  poster: "/images/movie/25.jpg",
+  date: "05 Sep 2025",
+  badge: "WEBDL",
+},
+{
+  id: 26,
+  title: "THE RAID 3",
+  poster: "/images/movie/26.jpg",
+  date: "18 Oct 2025",
+  badge: "BLURAY",
+},
+{
+  id: 27,
+  title: "TRANSFORMERS: RISE OF THE BEASTS",
+  poster: "/images/movie/27.jpg",
+  date: "09 Jun 2025",
+  badge: "WEBDL",
+},
+{
+  id: 28,
+  title: "THE BATMAN RETURNS",
+  poster: "/images/movie/28.jpg",
+  date: "14 Dec 2025",
+  badge: "BLURAY",
+},
+
 ];
 
 export default function ActionPage() {
