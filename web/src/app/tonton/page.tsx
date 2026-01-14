@@ -263,7 +263,7 @@ export const comedyMovies: Movie[] = [
   {
     id: 53,
     title: "THE HANGOVER",
-    description: "",
+    description: "Sebuah pesta lajang di Las Vegas yang awalnya direncanakan sebagai malam penuh kesenangan berubah menjadi kekacauan total keesokan harinya. Sekelompok sahabat terbangun tanpa ingatan sedikit pun tentang apa yang mereka lakukan semalam, namun menemukan petunjuk-petunjuk aneh seperti bayi di lemari, harimau di kamar mandi, dan seorang teman yang menghilang. Dengan waktu yang semakin menipis, mereka harus menyusuri kembali jejak kegilaan malam sebelumnya. Film ini dipenuhi humor dewasa, situasi ekstrem, dan kejadian tak terduga yang membuat penonton tertawa sekaligus terkejut sepanjang cerita.",
     poster: "/images/movie/drama/titanic.webp",
     genre: "comedy",
   },
