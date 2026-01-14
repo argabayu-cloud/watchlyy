@@ -381,6 +381,41 @@ export const romanceMovies: Movie[] = [
     poster: "/images/movie/romance/ibu tiada.webp",
     genre: "romance",
   },
+  {
+    id: 51,
+    title: "ASSALAMU'ALAIKUM BAITULLAH",
+    description: "",
+    poster: "/images/movie/romance/172 days.jpg",
+    genre: "romance",
+  },
+  {
+    id: 52,
+    title: "CINTA DALAM IKHLAS",
+    description: "",
+    poster: "/images/movie/romance/172 days.jpg",
+    genre: "romance",
+  },
+  {
+    id: 53,
+    title: "NAGIH JANJI CINTA",
+    description: "",
+    poster: "/images/movie/romance/172 days.jpg",
+    genre: "romance",
+  },
+  {
+    id: 54,
+    title: "PERAYAAN MATI RASA",
+    description: "",
+    poster: "/images/movie/romance/172 days.jpg",
+    genre: "romance",
+  },
+  {
+    id: 55,
+    title: "TAK INGIN USAI DISINI",
+    description: "",
+    poster: "/images/movie/romance/172 days.jpg",
+    genre: "romance",
+  },
 ];
 
 export const dramaMovies: Movie[] = [
