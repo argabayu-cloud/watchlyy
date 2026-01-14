@@ -143,7 +143,7 @@ export const actionMovies: Movie[] = [
     id: 17,
     title: "13 BOM DI JAKARTA",
     description: "Jakarta berubah menjadi medan perang ketika jaringan teroris melancarkan rencana teror paling berbahaya dalam sejarah kota: tiga belas bom yang tersebar di berbagai lokasi strategis. Aparat keamanan dan tim intelijen harus berpacu dengan waktu, memecahkan petunjuk demi petunjuk sebelum korban berjatuhan. Ketegangan meningkat seiring tekanan politik, konflik internal, dan risiko kegagalan yang bisa berujung kehancuran massal. Film ini menampilkan aksi realistis, strategi antiteror, dan keberanian tanpa kompromi.",
-    poster: "/images/movie/17.jpg",
+    poster: "/images/movie/13 bom.jpg",
     genre: "action",
   },
 
@@ -151,21 +151,21 @@ export const actionMovies: Movie[] = [
     id: 18,
     title: "SI PALING AKTOR",
     description: "Seorang aktor berbakat namun kurang beruntung mendapat kesempatan emas yang justru menyeretnya ke situasi berbahaya. Tanpa disadari, peran yang ia mainkan membuatnya terlibat langsung dalam dunia kriminal sungguhan. Dipaksa berakting dalam kehidupan nyata demi menyelamatkan diri, ia menggunakan kecerdikan, improvisasi, dan keberanian. Film ini memadukan aksi cepat, ketegangan, dan sentuhan komedi gelap yang segar.",
-    poster: "/images/movie/18.jpg",
+    poster: "/images/movie/si aktor.webp",
     genre: "action",
   },
   {
     id: 19,
     title: "JOHN  WICK",
     description: "Legenda pembunuh bayaran yang telah pensiun kembali bangkit setelah masa lalunya menyeretnya ke dalam pusaran balas dendam tanpa akhir. Setiap langkahnya membawa pertumpahan darah di dunia kriminal yang diatur oleh kode kehormatan kejam. Dengan kemampuan tempur luar biasa dan tekad yang tak tergoyahkan, John Wick menghadapi musuh yang semakin kuat. Film ini dikenal dengan aksi brutal, koreografi laga presisi tinggi, dan atmosfer gelap yang ikonik.",
-    poster: "/images/movie/19.jpg",
+    poster: "/images/movie/john wick.jpg",
     genre: "action",
   },
   {
     id: 20,
     title: "THE SHADOW'S EDGE",
     description: "Seorang agen elit bekerja di balik bayangan untuk menghentikan organisasi rahasia yang berencana mengguncang tatanan dunia. Misinya dipenuhi pengkhianatan, operasi hitam, dan keputusan moral yang sulit. Ketika batas antara kawan dan lawan semakin kabur, ia harus mempertaruhkan segalanya demi mencegah kehancuran global. Film ini menghadirkan aksi intens, kejar-kejaran berbahaya, dan intrik spionase yang penuh kejutan.",
-    poster: "/images/movie/20.jpg",
+    poster: "/images/movie/the shadow.jpg",
     genre: "action",
   },
 ];
