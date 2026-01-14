@@ -200,7 +200,78 @@ export const adventureMovies: Movie[] = [
     poster: "/images/movie/of the planet.jpg",
     genre: "adventure",
   },
+  {
+    id: 16,
+    title: "Indiana Jones and the Last Crusade",
+    description: "Indiana Jones kembali berpetualang dalam misi berbahaya untuk menemukan Cawan Suci yang legendaris. Kali ini ia harus bekerja sama dengan ayahnya sendiri, menghadapi jebakan kuno, teka-teki mematikan, dan musuh yang tak kenal ampun. Petualangan klasik penuh aksi, humor, dan sejarah.",
+    poster: "/images/movie/adventure/16.jpg",
+    genre: "adventure",
+  },
+  {
+    id: 17,
+    title: "The Lost City",
+    description: "Seorang penulis novel petualangan terjebak dalam penculikan nyata yang menyeretnya ke hutan belantara. Bersama model sampul bukunya, ia harus bertahan hidup sambil menemukan kota kuno yang selama ini hanya ada dalam cerita.",
+    poster: "/images/movie/adventure/17.jpg",
+    genre: "adventure",
+  },
+  {
+    id: 18,
+    title: "Pirates of the Caribbean",
+    description: "Di lautan penuh kutukan dan bajak laut, Jack Sparrow memulai petualangan berbahaya untuk merebut kembali kapalnya. Pertarungan laut, harta karun terkutuk, dan legenda bajak laut berpadu dalam petualangan epik yang ikonik.",
+    poster: "/images/movie/adventure/18.avif",
+    genre: "adventure",
+  },
+  {
+    id: 19,
+    title: "The Maze Runner",
+    description: "Seorang remaja terbangun di tengah labirin raksasa tanpa ingatan tentang masa lalunya. Bersama kelompok lain, ia harus memecahkan misteri labirin yang berubah setiap hari demi menemukan jalan keluar dan kebenaran yang mengerikan.",
+    poster: "/images/movie/adventure/19.jpg",
+    genre: "adventure",
+  },
+  {
+    id: 20,
+    title: "Uncharted",
+    description: "Pemburu harta karun muda terlibat dalam perburuan artefak legendaris yang telah hilang selama ratusan tahun. Dipenuhi aksi cepat, peta kuno, dan pengkhianatan, petualangan ini menguji kecerdikan dan keberanian.",
+    poster: "/images/movie/adventure/20.avif",
+    genre: "adventure",
+  },
+  {
+    id: 21,
+    title: "Tomb Raider",
+    description: "Lara Croft memulai petualangan berbahaya ke pulau misterius demi mengungkap hilangnya sang ayah. Menghadapi jebakan kuno dan organisasi rahasia, ia menemukan jati dirinya sebagai petualang sejati.",
+    poster: "/images/movie/adventure/21.jpg",
+    genre: "adventure",
+  },
+  {
+    id: 22,
+    title: "The Mummy",
+    description: "Sebuah ekspedisi arkeologi berubah menjadi bencana ketika mumi kuno dibangkitkan dari kuburnya. Kutukan mematikan, makhluk supernatural, dan kejar-kejaran di gurun menciptakan petualangan penuh ketegangan.",
+    poster: "/images/movie/adventure/22.webp",
+    genre: "adventure",
+  },
+  {
+    id: 23,
+    title: "Journey to the Center of the Earth",
+    description: "Sekelompok penjelajah mengikuti petunjuk misterius yang membawa mereka jauh ke dalam perut bumi. Dunia bawah tanah yang menakjubkan dan berbahaya menanti dalam petualangan penuh imajinasi.",
+    poster: "/images/movie/adventure/23.jpg",
+    genre: "adventure",
+  },
+  {
+    id: 24,
+    title: "Godzilla vs Kong",
+    description: "Dua monster raksasa paling kuat di dunia bertarung dalam pertarungan epik yang menentukan nasib umat manusia. Di balik pertempuran brutal, tersembunyi rahasia besar tentang asal-usul mereka.",
+    poster: "/images/movie/adventure/24.jpeg",
+    genre: "adventure",
+  },
+  {
+    id: 25,
+    title: "Ready Player One",
+    description: "Di dunia virtual bernama OASIS, seorang remaja terlibat dalam perburuan harta karun digital terbesar sepanjang masa. Petualangan futuristik ini dipenuhi tantangan, nostalgia, dan pertarungan sengit.",
+    poster: "/images/movie/adventure/25.jpg",
+    genre: "adventure",
+  },
 ];
+
 export const actionMovies: Movie[] = [
   {
     id: 16,
