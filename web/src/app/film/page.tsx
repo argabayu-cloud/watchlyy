@@ -22,7 +22,7 @@ export default function Film() {
   useEffect(() => {
     setNewMovies([
       {
-        id: 1,
+        id: 600,
         title: "Agak Laen",
         poster: "/images/3.jpg",
         date: "06 Nov 2025",

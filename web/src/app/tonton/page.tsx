@@ -544,7 +544,7 @@ export const dramaMovies: Movie[] = [
 
 export const comedyMovies: Movie[] = [
   {
-    id: 51,
+    id: 600,
     title: "AGAK LAEN",
     description: "Seorang mantan agen rahasia yang hidupnya kini jauh dari sorotan tiba-tiba terjebak dalam serangkaian kejadian aneh dan kocak di sebuah tempat wisata lokal. Bersama sekelompok orang dengan kepribadian “agak laen”, ia harus mengungkap misteri tak masuk akal yang justru semakin rumit setiap kali mencoba diselesaikan. Penuh humor segar, kejutan absurd, dan sindiran kehidupan sehari-hari, film ini menyajikan petualangan yang tidak biasa namun sangat menghibur.",
     poster: "/images/3.jpg",
