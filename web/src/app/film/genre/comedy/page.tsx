@@ -112,6 +112,13 @@ const comedyMovies: Movie[] = [
     date: "01 Jun 2025",
     badge: "WEBDL",
   },
+  {
+    id: 65,
+    title: "BAD BOYS",
+    poster: "/images/movie/comedy/15.jpg",
+    date: "18 Jun 2025",
+    badge: "BLURAY",
+  },
 ];
 
 export default function ComedyPage() {
