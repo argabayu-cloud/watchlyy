@@ -112,6 +112,13 @@ const dramaMovies: Movie[] = [
     date: "10 Sep 2025",
     badge: "BLURAY",
   },
+  {
+    id: 45,
+    title: "PARASITE",
+    poster: "/images/movie/drama/45.jpg",
+    date: "25 Sep 2025",
+    badge: "WEBDL",
+  },
 ];
 
 export default function DramaPage() {
