@@ -98,6 +98,13 @@ const dramaMovies: Movie[] = [
     date: "15 Aug 2025",
     badge: "WEBDL",
   },
+  {
+    id: 43,
+    title: "THE SOCIAL NETWORK",
+    poster: "/images/movie/drama/43.jpg",
+    date: "29 Aug 2025",
+    badge: "BLURAY",
+  },
 ];
 
 export default function DramaPage() {
