@@ -49,6 +49,13 @@ const comedyMovies: Movie[] = [
     date: "01 Jun 2025",
     badge: "BLURAY",
   },
+  {
+    id: 56,
+    title: "THE MASK",
+    poster: "/images/movie/comedy/6.jpg",
+    date: "05 Feb 2025",
+    badge: "BLURAY",
+  },
 ];
 
 export default function ComedyPage() {
