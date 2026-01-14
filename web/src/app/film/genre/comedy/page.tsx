@@ -70,6 +70,13 @@ const comedyMovies: Movie[] = [
     date: "03 Mar 2025",
     badge: "WEBDL",
   },
+  {
+    id: 59,
+    title: "JUMANJI",
+    poster: "/images/movie/comedy/9.jpg",
+    date: "20 Mar 2025",
+    badge: "BLURAY",
+  },
 ];
 
 export default function ComedyPage() {
