@@ -219,7 +219,7 @@ export const dramaMovies: Movie[] = [
     id: 32,
     title: "THE PURSUIT OF HAPPYNESS",
     description: "Film ini mengikuti perjalanan hidup seorang ayah tunggal yang harus bertahan di tengah keterbatasan ekonomi dan tekanan hidup yang berat. Demi masa depan anaknya, ia rela menghadapi penolakan, kegagalan, dan rasa putus asa yang terus menguji mentalnya. Dengan tekad yang kuat dan keyakinan bahwa kerja keras tidak akan mengkhianati hasil, ia terus melangkah meski dunia terasa tidak adil. Sebuah kisah nyata yang menyentuh tentang pengorbanan, harapan, dan arti sejati dari kebahagiaan.",
-    poster: "/images/movie/romance/2.jpg",
+    poster: "/images/movie/drama/the pursuit.jpg",
     genre: "drama",
   },
   {
