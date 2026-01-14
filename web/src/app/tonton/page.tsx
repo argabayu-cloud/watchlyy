@@ -225,6 +225,20 @@ export const actionMovies: Movie[] = [
     poster: "/images/movie/action/the batman.webp",
     genre: "action",
   },
+  {
+    id: 29,
+    title: "PENGEPUNGAN DI BUKIT DURI",
+    description: "Sebuah operasi penegakan hukum yang awalnya dirancang dengan matang berubah menjadi mimpi buruk ketika sekelompok aparat terjebak di tengah wilayah yang dikuasai oleh jaringan kriminal brutal. Terisolasi tanpa bantuan, mereka harus bertahan dari serangan bertubi-tubi sambil menghadapi keterbatasan amunisi, waktu, dan kepercayaan satu sama lain. Di balik aksi baku tembak yang intens dan penuh ketegangan, film ini menggali sisi kemanusiaan para karakter yang dipaksa membuat keputusan ekstrem demi bertahan hidup. Pengepungan di Bukit Duri menyajikan aksi realistis, atmosfer mencekam, serta kritik sosial tentang kekuasaan dan konflik di wilayah urban.",
+    poster: "/images/movie/action/29.jpg",
+    genre: "action",
+  },
+  {
+    id: 30,
+    title: "VENOM",
+    description: "Seorang jurnalis investigatif terjebak dalam eksperimen berbahaya yang mengubah hidupnya selamanya ketika ia menjadi inang bagi makhluk alien simbiotik bernama Venom. Hubungan yang rumit antara manusia dan makhluk asing ini menciptakan konflik internal yang brutal sekaligus kocak. Saat ancaman baru muncul dan membahayakan kota, Venom dipaksa memilih antara menghancurkan segalanya atau melindungi manusia. Dipenuhi aksi brutal, efek visual spektakuler, dan humor gelap, Venom menghadirkan kisah antihero yang unik dan penuh adrenalin.",
+    poster: "/images/movie/action/30.png",
+    genre: "action",
+  },
 ];
 export const romanceMovies: Movie[] = [
   {
