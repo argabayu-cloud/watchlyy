@@ -258,7 +258,7 @@ export const romanceMovies: Movie[] = [
   {
     id: 43,
     title: "LA LA LAND",
-    description: "",
+    description: "Di kota Los Angeles yang penuh mimpi, Sebastian dan Mia bertemu sebagai dua jiwa yang sama-sama mengejar ambisi besar. Diiringi musik dan tarian penuh warna, cinta mereka tumbuh di tengah perjuangan meraih karier impian. Namun, ketika kesuksesan mulai datang, mereka harus menghadapi kenyataan pahit tentang pengorbanan dan pilihan hidup. La La Land adalah kisah romantis yang indah tentang cinta, mimpi, dan jalan hidup yang tak selalu sejalan.",
     poster: "/images/movie/romance/la la land 2.jpg",
     genre: "romance",
   },
