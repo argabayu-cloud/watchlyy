@@ -13,8 +13,6 @@ interface Movie {
   badge?: string;
 }
 
-const img = "/images/hero.png";
-
 export default function Film() {
   const [newMovies, setNewMovies] = useState<Movie[]>([]);
   const [horrorMovies, setHorrorMovies] = useState<Movie[]>([]);
@@ -188,7 +186,7 @@ export default function Film() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
             {newMovies.map((movie) => (
-              <Link href={`/tonton?movie=${movie.id}`}>
+              <Link key={movie.id} href={`/tonton?movie=${movie.id}`}>
                 <div className="group cursor-pointer">
                   <div className="relative rounded-lg overflow-hidden shadow-md">
                     <Image
@@ -213,15 +211,15 @@ export default function Film() {
           </div>
         </section>
 
-        {/* FILM HOROR */}
+        {/* FILM HORROR */}
         <section className="mt-12">
           <h2 className="text-lg font-semibold border-l-4 border-red-600 pl-3 mb-5">
-            FILM HOROR
+            FILM HORROR
           </h2>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
             {horrorMovies.map((movie) => (
-              <Link href={`/tonton?movie=${movie.id}`}>
+              <Link key={movie.id} href={`/tonton?movie=${movie.id}`}>
                 <div className="group cursor-pointer">
                   <div className="relative rounded-lg overflow-hidden shadow-md">
                     <Image
