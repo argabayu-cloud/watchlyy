@@ -257,7 +257,7 @@ export const comedyMovies: Movie[] = [
     id: 52,
     title: "MY STUPID BOSS",
     description: "Film ini mengisahkan perjuangan seorang karyawan yang harus bekerja di bawah pimpinan bos dengan karakter super egois, kekanak-kanakan, dan sering bertindak tanpa logika. Setiap keputusan sang bos justru menimbulkan masalah baru, membuat suasana kantor penuh kekacauan dan konflik konyol. Mulai dari aturan kerja yang berubah-ubah, tuntutan tidak masuk akal, hingga sikap arogan yang menyebalkan, semua menjadi sumber humor yang terus mengalir. Di balik komedinya, film ini juga menyindir keras budaya kerja toksik, ketimpangan jabatan, dan realitas pahit dunia perkantoran yang dibalut dengan tawa segar.",
-    poster: "/images/movie/drama/the pursuit.jpg",
+    poster: "/images/movie/comedy/2.jpg",
     genre: "comedy",
   },
   {
