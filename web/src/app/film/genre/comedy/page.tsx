@@ -105,6 +105,13 @@ const comedyMovies: Movie[] = [
     date: "19 May 2025",
     badge: "BLURAY",
   },
+  {
+    id: 64,
+    title: "THE DICTATOR",
+    poster: "/images/movie/comedy/14.jpg",
+    date: "01 Jun 2025",
+    badge: "WEBDL",
+  },
 ];
 
 export default function ComedyPage() {
