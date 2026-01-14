@@ -214,7 +214,7 @@ export const actionMovies: Movie[] = [
   {
     id: 27,
     title: "TRANSFORMERS: RISE OF THE BEASTS",
-    description: "",
+    description: "Pertempuran epik antara Autobots dan Decepticons mencapai level baru dengan munculnya faksi Transformers kuno yang lebih kuat dan berbahaya. Manusia kembali terlibat dalam konflik berskala global yang menentukan masa depan bumi. Dengan aksi robot raksasa, ledakan spektakuler, dan visual yang memukau, film ini menghadirkan petualangan penuh adrenalin. Persahabatan, pengorbanan, dan keberanian menjadi inti cerita di tengah kehancuran besar.",
     poster: "/images/movie/the shadow.jpg",
     genre: "action",
   },
