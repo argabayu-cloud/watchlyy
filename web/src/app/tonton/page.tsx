@@ -168,6 +168,63 @@ export const actionMovies: Movie[] = [
     poster: "/images/movie/the shadow.jpg",
     genre: "action",
   },
+  {
+    id: 21,
+    title: "TRAIN TO BUSAN",
+    description: "Saat wabah misterius menyebar dengan cepat di Korea Utara, sebuah perjalanan kereta dari Seoul menuju Busan berubah menjadi mimpi buruk yang penuh teror. Para penumpang harus berjuang bertahan hidup dari serangan makhluk ganas yang terinfeksi virus mematikan. Di tengah kekacauan, seorang ayah berusaha melindungi putrinya sambil menghadapi pilihan-pilihan moral yang sulit. Film ini memadukan aksi intens, ketegangan tanpa henti, serta drama emosional yang kuat, menjadikannya lebih dari sekadar film zombie biasa.",
+    poster: "/images/movie/action/21.jpg",
+    genre: "action",
+  },
+  {
+    id: 22,
+    title: "MISSION: IMPOSSIBLE – DEAD RECKONING",
+    description: "Ethan Hunt kembali dalam misi paling berbahaya sepanjang kariernya ketika sebuah teknologi rahasia yang mampu mengendalikan dunia jatuh ke tangan yang salah. Diburu oleh musuh lama dan sekutu yang berubah menjadi ancaman, ia harus berpacu dengan waktu di berbagai belahan dunia. Aksi mata-mata penuh intrik, kejar-kejaran ekstrem, dan keputusan berisiko tinggi membuat film ini menyajikan ketegangan konstan. Setiap pilihan yang diambil membawa konsekuensi besar, menguji kesetiaan dan pengorbanan tim IMF.",
+    poster: "/images/movie/action/22.jpg",
+    genre: "action",
+  },
+
+  {
+    id: 23,
+    title: "FAST X",
+    description: "Keluarga Dom Toretto kembali menghadapi ancaman terbesar mereka ketika masa lalu yang kelam kembali menghantui. Musuh baru yang cerdas dan penuh dendam merancang rencana balas dendam yang mengancam seluruh keluarga. Aksi balapan brutal, ledakan spektakuler, dan kejar-kejaran lintas negara menjadi sajian utama film ini. Di balik kecepatan dan adrenalin tinggi, Fast X menegaskan kembali nilai loyalitas, pengorbanan, dan arti keluarga yang menjadi jiwa dari franchise ini.",
+    poster: "/images/movie/action/23.webp",
+    genre: "action",
+  },
+  {
+    id: 24,
+    title: "THE EXPENDABLES 4",
+    description: "Tim tentara bayaran legendaris kembali berkumpul untuk menghadapi misi berisiko tinggi yang melibatkan senjata mematikan dan konflik global. Dengan kekuatan senjata berat, strategi brutal, dan kerja tim yang solid, mereka menghadapi musuh yang tak segan menghancurkan segalanya. Film ini menyajikan aksi klasik penuh ledakan, pertarungan jarak dekat, dan humor khas para veteran perang. Setiap misi menjadi pertaruhan hidup dan mati tanpa kompromi.",
+    poster: "/images/movie/action/24.jpg",
+    genre: "action",
+  },
+  {
+    id: 25,
+    title: "THE CREATOR",
+    description: "Di masa depan ketika kecerdasan buatan menjadi ancaman bagi umat manusia, seorang mantan agen ditugaskan untuk menghentikan pencipta AI yang misterius. Namun, misinya berubah ketika ia menemukan rahasia besar yang mengguncang batas antara manusia dan mesin. Film ini memadukan aksi futuristik, teknologi canggih, dan dilema moral yang mendalam. Visual spektakuler dan cerita emosional menjadikan The Creator sebuah film aksi sci-fi yang penuh makna.",
+    poster: "/images/movie/action/25.jpg",
+    genre: "action",
+  },
+  {
+    id: 26,
+    title: "THE RAID 3: GAJI BUTA",
+    description: "Kisah berlanjut dengan pertarungan brutal di dunia kriminal yang semakin gelap dan korup. Seorang mantan aparat harus kembali terjun ke dalam jaringan kejahatan demi membongkar pengkhianatan dan ketidakadilan yang merajalela. Aksi bela diri khas Indonesia ditampilkan secara intens, cepat, dan tanpa ampun. Film ini menawarkan koreografi laga yang realistis, emosi yang keras, serta kritik sosial yang tajam.",
+    poster: "/images/movie/action/26.jpg",
+    genre: "action",
+  },
+  {
+    id: 27,
+    title: "TRANSFORMERS: RISE OF THE BEASTS",
+    description: "Pertempuran epik antara Autobots dan Decepticons mencapai level baru dengan munculnya faksi Transformers kuno yang lebih kuat dan berbahaya. Manusia kembali terlibat dalam konflik berskala global yang menentukan masa depan bumi. Dengan aksi robot raksasa, ledakan spektakuler, dan visual yang memukau, film ini menghadirkan petualangan penuh adrenalin. Persahabatan, pengorbanan, dan keberanian menjadi inti cerita di tengah kehancuran besar.",
+    poster: "/images/movie/action/27.jpg",
+    genre: "action",
+  },
+  {
+    id: 28,
+    title: "THE BATMAN RETURNS",
+    description: "Batman menghadapi ancaman baru yang mengguncang Gotham City, di mana kejahatan semakin terorganisir dan berbahaya. Saat musuh misterius muncul dari bayang-bayang, sang Ksatria Kegelapan dipaksa menghadapi trauma masa lalu dan batas moralnya sendiri. Film ini menyuguhkan nuansa gelap, investigasi kriminal yang intens, serta aksi brutal yang realistis. The Batman Returns menampilkan sisi manusiawi seorang pahlawan yang terus berjuang melawan kegelapan.",
+    poster: "/images/movie/action/the batman.webp",
+    genre: "action",
+  },
 ];
 export const romanceMovies: Movie[] = [
   {
