@@ -226,7 +226,7 @@ export const dramaMovies: Movie[] = [
     id: 33,
     title: "TITANIC",
     description: "Berlatar di atas kapal paling megah pada masanya, Titanic mengisahkan pertemuan dua insan dari kelas sosial yang berbeda. Hubungan mereka tumbuh di tengah kemewahan, impian, dan kebebasan yang singkat. Ketika tragedi besar tak terelakkan terjadi, cinta mereka diuji oleh keadaan ekstrem dan pilihan-pilihan yang menyayat hati. Film ini bukan hanya kisah cinta, tetapi juga potret kemanusiaan, keberanian, dan kehilangan yang abadi dalam sejarah.",
-    poster: "/images/movie/romance/3.jpeg",
+    poster: "/images/movie/drama/titanic.webp",
     genre: "drama",
   },
   {
