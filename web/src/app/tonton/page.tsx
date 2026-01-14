@@ -232,7 +232,7 @@ export const dramaMovies: Movie[] = [
   {
     id: 34,
     title: "A BEAUTIFUL MIND",
-    description: "",
+    description: "Seorang matematikawan jenius berjuang mengejar karier akademik yang gemilang, namun harus menghadapi kenyataan pahit ketika pikirannya mulai dikuasai oleh penyakit mental. Dunia yang ia yakini perlahan runtuh, memaksanya mempertanyakan apa yang nyata dan apa yang tidak. Dengan dukungan orang-orang terdekat dan keteguhan cinta sejati, ia belajar menerima dirinya apa adanya. Film ini menggambarkan perjuangan batin, kecerdasan, dan kekuatan cinta dalam menghadapi penyakit yang tak terlihat.",
     poster: "/images/movie/romance/4.jpg",
     genre: "drama",
   },
