@@ -207,7 +207,7 @@ export const actionMovies: Movie[] = [
   {
     id: 26,
     title: "THE RAID 3: GAJI BUTA",
-    description: "",
+    description: "Kisah berlanjut dengan pertarungan brutal di dunia kriminal yang semakin gelap dan korup. Seorang mantan aparat harus kembali terjun ke dalam jaringan kejahatan demi membongkar pengkhianatan dan ketidakadilan yang merajalela. Aksi bela diri khas Indonesia ditampilkan secara intens, cepat, dan tanpa ampun. Film ini menawarkan koreografi laga yang realistis, emosi yang keras, serta kritik sosial yang tajam.",
     poster: "/images/movie/the shadow.jpg",
     genre: "action",
   },
