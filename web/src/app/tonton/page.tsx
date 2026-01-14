@@ -168,6 +168,63 @@ export const actionMovies: Movie[] = [
     poster: "/images/movie/the shadow.jpg",
     genre: "action",
   },
+  {
+    id: 21,
+    title: "TRAIN TO BUSAN",
+    description: "",
+    poster: "/images/movie/ph.webp",
+    genre: "action",
+  },
+  {
+    id: 22,
+    title: "MISSION: IMPOSSIBLE – DEAD RECKONING",
+    description: "",
+    poster: "/images/movie/13 bom.jpg",
+    genre: "action",
+  },
+
+  {
+    id: 23,
+    title: "FAST X",
+    description: "",
+    poster: "/images/movie/si aktor.webp",
+    genre: "action",
+  },
+  {
+    id: 24,
+    title: "THE EXPENDABLES 4",
+    description: "",
+    poster: "/images/movie/john wick.jpg",
+    genre: "action",
+  },
+  {
+    id: 25,
+    title: "THE CREATOR",
+    description: "",
+    poster: "/images/movie/the shadow.jpg",
+    genre: "action",
+  },
+  {
+    id: 26,
+    title: "THE RAID 3: GAJI BUTA",
+    description: "",
+    poster: "/images/movie/the shadow.jpg",
+    genre: "action",
+  },
+  {
+    id: 27,
+    title: "TRANSFORMERS: RISE OF THE BEASTS",
+    description: "",
+    poster: "/images/movie/the shadow.jpg",
+    genre: "action",
+  },
+  {
+    id: 28,
+    title: "THE BATMAN RETURNS",
+    description: "",
+    poster: "/images/movie/the shadow.jpg",
+    genre: "action",
+  },
 ];
 export const romanceMovies: Movie[] = [
   {
