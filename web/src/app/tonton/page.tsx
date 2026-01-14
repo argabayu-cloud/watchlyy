@@ -200,7 +200,7 @@ export const actionMovies: Movie[] = [
   {
     id: 25,
     title: "THE CREATOR",
-    description: "",
+    description: "Di masa depan ketika kecerdasan buatan menjadi ancaman bagi umat manusia, seorang mantan agen ditugaskan untuk menghentikan pencipta AI yang misterius. Namun, misinya berubah ketika ia menemukan rahasia besar yang mengguncang batas antara manusia dan mesin. Film ini memadukan aksi futuristik, teknologi canggih, dan dilema moral yang mendalam. Visual spektakuler dan cerita emosional menjadikan The Creator sebuah film aksi sci-fi yang penuh makna.",
     poster: "/images/movie/the shadow.jpg",
     genre: "action",
   },
