@@ -245,10 +245,48 @@ export const dramaMovies: Movie[] = [
   },
 ];
 
+export const comedyMovies: Movie[] = [
+  {
+    id: 51,
+    title: "AGAK LAEN",
+    description: "Forrest Gump adalah seorang pria dengan kecerdasan di bawah rata-rata, namun memiliki hati yang luar biasa tulus dan penuh kasih. Tanpa pernah merencanakan hidupnya, Forrest justru terlibat dalam berbagai peristiwa besar yang membentuk sejarah Amerika, mulai dari dunia olahraga, dunia militer, hingga budaya populer. Di tengah segala pencapaiannya, satu hal yang selalu ia kejar adalah cinta sejatinya kepada Jenny. Kisah ini mengajarkan bahwa kesederhanaan, kejujuran, dan ketulusan hati mampu membawa seseorang menjalani hidup yang penuh makna.",
+    poster: "/images/movie/drama/forrest gump.jpg",
+    genre: "comedy",
+  },
+  {
+    id: 52,
+    title: "MY STUPID BOSS",
+    description: "Film ini mengikuti perjalanan hidup seorang ayah tunggal yang harus bertahan di tengah keterbatasan ekonomi dan tekanan hidup yang berat. Demi masa depan anaknya, ia rela menghadapi penolakan, kegagalan, dan rasa putus asa yang terus menguji mentalnya. Dengan tekad yang kuat dan keyakinan bahwa kerja keras tidak akan mengkhianati hasil, ia terus melangkah meski dunia terasa tidak adil. Sebuah kisah nyata yang menyentuh tentang pengorbanan, harapan, dan arti sejati dari kebahagiaan.",
+    poster: "/images/movie/drama/the pursuit.jpg",
+    genre: "comedy",
+  },
+  {
+    id: 53,
+    title: "THE HANGOVER",
+    description: "Berlatar di atas kapal paling megah pada masanya, Titanic mengisahkan pertemuan dua insan dari kelas sosial yang berbeda. Hubungan mereka tumbuh di tengah kemewahan, impian, dan kebebasan yang singkat. Ketika tragedi besar tak terelakkan terjadi, cinta mereka diuji oleh keadaan ekstrem dan pilihan-pilihan yang menyayat hati. Film ini bukan hanya kisah cinta, tetapi juga potret kemanusiaan, keberanian, dan kehilangan yang abadi dalam sejarah.",
+    poster: "/images/movie/drama/titanic.webp",
+    genre: "comedy",
+  },
+  {
+    id: 54,
+    title: "WARKOP DKI REBORN",
+    description: "Seorang matematikawan jenius berjuang mengejar karier akademik yang gemilang, namun harus menghadapi kenyataan pahit ketika pikirannya mulai dikuasai oleh penyakit mental. Dunia yang ia yakini perlahan runtuh, memaksanya mempertanyakan apa yang nyata dan apa yang tidak. Dengan dukungan orang-orang terdekat dan keteguhan cinta sejati, ia belajar menerima dirinya apa adanya. Film ini menggambarkan perjuangan batin, kecerdasan, dan kekuatan cinta dalam menghadapi penyakit yang tak terlihat.",
+    poster: "/images/movie/drama/a beautiful mind.jpeg",
+    genre: "comedy",
+  },
+  {
+    id: 55,
+    title: "HOME ALONE",
+    description: "Di balik tembok penjara dan lorong panjang yang dikenal sebagai Green Mile, seorang sipir bertemu dengan narapidana yang memiliki kemampuan luar biasa. Kehadiran sosok tersebut mengubah cara pandang para penjaga terhadap keadilan, dosa, dan kemanusiaan. Seiring berjalannya waktu, batas antara benar dan salah menjadi kabur, meninggalkan dilema moral yang mendalam. Film ini adalah kisah emosional tentang belas kasih, keajaiban, dan penderitaan manusia yang tak terlupakan.",
+    poster: "/images/movie/drama/the green mile.jpg",
+    genre: "comedy",
+  },
+];
+
 
 
 /* 🔑 GABUNG SEMUA FILM */
-const movies: Movie[] = [...newMovies, ...horrorMovies , ...adventureMovies, ...actionMovies, ...romanceMovies, ...dramaMovies ];
+const movies: Movie[] = [...newMovies, ...horrorMovies , ...adventureMovies, ...actionMovies, ...romanceMovies, ...dramaMovies, ...comedyMovies];
 
 /* ================== PAGE ================== */
 export default function TontonPage() {
