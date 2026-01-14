@@ -286,7 +286,7 @@ export const romanceMovies: Movie[] = [
   {
     id: 47,
     title: "DILAN 1990",
-    description: "",
+    description: "Berlatar di Bandung tahun 1990, film ini mengisahkan kisah cinta remaja antara Milea, siswi pindahan yang cerdas dan sopan, dengan Dilan, pemuda unik yang penuh percaya diri dan cara pendekatan tak biasa. Dengan gaya bicara nyeleneh namun tulus, Dilan perlahan mengisi hari-hari Milea dengan perhatian sederhana yang berkesan. Di balik romansa manis itu, terselip konflik remaja, geng motor, dan pilihan hidup yang membentuk kedewasaan mereka. Dilan 1990 adalah kisah cinta pertama yang hangat, polos, dan penuh kenangan tak terlupakan.",
     poster: "/images/movie/romance/dilan.png",
     genre: "romance",
   },
