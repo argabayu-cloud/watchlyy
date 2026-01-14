@@ -412,8 +412,8 @@ export const romanceMovies: Movie[] = [
   {
     id: 55,
     title: "TAK INGIN USAI DISINI",
-    description: "",
-    poster: "/images/movie/romance/172 days.jpg",
+    description: "Mengisahkan sepasang kekasih yang berada di persimpangan hidup, di mana cinta mereka diuji oleh jarak, waktu, dan keadaan yang tak berpihak. Saat perpisahan terasa semakin dekat, mereka berusaha mempertahankan hubungan yang mulai rapuh. Film ini menyajikan kisah cinta penuh harapan, ketakutan akan kehilangan, dan keinginan kuat untuk bertahan meski kenyataan berkata sebaliknya. Sebuah cerita tentang cinta yang belum siap untuk berakhir.",
+    poster: "/images/movie/romance/tak ingin usai di sini.webp",
     genre: "romance",
   },
 ];
