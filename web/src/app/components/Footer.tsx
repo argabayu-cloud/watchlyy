@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -7,11 +8,14 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-10">
         {/* Brand */}
         <div>
-          <img
-            src="images/WatchLy.png"
+          <Image
+            src="/images/WatchLy.png"
             alt="Watchly Logo"
-            className="w-50 mb-3"
+            width={140}
+            height={40}
+            className="mb-3 object-contain"
           />
+
           <p className="text-sm opacity-80">
             Platform streaming film dan series favoritmu. Nikmati pengalaman
             menonton tanpa batas.
@@ -22,31 +26,11 @@ export default function Footer() {
         <div>
           <h3 className="text-white text-lg font-semibold mb-3">Menu</h3>
           <ul className="space-y-2 text-sm">
-            <li>
-              <a href="#" className="hover:text-white">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white">
-                Genre
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white">
-                Tahun
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white">
-                Ratting
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white">
-                Rekomendasi
-              </a>
-            </li>
+            <li><Link href="/" className="hover:text-white">Home</Link></li>
+            <li><Link href="/film" className="hover:text-white">Genre</Link></li>
+            <li><Link href="#" className="hover:text-white">Tahun</Link></li>
+            <li><Link href="#" className="hover:text-white">Rating</Link></li>
+            <li><Link href="#" className="hover:text-white">Rekomendasi</Link></li>
           </ul>
         </div>
 
@@ -54,26 +38,10 @@ export default function Footer() {
         <div>
           <h3 className="text-white text-lg font-semibold mb-3">Ikuti Kami</h3>
           <ul className="space-y-2 text-sm">
-            <li>
-              <a href="#" className="hover:text-white">
-                Instagram
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white">
-                YouTube
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white">
-                TikTok
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white">
-                Facebook
-              </a>
-            </li>
+            <li><a href="#" className="hover:text-white">Instagram</a></li>
+            <li><a href="#" className="hover:text-white">YouTube</a></li>
+            <li><a href="#" className="hover:text-white">TikTok</a></li>
+            <li><a href="#" className="hover:text-white">Facebook</a></li>
           </ul>
         </div>
       </div>
