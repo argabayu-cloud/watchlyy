@@ -105,6 +105,13 @@ const dramaMovies: Movie[] = [
     date: "29 Aug 2025",
     badge: "BLURAY",
   },
+  {
+    id: 44,
+    title: "WHIPLASH",
+    poster: "/images/movie/drama/44.jpg",
+    date: "10 Sep 2025",
+    badge: "BLURAY",
+  },
 ];
 
 export default function DramaPage() {
