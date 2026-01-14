@@ -65,7 +65,7 @@ export default function Sidebar({ open, onClose }: Props) {
         <div className="mt-10 mb-8 flex flex-col items-center text-center">
           <div className="w-20 h-20 rounded-full overflow-hidden border border-white/20">
             <Image
-              src="/images/btth1.jpg"
+              src="/images/pp.jpeg"
               alt="Profile"
               width={80}
               height={80}
