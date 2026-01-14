@@ -244,7 +244,7 @@ export const romanceMovies: Movie[] = [
   {
     id: 41,
     title: "THE NOTEBOOK",
-    description: "",
+    description: "Sebuah kisah cinta abadi yang melampaui waktu, kelas sosial, dan ingatan. Noah dan Allie bertemu di musim panas yang sederhana, namun cinta mereka diuji oleh perbedaan latar belakang dan keadaan hidup. Bertahun-tahun kemudian, kenangan tentang cinta itu kembali diceritakan, mengungkap pengorbanan, kesetiaan, dan kekuatan cinta sejati. The Notebook adalah perjalanan emosional yang menyentuh hati tentang bagaimana cinta sejati mampu bertahan bahkan ketika ingatan mulai memudar.",
     poster: "/images/movie/romance/the notebook.jpg",
     genre: "romance",
   },
