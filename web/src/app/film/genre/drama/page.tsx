@@ -63,6 +63,13 @@ const dramaMovies: Movie[] = [
     date: "10 Jun 2025",
     badge: "BLURAY",
   },
+  {
+    id: 38,
+    title: "SCHINDLER'S LIST",
+    poster: "/images/movie/drama/38.jpg",
+    date: "22 Jun 2025",
+    badge: "WEBDL",
+  },
 ];
 
 export default function DramaPage() {
