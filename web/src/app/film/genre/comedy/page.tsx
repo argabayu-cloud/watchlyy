@@ -98,6 +98,13 @@ const comedyMovies: Movie[] = [
     date: "05 May 2025",
     badge: "BLURAY",
   },
+  {
+    id: 63,
+    title: "RUSH HOUR",
+    poster: "/images/movie/comedy/13.jpg",
+    date: "19 May 2025",
+    badge: "BLURAY",
+  },
 ];
 
 export default function ComedyPage() {
