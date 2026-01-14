@@ -84,6 +84,13 @@ const dramaMovies: Movie[] = [
     date: "18 Jul 2025",
     badge: "WEBDL",
   },
+  {
+    id: 41,
+    title: "12 YEARS A SLAVE",
+    poster: "/images/movie/drama/41.jpg",
+    date: "01 Aug 2025",
+    badge: "BLURAY",
+  },
 ];
 
 export default function DramaPage() {
