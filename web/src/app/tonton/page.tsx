@@ -58,105 +58,105 @@ export const newMovies: Movie[] = [
 
 export const horrorMovies: Movie[] = [
   {
-    id: 6,
+    id: 300,
     title: "Malam Pencabut Nyawa",
     description: "Teror makhluk gaib mulai menghantui sebuah desa terpencil setiap malam tanpa sebab yang jelas. Warga satu per satu mengalami kejadian aneh yang berujung kematian misterius. Ketika rahasia kelam masa lalu desa mulai terungkap, mereka menyadari bahwa ada harga mahal yang harus dibayar atas dosa yang telah lama dikubur.",
     poster: "/images/movie/malam pencabut nyawa.jpg",
     genre: "horror",
   },
   {
-    id: 7,
+    id: 301,
     title: "Pamali Tumbal",
     description: "Sebuah larangan adat yang diwariskan turun-temurun dilanggar demi kepentingan pribadi. Tanpa disadari, pelanggaran tersebut membangkitkan kekuatan gelap yang menuntut tumbal nyawa. Teror demi teror menghantui, memaksa para pelaku menghadapi konsekuensi mengerikan dari ketidakpatuhan terhadap tradisi.",
     poster: "/images/movie/7.jpg",
     genre: "horror",
   },
   {
-    id: 8,
+    id: 302,
     title: "KKN",
     description: "Sekelompok mahasiswa menjalani program KKN di desa terpencil dengan aturan adat yang ketat dan penuh kejanggalan. Awalnya dianggap mitos, gangguan makhluk tak kasat mata semakin nyata dan mematikan. Kesalahan kecil berubah menjadi teror besar yang mengancam keselamatan dan kewarasan mereka.",
     poster: "/images/movie/8.jpg",
     genre: "horror",
   },
   {
-    id: 9,
+    id: 303,
     title: "Siksa Neraka",
     description: "Film ini menyajikan gambaran mengerikan tentang balasan dosa di alam setelah kematian. Jiwa-jiwa yang semasa hidupnya berbuat kejahatan harus menerima siksa tanpa ampun sesuai perbuatan mereka. Sebuah horor religius yang mengguncang batin dan mengajak penonton merenungkan konsekuensi setiap tindakan.",
     poster: "/images/movie/9.jpg",
     genre: "horror",
   },
   {
-    id: 10,
+    id: 304,
     title: "Danur",
     description: "Seorang gadis kecil memiliki kemampuan melihat dan berkomunikasi dengan makhluk dari dunia lain. Persahabatan yang tampak polos perlahan berubah menjadi pengalaman menegangkan ketika keberadaan mereka mulai mengganggu dunia manusia. Kisah ini memadukan horor, kesedihan, dan sisi emosional yang mendalam.",
     poster: "/images/movie/10.jpg",
     genre: "horror",
   },
   {
-  id: 11,
+  id: 305,
   title: "Pengabdi Setan 2",
   description: "Teror keluarga ini berlanjut di sebuah rumah susun yang menyimpan rahasia kelam. Arwah-arwah penasaran kembali menghantui, kali ini dengan skala yang lebih besar dan mengerikan. Perlahan terungkap bahwa kutukan lama belum pernah benar-benar berakhir, dan keselamatan hanya bisa diraih dengan pengorbanan besar.",
   poster: "/images/movie/horror/11.webp",
   genre: "horror",
   },
   {
-  id: 12,
+  id: 306,
   title: "Sewu Dino",
   description: "Kutukan kuno bernama Sewu Dino mengikat nyawa seorang gadis yang tanpa sadar terjebak dalam ritual mematikan. Waktu menjadi musuh utama ketika setiap detik mendekatkannya pada kematian. Film ini menghadirkan horor ritual Jawa yang intens, mencekam, dan penuh ketegangan psikologis.",
   poster: "/images/movie/horror/12.jpg",
   genre: "horror",
   },
   {
-  id: 13,
+  id: 307,
   title: "Asih",
   description: "Sosok perempuan misterius bernama Asih menghantui sebuah keluarga kecil dengan teror yang perlahan menghancurkan ketenangan rumah tangga mereka. Di balik kehadirannya, tersembunyi kisah tragis tentang cinta, pengkhianatan, dan dendam yang tak pernah padam.",
   poster: "/images/movie/horror/13.jpg",
   genre: "horror",
   },
   {
-  id: 14,
+  id: 308,
   title: "Ivanna",
   description: "Arwah gadis Belanda korban kekejaman masa lalu bangkit dengan dendam yang membara. Terjebak di sebuah panti jompo, sekelompok orang harus menghadapi teror brutal Ivanna yang menuntut balasan atas penderitaan yang pernah ia alami.",
   poster: "/images/movie/horror/14.jpg",
   genre: "horror",
   },
   {
-  id: 15,
+  id: 309,
   title: "Rumah Kentang",
   description: "Sebuah rumah tua dengan aroma kentang rebus menyimpan rahasia mengerikan. Setiap orang yang mendekat mulai mengalami gangguan aneh dan teror yang sulit dijelaskan. Perlahan terungkap bahwa rumah tersebut menjadi tempat bersemayam kekuatan jahat.",
   poster: "/images/movie/horror/15.jpg",
   genre: "horror",
   },
   {
-  id: 16,
+  id: 310,
   title: "Jailangkung",
   description: "Permainan pemanggil arwah berubah menjadi mimpi buruk ketika roh jahat benar-benar datang dan menolak kembali. Teror tak terkendali menghantui mereka yang terlibat, memaksa untuk menghadapi konsekuensi dari rasa penasaran yang berlebihan.",
   poster: "/images/movie/horror/16.jpeg",
   genre: "horror",
   },
   {
-  id: 17,
+  id: 311,
   title: "The Conjuring",
   description: "Pasangan penyelidik paranormal menghadapi kasus terseram dalam karier mereka saat membantu sebuah keluarga yang diteror kekuatan iblis di rumah terpencil. Setiap sudut rumah menyimpan ancaman mematikan yang menguji iman dan keberanian.",
   poster: "/images/movie/horror/17.jpg",
   genre: "horror",
   },
   {
-  id: 18,
+  id: 312,
   title: "Insidious",
   description: "Seorang anak terjebak di dunia astral setelah mengalami kejadian misterius. Keluarganya harus berjuang melawan makhluk jahat dari dimensi lain sebelum jiwa sang anak benar-benar direnggut selamanya.",
   poster: "/images/movie/horror/18.jpeg",
   genre: "horror",
   },
   {
-  id: 19,
+  id: 313,
   title: "Annabelle",
   description: "Boneka antik yang tampak tak berbahaya ternyata menjadi wadah kekuatan iblis. Teror perlahan menguasai kehidupan sepasang suami istri, membawa kematian dan keputusasaan ke dalam rumah mereka.",
   poster: "/images/movie/horror/19.jpg",
   genre: "horror",
   },
   {
-  id: 20,
+  id: 314,
   title: "Petaka Gunung Gede",
   description: "Pendakian yang seharusnya menjadi petualangan berubah menjadi mimpi buruk ketika para pendaki melanggar pantangan gunung. Teror gaib dan kejadian tak masuk akal mulai menelan korban satu per satu.",
   poster: "/images/movie/horror/20.webp",
@@ -166,7 +166,7 @@ export const horrorMovies: Movie[] = [
 
 export const adventureMovies: Movie[] = [
   {
-    id: 21,
+    id: 200,
     title: "JURASSIC PARK",
     description:
       "Sebuah taman hiburan berisi dinosaurus hasil rekayasa genetika berubah menjadi mimpi buruk. Sistem keamanan gagal dan para pengunjung harus bertahan hidup di tengah makhluk purba yang lepas kendali.",
@@ -174,7 +174,7 @@ export const adventureMovies: Movie[] = [
     genre: "adventure",
   },
   {
-    id: 22,
+    id: 201,
     title: "INSPIRED BY THE TRUE EVENTS TIMUR",
     description:
       "Film petualangan yang terinspirasi dari kisah nyata di wilayah timur. Perjalanan penuh risiko ini menguji keberanian, solidaritas, dan tekad untuk bertahan hidup.",
@@ -182,7 +182,7 @@ export const adventureMovies: Movie[] = [
     genre: "adventure",
   },
   {
-    id: 23,
+    id: 202,
     title: "AVATAR",
     description:
       "Seorang mantan marinir dikirim ke planet Pandora untuk menjalankan misi rahasia. Ia justru terlibat konflik besar antara manusia dan penduduk asli yang mempertahankan tanah mereka.",
@@ -190,7 +190,7 @@ export const adventureMovies: Movie[] = [
     genre: "adventure",
   },
   {
-    id: 24,
+    id: 203,
     title: "JUMANJI",
     description:
       "Sebuah permainan misterius membawa pemainnya masuk ke dunia penuh bahaya. Mereka harus menyelesaikan tantangan ekstrem agar bisa kembali ke dunia nyata.",
@@ -198,7 +198,7 @@ export const adventureMovies: Movie[] = [
     genre: "adventure",
   },
   {
-    id: 25,
+    id: 204,
     title: "KINGDOM PLANET OF THE APES",
     description:
       "Dunia kini berada di bawah kekuasaan bangsa kera yang cerdas. Konflik antara kekuasaan, kebebasan, dan kemanusiaan menjadi inti dari petualangan epik ini.",
@@ -206,7 +206,7 @@ export const adventureMovies: Movie[] = [
     genre: "adventure",
   },
   {
-    id: 26,
+    id: 205,
     title: "INDIANA JONES AND THE LAST CRUSADE",
     description:
       "Indiana Jones memulai pencarian Holy Grail yang legendaris. Petualangan ini dipenuhi teka-teki berbahaya dan hubungan emosional antara ayah dan anak.",
@@ -214,7 +214,7 @@ export const adventureMovies: Movie[] = [
     genre: "adventure",
   },
   {
-    id: 27,
+    id: 206,
     title: "THE LOST CITY",
     description:
       "Seorang penulis novel petualangan terseret ke misi nyata yang penuh ancaman. Ia harus bertahan hidup di hutan liar sambil mengungkap rahasia kota yang hilang.",
@@ -222,7 +222,7 @@ export const adventureMovies: Movie[] = [
     genre: "adventure",
   },
   {
-    id: 28,
+    id: 207,
     title: "PIRATES OF THE CARIBBEAN",
     description:
       "Petualangan bajak laut legendaris di lautan penuh kutukan dan harta karun. Pertempuran, pengkhianatan, dan mitos kuno menyatu dalam kisah epik ini.",
@@ -230,7 +230,7 @@ export const adventureMovies: Movie[] = [
     genre: "adventure",
   },
   {
-    id: 29,
+    id: 208,
     title: "THE MAZE RUNNER",
     description:
       "Sekelompok remaja terjebak di labirin raksasa tanpa ingatan masa lalu. Mereka harus bekerja sama untuk menemukan jalan keluar sebelum ancaman mematikan datang.",
@@ -238,7 +238,7 @@ export const adventureMovies: Movie[] = [
     genre: "adventure",
   },
   {
-    id: 30,
+    id: 209,
     title: "UNCHARTED",
     description:
       "Seorang pemburu harta karun muda memulai perjalanan lintas benua. Petualangan ini dipenuhi teka-teki kuno, jebakan mematikan, dan rahasia sejarah.",
@@ -246,7 +246,7 @@ export const adventureMovies: Movie[] = [
     genre: "adventure",
   },
   {
-    id: 31,
+    id: 210,
     title: "TOMB RAIDER",
     description:
       "Lara Croft menjelajahi tempat-tempat berbahaya untuk membuktikan dirinya. Ia menghadapi misteri kuno yang bisa mengubah dunia selamanya.",
@@ -254,7 +254,7 @@ export const adventureMovies: Movie[] = [
     genre: "adventure",
   },
   {
-    id: 32,
+    id: 211,
     title: "THE MUMMY",
     description:
       "Sebuah ekspedisi arkeologi tanpa sengaja membangkitkan kekuatan kuno. Teror dan petualangan pun dimulai ketika kutukan mumi menyebar.",
@@ -262,7 +262,7 @@ export const adventureMovies: Movie[] = [
     genre: "adventure",
   },
   {
-    id: 33,
+    id: 212,
     title: "JOURNEY TO THE CENTER OF THE EARTH",
     description:
       "Sekelompok penjelajah melakukan perjalanan ke dunia tersembunyi di bawah bumi. Mereka menemukan makhluk aneh dan bahaya yang tak terbayangkan.",
@@ -270,7 +270,7 @@ export const adventureMovies: Movie[] = [
     genre: "adventure",
   },
   {
-    id: 34,
+    id: 213,
     title: "GODZILLA VS KONG",
     description:
       "Dua makhluk raksasa legendaris bertarung untuk menentukan siapa penguasa sejati. Pertarungan epik ini mengancam keseimbangan dunia.",
@@ -278,7 +278,7 @@ export const adventureMovies: Movie[] = [
     genre: "adventure",
   },
   {
-    id: 35,
+    id: 214,
     title: "READY PLAYER ONE",
     description:
       "Seorang remaja masuk ke dunia virtual penuh tantangan dan misteri. Ia berlomba menemukan harta digital yang dapat mengubah hidup banyak orang.",
@@ -289,107 +289,105 @@ export const adventureMovies: Movie[] = [
 
 export const actionMovies: Movie[] = [
   {
-    id: 36,
+    id: 100,
     title: "PEARL HARBOR",
     description: "Berlatar belakang Perang Dunia II, film ini mengisahkan dua sahabat pilot tempur yang terikat oleh persahabatan kuat dan cinta pada wanita yang sama. Ketika serangan mendadak Jepang menghancurkan pangkalan militer Pearl Harbor, hidup mereka berubah dalam sekejap. Di tengah kepanikan, kehancuran, dan peperangan udara yang brutal, mereka harus mengesampingkan konflik pribadi demi menjalankan tugas negara. Film ini menyajikan aksi perang berskala besar yang dipadukan dengan drama emosional dan pengorbanan.",
     poster: "/images/movie/ph.webp",
     genre: "action",
   },
   {
-    id: 37,
+    id: 101,
     title: "13 BOM DI JAKARTA",
     description: "Jakarta berubah menjadi medan perang ketika jaringan teroris melancarkan rencana teror paling berbahaya dalam sejarah kota: tiga belas bom yang tersebar di berbagai lokasi strategis. Aparat keamanan dan tim intelijen harus berpacu dengan waktu, memecahkan petunjuk demi petunjuk sebelum korban berjatuhan. Ketegangan meningkat seiring tekanan politik, konflik internal, dan risiko kegagalan yang bisa berujung kehancuran massal. Film ini menampilkan aksi realistis, strategi antiteror, dan keberanian tanpa kompromi.",
     poster: "/images/movie/13 bom.jpg",
     genre: "action",
   },
-
   {
-    id: 38,
+    id: 102,
     title: "SI PALING AKTOR",
     description: "Seorang aktor berbakat namun kurang beruntung mendapat kesempatan emas yang justru menyeretnya ke situasi berbahaya. Tanpa disadari, peran yang ia mainkan membuatnya terlibat langsung dalam dunia kriminal sungguhan. Dipaksa berakting dalam kehidupan nyata demi menyelamatkan diri, ia menggunakan kecerdikan, improvisasi, dan keberanian. Film ini memadukan aksi cepat, ketegangan, dan sentuhan komedi gelap yang segar.",
     poster: "/images/movie/si aktor.webp",
     genre: "action",
   },
   {
-    id: 19,
+    id: 103,
     title: "JOHN  WICK",
     description: "Legenda pembunuh bayaran yang telah pensiun kembali bangkit setelah masa lalunya menyeretnya ke dalam pusaran balas dendam tanpa akhir. Setiap langkahnya membawa pertumpahan darah di dunia kriminal yang diatur oleh kode kehormatan kejam. Dengan kemampuan tempur luar biasa dan tekad yang tak tergoyahkan, John Wick menghadapi musuh yang semakin kuat. Film ini dikenal dengan aksi brutal, koreografi laga presisi tinggi, dan atmosfer gelap yang ikonik.",
     poster: "/images/movie/john wick.jpg",
     genre: "action",
   },
   {
-    id: 20,
+    id: 104,
     title: "THE SHADOW'S EDGE",
     description: "Seorang agen elit bekerja di balik bayangan untuk menghentikan organisasi rahasia yang berencana mengguncang tatanan dunia. Misinya dipenuhi pengkhianatan, operasi hitam, dan keputusan moral yang sulit. Ketika batas antara kawan dan lawan semakin kabur, ia harus mempertaruhkan segalanya demi mencegah kehancuran global. Film ini menghadirkan aksi intens, kejar-kejaran berbahaya, dan intrik spionase yang penuh kejutan.",
     poster: "/images/movie/the shadow.jpg",
     genre: "action",
   },
   {
-    id: 21,
+    id: 105,
     title: "TRAIN TO BUSAN",
     description: "Saat wabah misterius menyebar dengan cepat di Korea Utara, sebuah perjalanan kereta dari Seoul menuju Busan berubah menjadi mimpi buruk yang penuh teror. Para penumpang harus berjuang bertahan hidup dari serangan makhluk ganas yang terinfeksi virus mematikan. Di tengah kekacauan, seorang ayah berusaha melindungi putrinya sambil menghadapi pilihan-pilihan moral yang sulit. Film ini memadukan aksi intens, ketegangan tanpa henti, serta drama emosional yang kuat, menjadikannya lebih dari sekadar film zombie biasa.",
     poster: "/images/movie/action/21.jpg",
     genre: "action",
   },
   {
-    id: 22,
+    id: 106,
     title: "MISSION: IMPOSSIBLE – DEAD RECKONING",
     description: "Ethan Hunt kembali dalam misi paling berbahaya sepanjang kariernya ketika sebuah teknologi rahasia yang mampu mengendalikan dunia jatuh ke tangan yang salah. Diburu oleh musuh lama dan sekutu yang berubah menjadi ancaman, ia harus berpacu dengan waktu di berbagai belahan dunia. Aksi mata-mata penuh intrik, kejar-kejaran ekstrem, dan keputusan berisiko tinggi membuat film ini menyajikan ketegangan konstan. Setiap pilihan yang diambil membawa konsekuensi besar, menguji kesetiaan dan pengorbanan tim IMF.",
     poster: "/images/movie/action/22.jpg",
     genre: "action",
   },
-
   {
-    id: 23,
+    id: 107,
     title: "FAST X",
     description: "Keluarga Dom Toretto kembali menghadapi ancaman terbesar mereka ketika masa lalu yang kelam kembali menghantui. Musuh baru yang cerdas dan penuh dendam merancang rencana balas dendam yang mengancam seluruh keluarga. Aksi balapan brutal, ledakan spektakuler, dan kejar-kejaran lintas negara menjadi sajian utama film ini. Di balik kecepatan dan adrenalin tinggi, Fast X menegaskan kembali nilai loyalitas, pengorbanan, dan arti keluarga yang menjadi jiwa dari franchise ini.",
     poster: "/images/movie/action/23.webp",
     genre: "action",
   },
   {
-    id: 24,
+    id: 108,
     title: "THE EXPENDABLES 4",
     description: "Tim tentara bayaran legendaris kembali berkumpul untuk menghadapi misi berisiko tinggi yang melibatkan senjata mematikan dan konflik global. Dengan kekuatan senjata berat, strategi brutal, dan kerja tim yang solid, mereka menghadapi musuh yang tak segan menghancurkan segalanya. Film ini menyajikan aksi klasik penuh ledakan, pertarungan jarak dekat, dan humor khas para veteran perang. Setiap misi menjadi pertaruhan hidup dan mati tanpa kompromi.",
     poster: "/images/movie/action/24.jpg",
     genre: "action",
   },
   {
-    id: 25,
+    id: 109,
     title: "THE CREATOR",
     description: "Di masa depan ketika kecerdasan buatan menjadi ancaman bagi umat manusia, seorang mantan agen ditugaskan untuk menghentikan pencipta AI yang misterius. Namun, misinya berubah ketika ia menemukan rahasia besar yang mengguncang batas antara manusia dan mesin. Film ini memadukan aksi futuristik, teknologi canggih, dan dilema moral yang mendalam. Visual spektakuler dan cerita emosional menjadikan The Creator sebuah film aksi sci-fi yang penuh makna.",
     poster: "/images/movie/action/25.jpg",
     genre: "action",
   },
   {
-    id: 26,
+    id: 110,
     title: "THE RAID 3: GAJI BUTA",
     description: "Kisah berlanjut dengan pertarungan brutal di dunia kriminal yang semakin gelap dan korup. Seorang mantan aparat harus kembali terjun ke dalam jaringan kejahatan demi membongkar pengkhianatan dan ketidakadilan yang merajalela. Aksi bela diri khas Indonesia ditampilkan secara intens, cepat, dan tanpa ampun. Film ini menawarkan koreografi laga yang realistis, emosi yang keras, serta kritik sosial yang tajam.",
     poster: "/images/movie/action/26.jpg",
     genre: "action",
   },
   {
-    id: 27,
+    id: 111,
     title: "TRANSFORMERS: RISE OF THE BEASTS",
     description: "Pertempuran epik antara Autobots dan Decepticons mencapai level baru dengan munculnya faksi Transformers kuno yang lebih kuat dan berbahaya. Manusia kembali terlibat dalam konflik berskala global yang menentukan masa depan bumi. Dengan aksi robot raksasa, ledakan spektakuler, dan visual yang memukau, film ini menghadirkan petualangan penuh adrenalin. Persahabatan, pengorbanan, dan keberanian menjadi inti cerita di tengah kehancuran besar.",
     poster: "/images/movie/action/27.jpg",
     genre: "action",
   },
   {
-    id: 28,
+    id: 112,
     title: "THE BATMAN RETURNS",
     description: "Batman menghadapi ancaman baru yang mengguncang Gotham City, di mana kejahatan semakin terorganisir dan berbahaya. Saat musuh misterius muncul dari bayang-bayang, sang Ksatria Kegelapan dipaksa menghadapi trauma masa lalu dan batas moralnya sendiri. Film ini menyuguhkan nuansa gelap, investigasi kriminal yang intens, serta aksi brutal yang realistis. The Batman Returns menampilkan sisi manusiawi seorang pahlawan yang terus berjuang melawan kegelapan.",
     poster: "/images/movie/action/the batman.webp",
     genre: "action",
   },
   {
-    id: 29,
+    id: 113,
     title: "PENGEPUNGAN DI BUKIT DURI",
     description: "Sebuah operasi penegakan hukum yang awalnya dirancang dengan matang berubah menjadi mimpi buruk ketika sekelompok aparat terjebak di tengah wilayah yang dikuasai oleh jaringan kriminal brutal. Terisolasi tanpa bantuan, mereka harus bertahan dari serangan bertubi-tubi sambil menghadapi keterbatasan amunisi, waktu, dan kepercayaan satu sama lain. Di balik aksi baku tembak yang intens dan penuh ketegangan, film ini menggali sisi kemanusiaan para karakter yang dipaksa membuat keputusan ekstrem demi bertahan hidup. Pengepungan di Bukit Duri menyajikan aksi realistis, atmosfer mencekam, serta kritik sosial tentang kekuasaan dan konflik di wilayah urban.",
     poster: "/images/movie/action/29.jpg",
     genre: "action",
   },
   {
-    id: 30,
+    id: 114,
     title: "VENOM",
     description: "Seorang jurnalis investigatif terjebak dalam eksperimen berbahaya yang mengubah hidupnya selamanya ketika ia menjadi inang bagi makhluk alien simbiotik bernama Venom. Hubungan yang rumit antara manusia dan makhluk asing ini menciptakan konflik internal yang brutal sekaligus kocak. Saat ancaman baru muncul dan membahayakan kota, Venom dipaksa memilih antara menghancurkan segalanya atau melindungi manusia. Dipenuhi aksi brutal, efek visual spektakuler, dan humor gelap, Venom menghadirkan kisah antihero yang unik dan penuh adrenalin.",
     poster: "/images/movie/action/30.png",
@@ -398,105 +396,105 @@ export const actionMovies: Movie[] = [
 ];
 export const romanceMovies: Movie[] = [
   {
-    id: 41,
+    id: 400,
     title: "THE NOTEBOOK",
     description: "Sebuah kisah cinta abadi yang melampaui waktu, kelas sosial, dan ingatan. Noah dan Allie bertemu di musim panas yang sederhana, namun cinta mereka diuji oleh perbedaan latar belakang dan keadaan hidup. Bertahun-tahun kemudian, kenangan tentang cinta itu kembali diceritakan, mengungkap pengorbanan, kesetiaan, dan kekuatan cinta sejati. The Notebook adalah perjalanan emosional yang menyentuh hati tentang bagaimana cinta sejati mampu bertahan bahkan ketika ingatan mulai memudar.",
     poster: "/images/movie/romance/the notebook.jpg",
     genre: "romance",
   },
   {
-    id: 42,
+    id: 401,
     title: "ME BEFORE YOU",
     description: "Louisa Clark, seorang wanita ceria dengan hidup sederhana, bertemu Will Traynor, pria sukses yang kehilangan semangat hidup akibat kecelakaan tragis. Hubungan mereka yang awalnya canggung perlahan berkembang menjadi ikatan emosional yang mendalam. Di tengah tawa, kesedihan, dan pilihan hidup yang sulit, Louisa belajar tentang arti mencintai tanpa harus memiliki. Film ini menghadirkan kisah cinta yang manis sekaligus memilukan, mengajarkan tentang keberanian untuk merelakan dan menerima kenyataan.",
     poster: "/images/movie/romance/me before you.jpg",
     genre: "romance",
   },
   {
-    id: 43,
+    id: 402,
     title: "LA LA LAND",
     description: "Di kota Los Angeles yang penuh mimpi, Sebastian dan Mia bertemu sebagai dua jiwa yang sama-sama mengejar ambisi besar. Diiringi musik dan tarian penuh warna, cinta mereka tumbuh di tengah perjuangan meraih karier impian. Namun, ketika kesuksesan mulai datang, mereka harus menghadapi kenyataan pahit tentang pengorbanan dan pilihan hidup. La La Land adalah kisah romantis yang indah tentang cinta, mimpi, dan jalan hidup yang tak selalu sejalan.",
     poster: "/images/movie/romance/la la land 2.jpg",
     genre: "romance",
   },
   {
-    id: 44,
+    id: 403,
     title: "500 DAYS OF SUMMER",
     description: "Film ini mengisahkan perjalanan cinta Tom, seorang pria romantis, dan Summer, wanita bebas yang tidak percaya pada cinta sejati. Diceritakan secara non-linear, kisah ini memperlihatkan naik turunnya hubungan mereka, dari kebahagiaan hingga patah hati. 500 Days of Summer menyajikan sudut pandang realistis tentang cinta modern, ekspektasi, dan pelajaran berharga dari hubungan yang tidak berjalan sesuai harapan.",
     poster: "/images/movie/romance/500 days.webp",
     genre: "romance",
   },
   {
-    id: 45,
+    id: 404,
     title: "BEFORE SUNRISE",
     description: "Dalam perjalanan singkat di Eropa, Jesse dan Céline bertemu secara kebetulan dan memutuskan menghabiskan satu malam bersama di Wina. Melalui percakapan mendalam tentang hidup, cinta, dan mimpi, hubungan mereka berkembang secara alami dan tulus. Tanpa janji besar, hanya waktu yang terbatas, Before Sunrise menghadirkan kisah cinta sederhana namun sangat intim tentang koneksi manusia yang tak terlupakan.",
     poster: "/images/movie/romance/before sunrise.jpeg",
     genre: "romance",
   },
   {
-    id: 46,
+    id: 405,
     title: "BERTAUT RINDU",
     description: "Dalam perjalanan singkat di Eropa, Jesse dan Céline bertemu secara kebetulan dan memutuskan menghabiskan satu malam bersama di Wina. Melalui percakapan mendalam tentang hidup, cinta, dan mimpi, hubungan mereka berkembang secara alami dan tulus. Tanpa janji besar, hanya waktu yang terbatas, Before Sunrise menghadirkan kisah cinta sederhana namun sangat intim tentang koneksi manusia yang tak terlupakan.",
     poster: "/images/movie/romance/bertaut rindu.webp",
     genre: "romance",
   },
   {
-    id: 47,
+    id: 406,
     title: "DILAN 1990",
     description: "Berlatar di Bandung tahun 1990, film ini mengisahkan kisah cinta remaja antara Milea, siswi pindahan yang cerdas dan sopan, dengan Dilan, pemuda unik yang penuh percaya diri dan cara pendekatan tak biasa. Dengan gaya bicara nyeleneh namun tulus, Dilan perlahan mengisi hari-hari Milea dengan perhatian sederhana yang berkesan. Di balik romansa manis itu, terselip konflik remaja, geng motor, dan pilihan hidup yang membentuk kedewasaan mereka. Dilan 1990 adalah kisah cinta pertama yang hangat, polos, dan penuh kenangan tak terlupakan.",
     poster: "/images/movie/romance/dilan.png",
     genre: "romance",
   },
   {
-    id: 48,
+    id: 407,
     title: "ANCIKA",
     description: "Ancika menghadirkan kelanjutan semesta cinta Dilan dari sudut pandang yang lebih dewasa. Berlatar tahun 1995, film ini menampilkan Dilan sebagai mahasiswa yang bertemu Ancika, perempuan mandiri dengan pemikiran kritis dan sikap tegas. Hubungan mereka berkembang melalui diskusi, perbedaan pandangan, dan dinamika kehidupan kampus. Tanpa rayuan berlebihan, cinta tumbuh dari kejujuran dan saling menghargai. Ancika menggambarkan bahwa cinta tidak selalu tentang kata-kata manis, tetapi tentang memahami dan tumbuh bersama.",
     poster: "/images/movie/romance/ancika.webp",
     genre: "romance",
   },
   {
-    id: 49,
+    id: 408,
     title: "172 DAYS",
     description: "Terinspirasi dari kisah nyata, 172 Days mengisahkan perjalanan cinta singkat namun bermakna antara dua insan yang dipersatukan oleh takdir dan iman. Dalam waktu yang terbatas, mereka berbagi kebahagiaan, harapan, dan doa, sambil menghadapi kenyataan pahit tentang kehilangan. Film ini menyoroti makna cinta yang tulus, ikhlas, dan berserah, bahwa cinta sejati tidak diukur dari lamanya waktu bersama, melainkan dari kedalaman perasaan yang ditinggalkan di hati.",
     poster: "/images/movie/romance/172 days.jpg",
     genre: "romance",
   },
   {
-    id: 50,
+    id: 409,
     title: "BILA ESOK IBU TIADA",
     description: "Film ini menyentuh sisi terdalam cinta keluarga, khususnya hubungan antara ibu dan anak. Mengisahkan seorang ibu yang diam-diam berjuang melawan penyakit sambil memastikan keluarganya tetap utuh dan bahagia. Di tengah kesibukan dan jarak emosional, anak-anaknya perlahan menyadari betapa besar pengorbanan sang ibu. Bila Esok Ibu Tiada adalah kisah cinta yang sunyi namun kuat, tentang kehilangan, penyesalan, dan kasih sayang yang abadi meski raga tak lagi ada.",
     poster: "/images/movie/romance/ibu tiada.webp",
     genre: "romance",
   },
   {
-    id: 51,
+    id: 410,
     title: "ASSALAMU'ALAIKUM BAITULLAH",
     description: "Film ini mengisahkan perjalanan batin seorang perempuan yang terluka oleh masa lalu dan kehilangan arah hidup. Dalam keputusasaan, ia memutuskan melakukan perjalanan spiritual ke Tanah Suci. Di hadapan Ka’bah, ia menemukan kembali makna cinta, keikhlasan, dan hubungan manusia dengan Tuhan. Di sana pula ia bertemu seseorang yang membantunya memahami bahwa cinta sejati bukan hanya tentang memiliki, tetapi tentang saling menguatkan dalam iman. Sebuah kisah romantis religius yang menyentuh hati dan penuh refleksi kehidupan.",
     poster: "/images/movie/romance/baitullah.webp",
     genre: "romance",
   },
   {
-    id: 52,
+    id: 411,
     title: "CINTA DALAM IKHLAS",
     description: "Kisah ini berfokus pada dua insan yang saling mencintai, namun harus menerima kenyataan bahwa tidak semua cinta bisa bersatu. Dihadapkan pada ujian hidup, perbedaan prinsip, dan kehendak Tuhan, mereka belajar tentang makna ikhlas dalam mencintai. Film ini menggambarkan perjuangan menahan ego, merelakan yang dicinta, dan mempercayai rencana Tuhan yang lebih indah. Cinta Dalam Ikhlas adalah kisah cinta sunyi yang mengajarkan ketenangan, kesabaran, dan ketulusan hati.",
     poster: "/images/movie/romance/cinta dalam ikhlas.jpeg",
     genre: "romance",
   },
   {
-    id: 53,
+    id: 412,
     title: "NAGIH JANJI CINTA",
     description: "Sebuah kisah tentang janji masa lalu yang belum ditepati dan luka yang belum sembuh. Seorang perempuan mencoba melanjutkan hidupnya, namun bayang-bayang cinta lama terus menghantui. Ketika takdir mempertemukan mereka kembali, pertanyaan lama pun muncul: apakah cinta lama layak diperjuangkan kembali, atau hanya kenangan yang harus dilepaskan? Film ini menyuguhkan konflik emosional, harapan, dan keberanian untuk menuntut kejujuran dalam cinta.",
     poster: "/images/movie/romance/nagin janji cinta.webp",
     genre: "romance",
   },
   {
-    id: 54,
+    id: 413,
     title: "PERAYAAN MATI RASA",
     description: "Film ini menggambarkan cinta dari sudut pandang yang berbeda—ketika perasaan perlahan menghilang tanpa disadari. Dua insan yang pernah saling mencintai terjebak dalam rutinitas, luka batin, dan kesepian emosional. Di balik senyum dan tawa, tersimpan kehampaan yang diperingati sebagai “perayaan mati rasa”. Sebuah drama romantis yang realistis dan dewasa, menggugah penonton untuk merenungkan arti komunikasi, kejujuran, dan keberanian menghadapi kenyataan dalam hubungan.",
     poster: "/images/movie/romance/perayaan mati rasa.jpg",
     genre: "romance",
   },
   {
-    id: 55,
+    id: 414,
     title: "TAK INGIN USAI DISINI",
     description: "Mengisahkan sepasang kekasih yang berada di persimpangan hidup, di mana cinta mereka diuji oleh jarak, waktu, dan keadaan yang tak berpihak. Saat perpisahan terasa semakin dekat, mereka berusaha mempertahankan hubungan yang mulai rapuh. Film ini menyajikan kisah cinta penuh harapan, ketakutan akan kehilangan, dan keinginan kuat untuk bertahan meski kenyataan berkata sebaliknya. Sebuah cerita tentang cinta yang belum siap untuk berakhir.",
     poster: "/images/movie/romance/tak ingin usai di sini.webp",
@@ -506,38 +504,108 @@ export const romanceMovies: Movie[] = [
 
 export const dramaMovies: Movie[] = [
   {
-    id: 31,
+    id: 500,
     title: "FORREST GUMP",
     description: "Forrest Gump adalah seorang pria dengan kecerdasan di bawah rata-rata, namun memiliki hati yang luar biasa tulus dan penuh kasih. Tanpa pernah merencanakan hidupnya, Forrest justru terlibat dalam berbagai peristiwa besar yang membentuk sejarah Amerika, mulai dari dunia olahraga, dunia militer, hingga budaya populer. Di tengah segala pencapaiannya, satu hal yang selalu ia kejar adalah cinta sejatinya kepada Jenny. Kisah ini mengajarkan bahwa kesederhanaan, kejujuran, dan ketulusan hati mampu membawa seseorang menjalani hidup yang penuh makna.",
     poster: "/images/movie/drama/forrest gump.jpg",
     genre: "drama",
   },
   {
-    id: 32,
+    id: 501,
     title: "THE PURSUIT OF HAPPYNESS",
     description: "Film ini mengikuti perjalanan hidup seorang ayah tunggal yang harus bertahan di tengah keterbatasan ekonomi dan tekanan hidup yang berat. Demi masa depan anaknya, ia rela menghadapi penolakan, kegagalan, dan rasa putus asa yang terus menguji mentalnya. Dengan tekad yang kuat dan keyakinan bahwa kerja keras tidak akan mengkhianati hasil, ia terus melangkah meski dunia terasa tidak adil. Sebuah kisah nyata yang menyentuh tentang pengorbanan, harapan, dan arti sejati dari kebahagiaan.",
     poster: "/images/movie/drama/the pursuit.jpg",
     genre: "drama",
   },
   {
-    id: 33,
+    id: 502,
     title: "TITANIC",
     description: "Berlatar di atas kapal paling megah pada masanya, Titanic mengisahkan pertemuan dua insan dari kelas sosial yang berbeda. Hubungan mereka tumbuh di tengah kemewahan, impian, dan kebebasan yang singkat. Ketika tragedi besar tak terelakkan terjadi, cinta mereka diuji oleh keadaan ekstrem dan pilihan-pilihan yang menyayat hati. Film ini bukan hanya kisah cinta, tetapi juga potret kemanusiaan, keberanian, dan kehilangan yang abadi dalam sejarah.",
     poster: "/images/movie/drama/titanic.webp",
     genre: "drama",
   },
   {
-    id: 34,
+    id: 503,
     title: "A BEAUTIFUL MIND",
     description: "Seorang matematikawan jenius berjuang mengejar karier akademik yang gemilang, namun harus menghadapi kenyataan pahit ketika pikirannya mulai dikuasai oleh penyakit mental. Dunia yang ia yakini perlahan runtuh, memaksanya mempertanyakan apa yang nyata dan apa yang tidak. Dengan dukungan orang-orang terdekat dan keteguhan cinta sejati, ia belajar menerima dirinya apa adanya. Film ini menggambarkan perjuangan batin, kecerdasan, dan kekuatan cinta dalam menghadapi penyakit yang tak terlihat.",
     poster: "/images/movie/drama/a beautiful mind.jpeg",
     genre: "drama",
   },
   {
-    id: 35,
+    id: 504,
     title: "THE GREEN MILE",
     description: "Di balik tembok penjara dan lorong panjang yang dikenal sebagai Green Mile, seorang sipir bertemu dengan narapidana yang memiliki kemampuan luar biasa. Kehadiran sosok tersebut mengubah cara pandang para penjaga terhadap keadilan, dosa, dan kemanusiaan. Seiring berjalannya waktu, batas antara benar dan salah menjadi kabur, meninggalkan dilema moral yang mendalam. Film ini adalah kisah emosional tentang belas kasih, keajaiban, dan penderitaan manusia yang tak terlupakan.",
     poster: "/images/movie/drama/the green mile.jpg",
+    genre: "drama",
+  },
+   {
+    id: 505,
+    title: "SHAWSHANK REDEMPTION",
+    description: "Film ini menceritakan tentang seorang bankir yang dipenjara secara salah dan harus menyesuaikan diri di penjara Shawshank. Di tengah keputusasaan, ia menemukan harapan, persahabatan, dan cara untuk membebaskan dirinya, mengajarkan kekuatan ketekunan dan harapan yang tak pernah padam.",
+    poster: "/images/movie/drama/36.jpg",
+    genre: "drama",
+  },
+  {
+    id: 506,
+    title: "THE GODFATHER",
+    description: "Kisah epik tentang keluarga mafia Corleone, menggambarkan intrik, kekuasaan, dan loyalitas dalam dunia kriminal. Film ini menyoroti konflik internal keluarga dan konsekuensi dari ambisi dan kekuasaan, menjadi salah satu film drama kriminal terbaik sepanjang masa.",
+    poster: "/images/movie/drama/37.jpg",
+    genre: "drama",
+  },
+  {
+    id: 507,
+    title: "SCHINDLER'S LIST",
+    description: "Berdasarkan kisah nyata, film ini mengikuti Oskar Schindler yang berusaha menyelamatkan ratusan orang Yahudi selama Holocaust. Sebuah cerita penuh keberanian, kemanusiaan, dan pengorbanan di tengah kekejaman perang.",
+    poster: "/images/movie/drama/38.jpg",
+    genre: "drama",
+  },
+  {
+    id: 508,
+    title: "LIFE OF PI",
+    description: "Seorang pemuda terjebak di tengah laut bersama seekor harimau Bengal setelah kapal mereka tenggelam. Perjuangan mereka untuk bertahan hidup menjadi kisah tentang iman, keberanian, dan hubungan manusia dengan alam.",
+    poster: "/images/movie/drama/39.jpg",
+    genre: "drama",
+  },
+  {
+    id: 509,
+    title: "THE NOTEBOOK",
+    description: "Kisah cinta yang abadi antara sepasang kekasih dari latar belakang berbeda. Film ini menggambarkan kekuatan cinta sejati, pengorbanan, dan kenangan yang tak lekang oleh waktu.",
+    poster: "/images/movie/drama/40.jpg",
+    genre: "drama",
+  },
+  {
+    id: 510,
+    title: "12 YEARS A SLAVE",
+    description: "Berdasarkan kisah nyata Solomon Northup, seorang pria kulit hitam bebas yang diculik dan dijadikan budak selama 12 tahun. Film ini menggambarkan penderitaan, ketahanan, dan harapan di tengah ketidakadilan sistem perbudakan.",
+    poster: "/images/movie/drama/41.jpg",
+    genre: "drama",
+  },
+  {
+    id: 511,
+    title: "SLUMDOG MILLIONAIRE",
+    description: "Seorang pemuda dari Mumbai mengikuti kuis televisi untuk memenangkan hadiah besar. Cerita ini menyajikan perjalanan hidupnya yang penuh perjuangan, cinta, dan nasib yang membawanya dari kemiskinan ke keberhasilan.",
+    poster: "/images/movie/drama/42.jpg",
+    genre: "drama",
+  },
+  {
+    id: 512,
+    title: "THE SOCIAL NETWORK",
+    description: "Mengisahkan perjalanan Mark Zuckerberg dalam menciptakan Facebook dan kontroversi di balik kesuksesannya. Film ini menyoroti ambisi, persahabatan, dan konflik moral dalam dunia teknologi modern.",
+    poster: "/images/movie/drama/43.jpg",
+    genre: "drama",
+  },
+  {
+    id: 513,
+    title: "WHIPLASH",
+    description: "Seorang drummer muda bercita-cita tinggi berlatih di bawah guru musik yang keras dan menuntut. Film ini menggambarkan perjuangan, obsesinya terhadap kesempurnaan, dan harga yang harus dibayar untuk mencapai puncak.",
+    poster: "/images/movie/drama/44.jpg",
+    genre: "drama",
+  },
+  {
+    id: 514,
+    title: "PARASITE",
+    description: "Kisah satir tentang kesenjangan sosial antara dua keluarga yang hidup di lapisan ekonomi berbeda. Film ini memadukan drama, ketegangan, dan komentar sosial yang tajam, menampilkan konflik kelas dan intrik yang tak terduga.",
+    poster: "/images/movie/drama/45.jpg",
     genre: "drama",
   },
 ];
@@ -579,8 +647,6 @@ export const comedyMovies: Movie[] = [
     genre: "comedy",
   },
 ];
-
-
 
 /* 🔑 GABUNG SEMUA FILM */
 const movies: Movie[] = [...newMovies, ...horrorMovies , ...adventureMovies, ...actionMovies, ...romanceMovies, ...dramaMovies, ...comedyMovies];
