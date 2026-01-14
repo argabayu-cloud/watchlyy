@@ -166,51 +166,137 @@ export const horrorMovies: Movie[] = [
 
 export const adventureMovies: Movie[] = [
   {
-    id: 11,
-    title: "Jurassic Park",
-    description: "Sebuah taman hiburan revolusioner yang menampilkan dinosaurus hidup berubah menjadi mimpi buruk ketika sistem keamanan gagal. Para pengunjung harus berjuang bertahan hidup di tengah makhluk prasejarah yang lepas kendali. Petualangan menegangkan ini memadukan sains, keberanian, dan insting bertahan hidup.",
+    id: 21,
+    title: "JURASSIC PARK",
+    description:
+      "Sebuah taman hiburan berisi dinosaurus hasil rekayasa genetika berubah menjadi mimpi buruk. Sistem keamanan gagal dan para pengunjung harus bertahan hidup di tengah makhluk purba yang lepas kendali.",
     poster: "/images/movie/11.jpg",
     genre: "adventure",
   },
   {
-    id: 12,
+    id: 22,
     title: "INSPIRED BY THE TRUE EVENTS TIMUR",
-    description: "Terinspirasi dari kisah nyata di wilayah timur, film ini mengikuti perjalanan sekelompok orang yang menghadapi alam liar dan konflik budaya. Di tengah keterbatasan dan bahaya, mereka diuji oleh pilihan sulit yang menentukan nasib hidup dan persahabatan. Sebuah petualangan emosional penuh makna.",
+    description:
+      "Film petualangan yang terinspirasi dari kisah nyata di wilayah timur. Perjalanan penuh risiko ini menguji keberanian, solidaritas, dan tekad untuk bertahan hidup.",
     poster: "/images/movie/12.jpg",
     genre: "adventure",
   },
   {
-    id: 13,
+    id: 23,
     title: "AVATAR",
-    description: "Seorang manusia menjelajahi planet Pandora yang penuh keindahan dan bahaya melalui tubuh avatar. Ketika konflik antara manusia dan penduduk asli semakin memanas, ia terjebak di antara dua dunia. Petualangan epik ini menyuguhkan visual spektakuler dan kisah tentang alam, identitas, serta pengorbanan.",
+    description:
+      "Seorang mantan marinir dikirim ke planet Pandora untuk menjalankan misi rahasia. Ia justru terlibat konflik besar antara manusia dan penduduk asli yang mempertahankan tanah mereka.",
     poster: "/images/movie/avatar.jpg",
     genre: "adventure",
   },
   {
-    id: 14,
+    id: 24,
     title: "JUMANJI",
-    description: "Sebuah permainan misterius menyeret para pemainnya ke dunia penuh rintangan mematikan dan tantangan tak terduga. Untuk bisa kembali ke dunia nyata, mereka harus menyelesaikan permainan dengan kerja sama dan keberanian. Film ini menghadirkan petualangan seru yang dibalut humor dan aksi.",
+    description:
+      "Sebuah permainan misterius membawa pemainnya masuk ke dunia penuh bahaya. Mereka harus menyelesaikan tantangan ekstrem agar bisa kembali ke dunia nyata.",
     poster: "/images/movie/14.jpg",
     genre: "adventure",
   },
   {
-    id: 15,
+    id: 25,
     title: "KINGDOM PLANET OF THE APES",
-    description: "Di dunia yang telah dikuasai oleh bangsa kera, manusia berjuang bertahan di tengah peradaban baru. Konflik kekuasaan dan perjuangan untuk kebebasan membawa para karakter ke dalam petualangan penuh strategi dan pengorbanan. Sebuah kisah epik tentang evolusi dan kepemimpinan.",
-    poster: "/images/movie/of the planet.jpg",
+    description:
+      "Dunia kini berada di bawah kekuasaan bangsa kera yang cerdas. Konflik antara kekuasaan, kebebasan, dan kemanusiaan menjadi inti dari petualangan epik ini.",
+    poster: "/images/movie/kingdom.jpg",
+    genre: "adventure",
+  },
+  {
+    id: 26,
+    title: "INDIANA JONES AND THE LAST CRUSADE",
+    description:
+      "Indiana Jones memulai pencarian Holy Grail yang legendaris. Petualangan ini dipenuhi teka-teki berbahaya dan hubungan emosional antara ayah dan anak.",
+    poster: "/images/movie/adventure/16.jpg",
+    genre: "adventure",
+  },
+  {
+    id: 27,
+    title: "THE LOST CITY",
+    description:
+      "Seorang penulis novel petualangan terseret ke misi nyata yang penuh ancaman. Ia harus bertahan hidup di hutan liar sambil mengungkap rahasia kota yang hilang.",
+    poster: "/images/movie/adventure/17.jpg",
+    genre: "adventure",
+  },
+  {
+    id: 28,
+    title: "PIRATES OF THE CARIBBEAN",
+    description:
+      "Petualangan bajak laut legendaris di lautan penuh kutukan dan harta karun. Pertempuran, pengkhianatan, dan mitos kuno menyatu dalam kisah epik ini.",
+    poster: "/images/movie/adventure/18.avif",
+    genre: "adventure",
+  },
+  {
+    id: 29,
+    title: "THE MAZE RUNNER",
+    description:
+      "Sekelompok remaja terjebak di labirin raksasa tanpa ingatan masa lalu. Mereka harus bekerja sama untuk menemukan jalan keluar sebelum ancaman mematikan datang.",
+    poster: "/images/movie/adventure/19.jpg",
+    genre: "adventure",
+  },
+  {
+    id: 30,
+    title: "UNCHARTED",
+    description:
+      "Seorang pemburu harta karun muda memulai perjalanan lintas benua. Petualangan ini dipenuhi teka-teki kuno, jebakan mematikan, dan rahasia sejarah.",
+    poster: "/images/movie/adventure/20.avif",
+    genre: "adventure",
+  },
+  {
+    id: 31,
+    title: "TOMB RAIDER",
+    description:
+      "Lara Croft menjelajahi tempat-tempat berbahaya untuk membuktikan dirinya. Ia menghadapi misteri kuno yang bisa mengubah dunia selamanya.",
+    poster: "/images/movie/adventure/21.jpg",
+    genre: "adventure",
+  },
+  {
+    id: 32,
+    title: "THE MUMMY",
+    description:
+      "Sebuah ekspedisi arkeologi tanpa sengaja membangkitkan kekuatan kuno. Teror dan petualangan pun dimulai ketika kutukan mumi menyebar.",
+    poster: "/images/movie/adventure/22.webp",
+    genre: "adventure",
+  },
+  {
+    id: 33,
+    title: "JOURNEY TO THE CENTER OF THE EARTH",
+    description:
+      "Sekelompok penjelajah melakukan perjalanan ke dunia tersembunyi di bawah bumi. Mereka menemukan makhluk aneh dan bahaya yang tak terbayangkan.",
+    poster: "/images/movie/adventure/23.jpg",
+    genre: "adventure",
+  },
+  {
+    id: 34,
+    title: "GODZILLA VS KONG",
+    description:
+      "Dua makhluk raksasa legendaris bertarung untuk menentukan siapa penguasa sejati. Pertarungan epik ini mengancam keseimbangan dunia.",
+    poster: "/images/movie/adventure/24.jpeg",
+    genre: "adventure",
+  },
+  {
+    id: 35,
+    title: "READY PLAYER ONE",
+    description:
+      "Seorang remaja masuk ke dunia virtual penuh tantangan dan misteri. Ia berlomba menemukan harta digital yang dapat mengubah hidup banyak orang.",
+    poster: "/images/movie/adventure/25.jpg",
     genre: "adventure",
   },
 ];
+
 export const actionMovies: Movie[] = [
   {
-    id: 16,
+    id: 36,
     title: "PEARL HARBOR",
     description: "Berlatar belakang Perang Dunia II, film ini mengisahkan dua sahabat pilot tempur yang terikat oleh persahabatan kuat dan cinta pada wanita yang sama. Ketika serangan mendadak Jepang menghancurkan pangkalan militer Pearl Harbor, hidup mereka berubah dalam sekejap. Di tengah kepanikan, kehancuran, dan peperangan udara yang brutal, mereka harus mengesampingkan konflik pribadi demi menjalankan tugas negara. Film ini menyajikan aksi perang berskala besar yang dipadukan dengan drama emosional dan pengorbanan.",
     poster: "/images/movie/ph.webp",
     genre: "action",
   },
   {
-    id: 17,
+    id: 37,
     title: "13 BOM DI JAKARTA",
     description: "Jakarta berubah menjadi medan perang ketika jaringan teroris melancarkan rencana teror paling berbahaya dalam sejarah kota: tiga belas bom yang tersebar di berbagai lokasi strategis. Aparat keamanan dan tim intelijen harus berpacu dengan waktu, memecahkan petunjuk demi petunjuk sebelum korban berjatuhan. Ketegangan meningkat seiring tekanan politik, konflik internal, dan risiko kegagalan yang bisa berujung kehancuran massal. Film ini menampilkan aksi realistis, strategi antiteror, dan keberanian tanpa kompromi.",
     poster: "/images/movie/13 bom.jpg",
@@ -218,7 +304,7 @@ export const actionMovies: Movie[] = [
   },
 
   {
-    id: 18,
+    id: 38,
     title: "SI PALING AKTOR",
     description: "Seorang aktor berbakat namun kurang beruntung mendapat kesempatan emas yang justru menyeretnya ke situasi berbahaya. Tanpa disadari, peran yang ia mainkan membuatnya terlibat langsung dalam dunia kriminal sungguhan. Dipaksa berakting dalam kehidupan nyata demi menyelamatkan diri, ia menggunakan kecerdikan, improvisasi, dan keberanian. Film ini memadukan aksi cepat, ketegangan, dan sentuhan komedi gelap yang segar.",
     poster: "/images/movie/si aktor.webp",
