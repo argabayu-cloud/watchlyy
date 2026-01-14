@@ -98,6 +98,27 @@ const comedyMovies: Movie[] = [
     date: "05 May 2025",
     badge: "BLURAY",
   },
+  {
+    id: 63,
+    title: "RUSH HOUR",
+    poster: "/images/movie/comedy/13.jpg",
+    date: "19 May 2025",
+    badge: "BLURAY",
+  },
+  {
+    id: 64,
+    title: "THE DICTATOR",
+    poster: "/images/movie/comedy/14.jpg",
+    date: "01 Jun 2025",
+    badge: "WEBDL",
+  },
+  {
+    id: 65,
+    title: "BAD BOYS",
+    poster: "/images/movie/comedy/15.jpg",
+    date: "18 Jun 2025",
+    badge: "BLURAY",
+  },
 ];
 
 export default function ComedyPage() {
