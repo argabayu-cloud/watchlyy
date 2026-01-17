@@ -80,7 +80,7 @@ const dramaMovies: Movie[] = [
   {
     id: 509,
     title: "THE NOTEBOOK",
-    poster: "/images/movie/drama/40.jpg",
+    poster: "/images/movie/romance/1.jpg",
     date: "18 Jul 2025",
     badge: "WEBDL",
   },
@@ -94,7 +94,7 @@ const dramaMovies: Movie[] = [
   {
     id: 511,
     title: "SLUMDOG MILLIONAIRE",
-    poster: "/images/movie/drama/42.jpg",
+    poster: "/images/movie/drama/slumdog.webp",
     date: "15 Aug 2025",
     badge: "WEBDL",
   },
