@@ -542,7 +542,7 @@ export const dramaMovies: Movie[] = [
     id: 505,
     title: "SHAWSHANK REDEMPTION",
     description: "Film ini menceritakan tentang seorang bankir yang dipenjara secara salah dan harus menyesuaikan diri di penjara Shawshank. Di tengah keputusasaan, ia menemukan harapan, persahabatan, dan cara untuk membebaskan dirinya, mengajarkan kekuatan ketekunan dan harapan yang tak pernah padam.",
-    poster: "/images/movie/drama/36.jpg",
+    poster: "/images/movie/drama/the shawshank.webp",
     genre: "drama",
   },
   {
